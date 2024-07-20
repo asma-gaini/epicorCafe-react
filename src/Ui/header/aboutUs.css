@@ -1,0 +1,14 @@
+.introAboutUs a {
+  color: #000000;
+  cursor: pointer;
+  text-decoration: none;
+  padding: 5px;
+  border-radius: 5px;
+  position: absolute;
+  right: 20px;
+  top: 25px;
+  font-size: 13px;
+}
+.aboutUsLink {
+  background-color: rgb(205 171 44);
+}

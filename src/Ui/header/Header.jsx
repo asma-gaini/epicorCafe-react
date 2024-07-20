@@ -1,3 +1,4 @@
+import AboutUs from "./AboutUs";
 import "./header.css";
 import Logo from "./Logo";
 import MultiLanguage from "./MultiLanguage";
@@ -9,7 +10,7 @@ function Header() {
       <MultiLanguage />
       <Theme />
       <Logo />
-      multi language / theme / logo / about Us
+      <AboutUs />
     </div>
   );
 }

@@ -1,9 +1,13 @@
+import "./aboutUs.css";
+
 function AboutUs() {
-    return (
-        <div>
-            about
-        </div>
-    )
+  return (
+    <div class="introAboutUs">
+      <a class="aboutUsLink" text_key="aboutUs">
+        درباره ما
+      </a>
+    </div>
+  );
 }
 
-export default AboutUs
+export default AboutUs;
