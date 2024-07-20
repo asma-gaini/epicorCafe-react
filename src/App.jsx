@@ -1,12 +1,12 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Menu from "./features/menu/Menu";
+import MainMenu from "./features/menu/MainMenu";
 import AppLayout from "./Ui/AppLayout";
 
 const router = createBrowserRouter([
   {
     element: <AppLayout />,
 
-    children: [{ path: "/", element: <Menu /> }],
+    children: [{ path: "/", element: <MainMenu /> }],
   },
 ]);
 

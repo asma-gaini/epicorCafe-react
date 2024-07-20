@@ -1,0 +1,91 @@
+:root {
+    --body: rgb(192, 160, 40, 0.9);
+    --white: rgb(255, 255, 255);
+    --menu-item: rgba(178, 157, 84, 0.8);
+    --btn-order: #ab6130;
+    --btn-counter: rgb(207, 137, 80);
+    --menubar: linear-gradient(
+        to left top,
+        rgba(134, 53, 0, 0.09),
+        rgba(134, 53, 0, 0)
+      )
+      rgba(134, 53, 0, 0.02);
+    --menubar-click-primary: rgb(196, 145, 91);
+    --menubar-click: radial-gradient(
+      circle,
+      rgb(221, 178, 131),
+      rgb(210, 119, 21),
+      rgb(106, 56, 2)
+    );
+    --hrLineFont: rgb(237, 237, 237);
+    --hrLineBack: rgb(134 53 0 / 15%);
+    --font-button: #000000;
+  }
+
+/* ******************************* menu bar ******************************* */
+
+.menu-bar {
+  margin: 40px 70px 0px 70px;
+  direction: rtl;
+  overflow: auto;
+  white-space: nowrap;
+  text-align: center;
+}
+.menu-bar_section {
+  cursor: pointer;
+  border-radius: 10px;
+  background: var(--menubar);
+  margin: 10px 5px;
+  min-width: 90px;
+  border: none;
+  color: var(--white);
+}
+.menu-bar_section_click {
+  background-color: var(--menubar-click-primary);
+  background-image: var(--menubar-click);
+}
+.menu-bar_section img {
+  width: 30px;
+  vertical-align: middle;
+  margin: 5px auto;
+}
+.menu-bar_section_info {
+  text-align: center;
+}
+.menu-bar_section_name-en {
+  font-size: 10px;
+  padding: 3px 0;
+}
+.menu-bar_section_name-fa {
+  font-size: 11px;
+  padding: 3px 0;
+  padding-bottom: 8px;
+}
+
+.main {
+  background-color: inherit;
+  grid-area: main;
+  padding: 0;
+}
+.items {
+  position: relative;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  transition: all 0.2s;
+  transform: scale(0.98);
+  will-change: transform;
+  user-select: none;
+  cursor: pointer;
+}
+.items.active {
+  cursor: grabbing;
+  cursor: -webkit-grabbing;
+  transform: scale(1);
+}
+.item {
+  display: inline-block;
+}
+a:hover {
+  cursor: pointer;
+}
