@@ -1,0 +1,40 @@
+.logo {
+  display: flex;
+  justify-content: center;
+  height: 60px;
+  margin-top: 15px;
+}
+.logo img {
+  border-radius: 3px;
+}
+.info-header {
+  display: flex;
+  justify-content: center;
+}
+.info-header_instagram {
+  display: flex;
+  margin: 5px;
+  margin-top: 15px;
+  align-items: center;
+}
+.info-header_instagram img {
+  width: 20px;
+  padding: 5px;
+}
+.info-header_instagram span {
+  font-size: 12px;
+  color: var(--white);
+}
+.info-header_phone {
+  display: flex;
+  align-items: center;
+  margin: 5px;
+  margin-top: 15px;
+}
+.info-header_phone img {
+  width: 20px;
+  padding: 5px;
+}
+.info-header_phone span {
+  font-size: 12px;
+}
