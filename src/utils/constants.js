@@ -6,7 +6,7 @@ var menu = {
       headerNameFA: "breakfast",
       headerNameEN: "breakfastEn",
       headerImg:
-        "./img/main page/food & this category menu/breakfast/63fd588c75bdd.png",
+        "../image/main page/food & this category menu/breakfast/63fd588c75bdd.png",
       Info: [
         {
           codeNumber: 1,
@@ -16,7 +16,7 @@ var menu = {
             "Cucumbers-tomatoes-vegetables-butter-cheese-honey-boiled_eggs",
           Price: 175,
           ImageURL:
-            "./img/main page/food & this category menu/breakfast/61ee584723571.jpg",
+            "../image/main page/food & this category menu/breakfast/61ee584723571.jpg",
         },
         {
           codeNumber: 2,
@@ -24,7 +24,7 @@ var menu = {
           Title: "IranianOmelette",
           Description: "Toast-eggs-tomatoes",
           Price: 155,
-          ImageURL: "./img/general image/noimagefood.png",
+          ImageURL: "../image/general image/noimagefood.png",
         },
         {
           codeNumber: 3,
@@ -34,7 +34,7 @@ var menu = {
             "Sausage-bacon-halfBoiledEgg-beanFeed-potato-mushroom-tomato-pickledCucumber",
           Price: 195,
           ImageURL:
-            "./img/main page/food & this category menu/breakfast/61ee57fcc00cd.jpg",
+            "../image/main page/food & this category menu/breakfast/61ee57fcc00cd.jpg",
         },
         {
           codeNumber: 4,
@@ -42,7 +42,7 @@ var menu = {
           Title: "MexicanOmelette",
           Description: "Toast-egg-tomato-jalapenoPepper",
           Price: 135,
-          ImageURL: "./img/general image/noimagefood.png",
+          ImageURL: "../image/general image/noimagefood.png",
         },
         {
           codeNumber: 5,
@@ -52,21 +52,21 @@ var menu = {
             "MacBread-scrambledEggs-bacon-slicedCheese-lettuce-tomato",
           Price: 125,
           ImageURL:
-            "./img/main page/food & this category menu/breakfast/61f3e2420f1cc.jpg",
+            "../image/main page/food & this category menu/breakfast/61f3e2420f1cc.jpg",
         },
         {
           codeNumber: 6,
           isPopular: "false",
           Title: "beanFeed",
           Price: 95,
-          ImageURL: "./img/general image/noimagefood.png",
+          ImageURL: "../image/general image/noimagefood.png",
         },
         {
           codeNumber: 7,
           isPopular: "true",
           Title: "friedEgg",
           Price: 110,
-          ImageURL: "./img/general image/noimagefood.png",
+          ImageURL: "../image/general image/noimagefood.png",
         },
       ],
     },
@@ -75,63 +75,63 @@ var menu = {
       headerNameFA: "MinaBar",
       headerNameEN: "MinaBarEn",
       headerImg:
-        "./img/main page/food & this category menu/minabar/minabar.png",
+        "../image/main page/food & this category menu/minabar/minabar.png",
       Info: [
         {
           codeNumber: 8,
           isPopular: "false",
           Title: "Espresso",
           Price: 68,
-          ImageURL: "./img/main page/food & this category menu/minabar/1.jpg",
+          ImageURL: "../image/main page/food & this category menu/minabar/1.jpg",
         },
         {
           codeNumber: 9,
           isPopular: "false",
           Title: "DoubleEspresso",
           Price: 72,
-          ImageURL: "./img/main page/food & this category menu/minabar/2.jpg",
+          ImageURL: "../image/main page/food & this category menu/minabar/2.jpg",
         },
         {
           codeNumber: 10,
           isPopular: "true",
           Title: "Americans",
           Price: 78,
-          ImageURL: "./img/main page/food & this category menu/minabar/3.jpg",
+          ImageURL: "../image/main page/food & this category menu/minabar/3.jpg",
         },
         {
           codeNumber: 11,
           isPopular: "false",
           Title: "EspressoMacchiato",
           Price: 75,
-          ImageURL: "./img/general image/noimagefood.png",
+          ImageURL: "../image/general image/noimagefood.png",
         },
         {
           codeNumber: 12,
           isPopular: "false",
           Title: "cortado",
           Price: 70,
-          ImageURL: "./img/main page/food & this category menu/minabar/5.jpg",
+          ImageURL: "../image/main page/food & this category menu/minabar/5.jpg",
         },
         {
           codeNumber: 13,
           isPopular: "false",
           Title: "Cappuccino",
           Price: 85,
-          ImageURL: "./img/main page/food & this category menu/minabar/6.jpg",
+          ImageURL: "../image/main page/food & this category menu/minabar/6.jpg",
         },
         {
           codeNumber: 14,
           isPopular: "false",
           Title: "DoubleLatte",
           Price: 85,
-          ImageURL: "./img/main page/food & this category menu/minabar/7.jpg",
+          ImageURL: "../image/main page/food & this category menu/minabar/7.jpg",
         },
         {
           codeNumber: 15,
           isPopular: "false",
           Title: "SheikhCoffee",
           Price: 98,
-          ImageURL: "./img/general image/noimagefood.png",
+          ImageURL: "../image/general image/noimagefood.png",
         },
       ],
     },
@@ -140,7 +140,7 @@ var menu = {
       headerNameFA: "EspressoBar",
       headerNameEN: "EspressoBarEn",
       headerImg:
-        "./img/main page/food & this category menu/espresso bar/espressobar.png",
+        "../image/main page/food & this category menu/espresso bar/espressobar.png",
       Info: [
         {
           codeNumber: 16,
@@ -148,7 +148,7 @@ var menu = {
           Title: "SingleEspresso",
           Price: 69,
           ImageURL:
-            "./img/main page/food & this category menu/espresso bar/1.jpg",
+            "../image/main page/food & this category menu/espresso bar/1.jpg",
         },
         {
           codeNumber: 17,
@@ -156,7 +156,7 @@ var menu = {
           Title: "DoubleEspresso",
           Price: 74,
           ImageURL:
-            "./img/main page/food & this category menu/espresso bar/2.jpg",
+            "../image/main page/food & this category menu/espresso bar/2.jpg",
         },
         {
           codeNumber: 18,
@@ -164,7 +164,7 @@ var menu = {
           Title: "Mocha",
           Price: 85,
           ImageURL:
-            "./img/main page/food & this category menu/espresso bar/3.jpg",
+            "../image/main page/food & this category menu/espresso bar/3.jpg",
         },
         {
           codeNumber: 19,
@@ -172,7 +172,7 @@ var menu = {
           Title: "CaramelMacchiato",
           Price: 95,
           ImageURL:
-            "./img/main page/food & this category menu/espresso bar/4.jpg",
+            "../image/main page/food & this category menu/espresso bar/4.jpg",
         },
         {
           codeNumber: 20,
@@ -180,7 +180,7 @@ var menu = {
           Title: "Americans",
           Price: 75,
           ImageURL:
-            "./img/main page/food & this category menu/espresso bar/5.jpg",
+            "../image/main page/food & this category menu/espresso bar/5.jpg",
         },
         {
           codeNumber: 21,
@@ -188,7 +188,7 @@ var menu = {
           Title: "latte",
           Price: 83,
           ImageURL:
-            "./img/main page/food & this category menu/espresso bar/6.jpg",
+            "../image/main page/food & this category menu/espresso bar/6.jpg",
         },
         {
           codeNumber: 22,
@@ -196,7 +196,7 @@ var menu = {
           Title: "Affogato",
           Price: 105,
           ImageURL:
-            "./img/main page/food & this category menu/espresso bar/7.jpg",
+            "../image/main page/food & this category menu/espresso bar/7.jpg",
         },
       ],
     },
@@ -205,42 +205,42 @@ var menu = {
       headerNameFA: "IceCoffee",
       headerNameEN: "IceCoffeeEn",
       headerImg:
-        "./img/main page/food & this category menu/ice cofee/ice cofee.png",
+        "../image/main page/food & this category menu/ice cofee/ice cofee.png",
       Info: [
         {
           codeNumber: 23,
           isPopular: "false",
           Title: "IcedLatte",
           Price: 69,
-          ImageURL: "./img/main page/food & this category menu/ice cofee/1.jpg",
+          ImageURL: "../image/main page/food & this category menu/ice cofee/1.jpg",
         },
         {
           codeNumber: 24,
           isPopular: "false",
           Title: "IcedAmerican",
           Price: 79,
-          ImageURL: "./img/main page/food & this category menu/ice cofee/2.jpg",
+          ImageURL: "../image/main page/food & this category menu/ice cofee/2.jpg",
         },
         {
           codeNumber: 25,
           isPopular: "false",
           Title: "IcedCaramelMacchiato",
           Price: 95,
-          ImageURL: "./img/main page/food & this category menu/ice cofee/3.jpg",
+          ImageURL: "../image/main page/food & this category menu/ice cofee/3.jpg",
         },
         {
           codeNumber: 26,
           isPopular: "false",
           Title: "IceMocha",
           Price: 90,
-          ImageURL: "./img/main page/food & this category menu/ice cofee/4.jpg",
+          ImageURL: "../image/main page/food & this category menu/ice cofee/4.jpg",
         },
         {
           codeNumber: 27,
           isPopular: "false",
           Title: "Coldbrew",
           Price: 78,
-          ImageURL: "./img/general image/noimagefood.png",
+          ImageURL: "../image/general image/noimagefood.png",
         },
       ],
     },
@@ -249,63 +249,63 @@ var menu = {
       headerNameFA: "CofeeBar",
       headerNameEN: "CofeeBarEn",
       headerImg:
-        "./img/main page/food & this category menu/cofee bar/cofee bar.png",
+        "../image/main page/food & this category menu/cofee bar/cofee bar.png",
       Info: [
         {
           codeNumber: 28,
           isPopular: "false",
           Title: "SingleSiphon",
           Price: 68,
-          ImageURL: "./img/main page/food & this category menu/cofee bar/1.jpg",
+          ImageURL: "../image/main page/food & this category menu/cofee bar/1.jpg",
         },
         {
           codeNumber: 29,
           isPopular: "false",
           Title: "Two-personSiphon",
           Price: 110,
-          ImageURL: "./img/general image/noimagefood.png",
+          ImageURL: "../image/general image/noimagefood.png",
         },
         {
           codeNumber: 30,
           isPopular: "false",
           Title: "Three-personSiphon",
           Price: 155,
-          ImageURL: "./img/general image/noimagefood.png",
+          ImageURL: "../image/general image/noimagefood.png",
         },
         {
           codeNumber: 31,
           isPopular: "false",
           Title: "singlePlayer",
           Price: 85,
-          ImageURL: "./img/main page/food & this category menu/cofee bar/4.jpg",
+          ImageURL: "../image/main page/food & this category menu/cofee bar/4.jpg",
         },
         {
           codeNumber: 32,
           isPopular: "false",
           Title: "DoubleBed",
           Price: 110,
-          ImageURL: "./img/general image/noimagefood.png",
+          ImageURL: "../image/general image/noimagefood.png",
         },
         {
           codeNumber: 33,
           isPopular: "false",
           Title: "AThree-personCamp",
           Price: 145,
-          ImageURL: "./img/general image/noimagefood.png",
+          ImageURL: "../image/general image/noimagefood.png",
         },
         {
           codeNumber: 34,
           isPopular: "false",
           Title: "Turkish",
           Price: 95,
-          ImageURL: "./img/general image/noimagefood.png",
+          ImageURL: "../image/general image/noimagefood.png",
         },
         {
           codeNumber: 35,
           isPopular: "false",
           Title: "FrenchPressWithMilk",
           Price: 125,
-          ImageURL: "./img/main page/food & this category menu/cofee bar/8.jpg",
+          ImageURL: "../image/main page/food & this category menu/cofee bar/8.jpg",
         },
       ],
     },
@@ -314,14 +314,14 @@ var menu = {
       headerNameFA: "HotDrinks",
       headerNameEN: "HotDrinksEn",
       headerImg:
-        "./img/main page/food & this category menu/hot drinks/hot drinks.png",
+        "../image/main page/food & this category menu/hot drinks/hot drinks.png",
       Info: [
         {
           codeNumber: 36,
           isPopular: "false",
           Title: "SingleIranianBlackTea",
           Price: 42,
-          ImageURL: "./img/general image/noimagefood.png",
+          ImageURL: "../image/general image/noimagefood.png",
         },
         {
           codeNumber: 37,
@@ -329,7 +329,7 @@ var menu = {
           Title: "IranianBlackTeaForTwo",
           Price: 62,
           ImageURL:
-            "./img/main page/food & this category menu/hot drinks/2.jpg",
+            "../image/main page/food & this category menu/hot drinks/2.jpg",
         },
         {
           codeNumber: 38,
@@ -337,42 +337,42 @@ var menu = {
           Title: "IranianBlackTeaForFour",
           Price: 155,
           ImageURL:
-            "./img/main page/food & this category menu/hot drinks/3.jpg",
+            "../image/main page/food & this category menu/hot drinks/3.jpg",
         },
         {
           codeNumber: 39,
           isPopular: "false",
           Title: "JazminGreenTeaForOnePerson",
           Price: 65,
-          ImageURL: "./img/general image/noimagefood.png",
+          ImageURL: "../image/general image/noimagefood.png",
         },
         {
           codeNumber: 40,
           isPopular: "false",
           Title: "JasmineGreenTeaForTwo",
           Price: 75,
-          ImageURL: "./img/general image/noimagefood.png",
+          ImageURL: "../image/general image/noimagefood.png",
         },
         {
           codeNumber: 41,
           isPopular: "false",
           Title: "JasmineGreenTeaForFour",
           Price: 80,
-          ImageURL: "./img/general image/noimagefood.png",
+          ImageURL: "../image/general image/noimagefood.png",
         },
         {
           codeNumber: 42,
           isPopular: "false",
           Title: "WhiteTea(BardGinsengAndHoney)",
           Price: 110,
-          ImageURL: "./img/general image/noimagefood.png",
+          ImageURL: "../image/general image/noimagefood.png",
         },
         {
           codeNumber: 43,
           isPopular: "false",
           Title: "WhiteTea(WithGingerAndCitrusPeel)",
           Price: 125,
-          ImageURL: "./img/general image/noimagefood.png",
+          ImageURL: "../image/general image/noimagefood.png",
         },
         {
           codeNumber: 44,
@@ -380,7 +380,7 @@ var menu = {
           Title: "MasalaTea",
           Price: 95,
           ImageURL:
-            "./img/main page/food & this category menu/hot drinks/9.jpg",
+            "../image/main page/food & this category menu/hot drinks/9.jpg",
         },
         {
           codeNumber: 45,
@@ -388,14 +388,14 @@ var menu = {
           Title: "hotChocolate",
           Price: 93,
           ImageURL:
-            "./img/main page/food & this category menu/hot drinks/10.jpg",
+            "../image/main page/food & this category menu/hot drinks/10.jpg",
         },
         {
           codeNumber: 46,
           isPopular: "false",
           Title: "WhiteChocolateWithPeanutButter",
           Price: 105,
-          ImageURL: "./img/general image/noimagefood.png",
+          ImageURL: "../image/general image/noimagefood.png",
         },
         {
           codeNumber: 47,
@@ -403,14 +403,14 @@ var menu = {
           Title: "teaLatte",
           Price: 85,
           ImageURL:
-            "./img/main page/food & this category menu/hot drinks/12.jpg",
+            "../image/main page/food & this category menu/hot drinks/12.jpg",
         },
         {
           codeNumber: 48,
           isPopular: "false",
           Title: "SingleMoroccanTea",
           Price: 62,
-          ImageURL: "./img/general image/noimagefood.png",
+          ImageURL: "../image/general image/noimagefood.png",
         },
       ],
     },
@@ -419,7 +419,7 @@ var menu = {
       headerNameFA: "theDrinkOfYourChoice",
       headerNameEN: "theDrinkOfYourChoiceEn",
       headerImg:
-        "./img/main page/food & this category menu/drink chois/drink chois.png",
+        "../image/main page/food & this category menu/drink chois/drink chois.png",
       Info: [
         {
           codeNumber: 49,
@@ -427,14 +427,14 @@ var menu = {
           Title: "peaceOfMind",
           Price: 85,
           ImageURL:
-            "./img/main page/food & this category menu/drink chois/1.jpg",
+            "../image/main page/food & this category menu/drink chois/1.jpg",
         },
         {
           codeNumber: 50,
           isPopular: "false",
           Title: "Lemon-Ginger-Honey",
           Price: 115,
-          ImageURL: "./img/general image/noimagefood.png",
+          ImageURL: "../image/general image/noimagefood.png",
         },
       ],
     },
@@ -443,7 +443,7 @@ var menu = {
       headerNameFA: "NaturalJuice",
       headerNameEN: "NaturalJuiceEn",
       headerImg:
-        "./img/main page/food & this category menu/natural juice/natural juice.png",
+        "../image/main page/food & this category menu/natural juice/natural juice.png",
       Info: [
         {
           codeNumber: 51,
@@ -451,7 +451,7 @@ var menu = {
           Title: "NaturalJuice",
           Description: "WatermelonJuice-cantaloupeJuice-orangeJuice",
           Price: 95,
-          ImageURL: "./img/general image/noimagefood.png",
+          ImageURL: "../image/general image/noimagefood.png",
         },
         {
           codeNumber: 52,
@@ -460,7 +460,7 @@ var menu = {
           Description: "SimpleLime-Syrup-Soda+GingerCanBeAddedIfDesired ",
           Price: 105,
           ImageURL:
-            "./img/main page/food & this category menu/natural juice/2.jpg",
+            "../image/main page/food & this category menu/natural juice/2.jpg",
         },
         {
           codeNumber: 53,
@@ -469,7 +469,7 @@ var menu = {
           Description: "TheCompositionOfMint-FreshLime-SweetAndSour-Soda ",
           Price: 115,
           ImageURL:
-            "./img/main page/food & this category menu/natural juice/3.jpeg",
+            "../image/main page/food & this category menu/natural juice/3.jpeg",
         },
         {
           codeNumber: 54,
@@ -478,7 +478,7 @@ var menu = {
           Description: "Banana-pineapple-strawberry-mango-coconut",
           Price: 165,
           ImageURL:
-            "./img/main page/food & this category menu/natural juice/4.jpeg",
+            "../image/main page/food & this category menu/natural juice/4.jpeg",
         },
         {
           codeNumber: 55,
@@ -487,7 +487,7 @@ var menu = {
           Description: "AloeVeraJuice-Strawberry-WatermelonAndPassionFruit ",
           Price: 145,
           ImageURL:
-            "./img/main page/food & this category menu/natural juice/5.jpeg",
+            "../image/main page/food & this category menu/natural juice/5.jpeg",
         },
         {
           codeNumber: 56,
@@ -495,7 +495,7 @@ var menu = {
           Title: "BerrySmoothie",
           Description: "Strawberries-Blackberries-GrenadineSyrup-aloeVeraJuice",
           Price: 155,
-          ImageURL: "./img/general image/noimagefood.png",
+          ImageURL: "../image/general image/noimagefood.png",
         },
         {
           codeNumber: 57,
@@ -503,7 +503,7 @@ var menu = {
           Title: "PostmodernPunchForTwo",
           Price: 195,
           ImageURL:
-            "./img/main page/food & this category menu/natural juice/7.jpeg",
+            "../image/main page/food & this category menu/natural juice/7.jpeg",
         },
         {
           codeNumber: 58,
@@ -513,7 +513,7 @@ var menu = {
             "FreshStrawberries-strawberryFlavoring-orangeJuice-mangoJuice-cheeseCold ",
           Price: 150,
           ImageURL:
-            "./img/main page/food & this category menu/natural juice/8.jpeg",
+            "../image/main page/food & this category menu/natural juice/8.jpeg",
         },
         {
           codeNumber: 59,
@@ -521,7 +521,7 @@ var menu = {
           Title: "BerryMojito",
           Price: 135,
           ImageURL:
-            "./img/main page/food & this category menu/natural juice/9.jpeg",
+            "../image/main page/food & this category menu/natural juice/9.jpeg",
         },
         {
           codeNumber: 60,
@@ -530,7 +530,7 @@ var menu = {
           Description: "Blucarasao-MintFlavoring-AloeVeraJuice-AppleJuice",
           Price: 185,
           ImageURL:
-            "./img/main page/food & this category menu/natural juice/10.jpeg",
+            "../image/main page/food & this category menu/natural juice/10.jpeg",
         },
         {
           codeNumber: 61,
@@ -539,7 +539,7 @@ var menu = {
           Description: "Espresso-VanillaIceCream-VanillaFlavor-CoconutFlavor",
           Price: 145,
           ImageURL:
-            "./img/main page/food & this category menu/natural juice/11.jpeg",
+            "../image/main page/food & this category menu/natural juice/11.jpeg",
         },
       ],
     },
@@ -548,7 +548,7 @@ var menu = {
       headerNameFA: "SmoothieBulls",
       headerNameEN: "SmoothieBullsEn",
       headerImg:
-        "./img/main page/food & this category menu/smoothie/smoothie.png",
+        "../image/main page/food & this category menu/smoothie/smoothie.png",
       Info: [
         {
           codeNumber: 62,
@@ -557,7 +557,7 @@ var menu = {
           Description:
             "ExcitingCombinationsOfChocolateGelato-PeanutButter-BananaWithChocolateTopping-Cornflakes",
           Price: 175,
-          ImageURL: "./img/main page/food & this category menu/smoothie/1.jpg",
+          ImageURL: "../image/main page/food & this category menu/smoothie/1.jpg",
         },
         {
           codeNumber: 63,
@@ -566,7 +566,7 @@ var menu = {
           Description:
             "ACombinationOfStrawberries-CranberrySyrup-AndChocolateGelato",
           Price: 185,
-          ImageURL: "./img/main page/food & this category menu/smoothie/2.jpg",
+          ImageURL: "../image/main page/food & this category menu/smoothie/2.jpg",
         },
       ],
     },
@@ -574,77 +574,77 @@ var menu = {
       CategoryID: 10,
       headerNameFA: "Milkshake",
       headerNameEN: "MilkshakeEn",
-      headerImg: "./img/main page/food & this category menu/shake/shake.png",
+      headerImg: "../image/main page/food & this category menu/shake/shake.png",
       Info: [
         {
           codeNumber: 64,
           isPopular: "false",
           Title: "Chocolate",
           Price: 115,
-          ImageURL: "./img/main page/food & this category menu/shake/1.jpg",
+          ImageURL: "../image/main page/food & this category menu/shake/1.jpg",
         },
         {
           codeNumber: 65,
           isPopular: "false",
           Title: "Shatot",
           Price: 115,
-          ImageURL: "./img/main page/food & this category menu/shake/2.jpg",
+          ImageURL: "../image/main page/food & this category menu/shake/2.jpg",
         },
         {
           codeNumber: 66,
           isPopular: "false",
           Title: "vanilla",
           Price: 115,
-          ImageURL: "./img/main page/food & this category menu/shake/3.jpg",
+          ImageURL: "../image/main page/food & this category menu/shake/3.jpg",
         },
         {
           codeNumber: 67,
           isPopular: "false",
           Title: "Strawberry",
           Price: 125,
-          ImageURL: "./img/main page/food & this category menu/shake/4.jpg",
+          ImageURL: "../image/main page/food & this category menu/shake/4.jpg",
         },
         {
           codeNumber: 68,
           isPopular: "false",
           Title: "VanillaNutella",
           Price: 135,
-          ImageURL: "./img/main page/food & this category menu/shake/5.jpg",
+          ImageURL: "../image/main page/food & this category menu/shake/5.jpg",
         },
         {
           codeNumber: 69,
           isPopular: "false",
           Title: "ChocolateBanana",
           Price: 120,
-          ImageURL: "./img/main page/food & this category menu/shake/6.jpg",
+          ImageURL: "../image/main page/food & this category menu/shake/6.jpg",
         },
         {
           codeNumber: 70,
           isPopular: "false",
           Title: "Coffee",
           Price: 125,
-          ImageURL: "./img/main page/food & this category menu/shake/7.jpg",
+          ImageURL: "../image/main page/food & this category menu/shake/7.jpg",
         },
         {
           codeNumber: 71,
           isPopular: "false",
           Title: "peanut",
           Price: 115,
-          ImageURL: "./img/main page/food & this category menu/shake/8.jpg",
+          ImageURL: "../image/main page/food & this category menu/shake/8.jpg",
         },
         {
           codeNumber: 72,
           isPopular: "false",
           Title: "ChocolateBrownieFreakShake",
           Price: 165,
-          ImageURL: "./img/main page/food & this category menu/shake/9.jpg",
+          ImageURL: "../image/main page/food & this category menu/shake/9.jpg",
         },
         {
           codeNumber: 73,
           isPopular: "false",
           Title: "ChicLotus",
           Price: 155,
-          ImageURL: "./img/main page/food & this category menu/shake/10.jpeg",
+          ImageURL: "../image/main page/food & this category menu/shake/10.jpeg",
         },
       ],
     },
@@ -652,105 +652,105 @@ var menu = {
       CategoryID: 11,
       headerNameFA: "CakesAndSweets",
       headerNameEN: "CakesAndSweetsEn",
-      headerImg: "./img/main page/food & this category menu/cakes/cakes.png",
+      headerImg: "../image/main page/food & this category menu/cakes/cakes.png",
       Info: [
         {
           codeNumber: 74,
           isPopular: "false",
           Title: "NewYorkCheesecake",
           Price: 98,
-          ImageURL: "./img/general image/noimagefood.png",
+          ImageURL: "../image/general image/noimagefood.png",
         },
         {
           codeNumber: 75,
           isPopular: "false",
           Title: "CarrotCake",
           Price: 93,
-          ImageURL: "./img/main page/food & this category menu/cakes/2.jpg",
+          ImageURL: "../image/main page/food & this category menu/cakes/2.jpg",
         },
         {
           codeNumber: 76,
           isPopular: "false",
           Title: "redolot",
           Price: 85,
-          ImageURL: "./img/main page/food & this category menu/cakes/2.jpg",
+          ImageURL: "../image/main page/food & this category menu/cakes/2.jpg",
         },
         {
           codeNumber: 77,
           isPopular: "false",
           Title: "CherryCrumble",
           Price: 83,
-          ImageURL: "./img/main page/food & this category menu/cakes/4.jpg",
+          ImageURL: "../image/main page/food & this category menu/cakes/4.jpg",
         },
         {
           codeNumber: 78,
           isPopular: "false",
           Title: "brownie",
           Price: 89,
-          ImageURL: "./img/main page/food & this category menu/cakes/5.jpg",
+          ImageURL: "../image/main page/food & this category menu/cakes/5.jpg",
         },
         {
           codeNumber: 79,
           isPopular: "false",
           Title: "TripleChocolate",
           Price: 92,
-          ImageURL: "./img/main page/food & this category menu/cakes/6.jpeg",
+          ImageURL: "../image/main page/food & this category menu/cakes/6.jpeg",
         },
         {
           codeNumber: 80,
           isPopular: "false",
           Title: "ChocolateChipCookie",
           Price: 9,
-          ImageURL: "./img/general image/noimagefood.png",
+          ImageURL: "../image/general image/noimagefood.png",
         },
         {
           codeNumber: 81,
           isPopular: "false",
           Title: "Kenafa",
           Price: 185,
-          ImageURL: "./img/main page/food & this category menu/cakes/8.jpeg",
+          ImageURL: "../image/main page/food & this category menu/cakes/8.jpeg",
         },
         {
           codeNumber: 82,
           isPopular: "false",
           Title: "KonafaWithIceCream",
           Price: 215,
-          ImageURL: "./img/general image/noimagefood.png",
+          ImageURL: "../image/general image/noimagefood.png",
         },
         {
           codeNumber: 83,
           isPopular: "false",
           Title: "waffle",
           Price: 195,
-          ImageURL: "./img/main page/food & this category menu/cakes/10.jpeg",
+          ImageURL: "../image/main page/food & this category menu/cakes/10.jpeg",
         },
         {
           codeNumber: 84,
           isPopular: "false",
           Title: "Baklava",
           Price: 85,
-          ImageURL: "./img/general image/noimagefood.png",
+          ImageURL: "../image/general image/noimagefood.png",
         },
         {
           codeNumber: 85,
           isPopular: "false",
           Title: "ClassicCroissant",
           Price: 125,
-          ImageURL: "./img/main page/food & this category menu/cakes/12.jpeg",
+          ImageURL: "../image/main page/food & this category menu/cakes/12.jpeg",
         },
         {
           codeNumber: 86,
           isPopular: "false",
           Title: "CroissantsWithNutellaAndStrawberries",
           Price: 170,
-          ImageURL: "./img/main page/food & this category menu/cakes/13.jpeg",
+          ImageURL: "../image/main page/food & this category menu/cakes/13.jpeg",
         },
         {
           codeNumber: 87,
           isPopular: "false",
           Title: "BrownieWithVanillaGelato",
           Price: 125,
-          ImageURL: "./img/general image/noimagefood.png",
+          ImageURL: "../image/general image/noimagefood.png",
         },
       ],
     },
@@ -759,7 +759,7 @@ var menu = {
       headerNameFA: "Appetizars",
       headerNameEN: "AppetizarsEn",
       headerImg:
-        "./img/main page/food & this category menu/appetizers/appetizers.png",
+        "../image/main page/food & this category menu/appetizers/appetizers.png",
       Info: [
         {
           codeNumber: 88,
@@ -767,7 +767,7 @@ var menu = {
           Title: "CaesarSalad",
           Price: 265,
           ImageURL:
-            "./img/main page/food & this category menu/appetizers/1.jpg",
+            "../image/main page/food & this category menu/appetizers/1.jpg",
         },
         {
           codeNumber: 89,
@@ -775,7 +775,7 @@ var menu = {
           Title: "CaesarSalad(grilled)",
           Price: 285,
           ImageURL:
-            "./img/main page/food & this category menu/appetizers/2.jpg",
+            "../image/main page/food & this category menu/appetizers/2.jpg",
         },
         {
           codeNumber: 90,
@@ -785,7 +785,7 @@ var menu = {
             "Lettuce-MixedVegetables-cherryTomatoes-SteamedMushrooms-Carrots-ChickenBreast-GarnerSauce",
           Price: 235,
           ImageURL:
-            "./img/main page/food & this category menu/appetizers/3.jpeg",
+            "../image/main page/food & this category menu/appetizers/3.jpeg",
         },
         {
           codeNumber: 91,
@@ -795,7 +795,7 @@ var menu = {
             "Lettuce-VegetableMix-Celery-CherryTomato-Cucumber-ColorPepper-Carrot-Sesame-LemoMustardSauce",
           Price: 225,
           ImageURL:
-            "./img/main page/food & this category menu/appetizers/4.jpeg",
+            "../image/main page/food & this category menu/appetizers/4.jpeg",
         },
         {
           codeNumber: 92,
@@ -804,7 +804,7 @@ var menu = {
           Description: "Lettuce-GreenApple-Lemon-Bacon-Cheese-Walnuts",
           Price: 245,
           ImageURL:
-            "./img/main page/food & this category menu/appetizers/5.jpg",
+            "../image/main page/food & this category menu/appetizers/5.jpg",
         },
         {
           codeNumber: 93,
@@ -812,7 +812,7 @@ var menu = {
           Title: "PlateOfSteamedVegetables",
           Price: 215,
           ImageURL:
-            "./img/main page/food & this category menu/appetizers/6.jpg",
+            "../image/main page/food & this category menu/appetizers/6.jpg",
         },
         {
           codeNumber: 94,
@@ -820,7 +820,7 @@ var menu = {
           Title: "FrenchPotatoSoup",
           Price: 105,
           ImageURL:
-            "./img/main page/food & this category menu/appetizers/7.jpg",
+            "../image/main page/food & this category menu/appetizers/7.jpg",
         },
         {
           codeNumber: 95,
@@ -828,14 +828,14 @@ var menu = {
           Title: "MexicanBreadWithSalsaSauce",
           Price: 115,
           ImageURL:
-            "./img/main page/food & this category menu/appetizers/8.jpg",
+            "../image/main page/food & this category menu/appetizers/8.jpg",
         },
         {
           codeNumber: 96,
           isPopular: "false",
           Title: "Olive",
           Price: 55,
-          ImageURL: "./img/general image/noimagefood.png",
+          ImageURL: "../image/general image/noimagefood.png",
         },
         {
           codeNumber: 97,
@@ -843,7 +843,7 @@ var menu = {
           Title: "YogurtAndCucumber",
           Description: "Yogurt-Cucumber-Mint-Walnut",
           Price: 35,
-          ImageURL: "./img/general image/noimagefood.png",
+          ImageURL: "../image/general image/noimagefood.png",
         },
       ],
     },
@@ -851,21 +851,21 @@ var menu = {
       CategoryID: 13,
       headerNameFA: "Fries",
       headerNameEN: "FriesEn",
-      headerImg: "./img/main page/food & this category menu/fries/fries.png",
+      headerImg: "../image/main page/food & this category menu/fries/fries.png",
       Info: [
         {
           codeNumber: 98,
           isPopular: "false",
           Title: "FrenchFries",
           Price: 115,
-          ImageURL: "./img/main page/food & this category menu/fries/1.jpg",
+          ImageURL: "../image/main page/food & this category menu/fries/1.jpg",
         },
         {
           codeNumber: 99,
           isPopular: "false",
           Title: "ChickenWings",
           Price: 195,
-          ImageURL: "./img/main page/food & this category menu/fries/2.jpg",
+          ImageURL: "../image/main page/food & this category menu/fries/2.jpg",
         },
         {
           codeNumber: 100,
@@ -873,7 +873,7 @@ var menu = {
           Title: "PotatoesWithCheese",
           Description: "SlicedPotatoes-PizzaCheese",
           Price: 135,
-          ImageURL: "./img/general image/noimagefood.png",
+          ImageURL: "../image/general image/noimagefood.png",
         },
         {
           codeNumber: 101,
@@ -882,7 +882,7 @@ var menu = {
           Description:
             "TwoFillets-2Wings-2Shoulders-Mushrooms-FrenchFriedVegetables-4TypesOfSauces",
           Price: 115,
-          ImageURL: "./img/main page/food & this category menu/fries/4.jpeg",
+          ImageURL: "../image/main page/food & this category menu/fries/4.jpeg",
         },
       ],
     },
@@ -891,56 +891,56 @@ var menu = {
       headerNameFA: "Sandwiches",
       headerNameEN: "SandwichesEn",
       headerImg:
-        "./img/main page/food & this category menu/sandwich/sandwich.png",
+        "../image/main page/food & this category menu/sandwich/sandwich.png",
       Info: [
         {
           codeNumber: 102,
           isPopular: "false",
           Title: "ChickenAndVegetablePanini",
           Price: 225,
-          ImageURL: "./img/main page/food & this category menu/sandwich/1.jpg",
+          ImageURL: "../image/main page/food & this category menu/sandwich/1.jpg",
         },
         {
           codeNumber: 103,
           isPopular: "false",
           Title: "ChickenAndPeanutPanini",
           Price: 210,
-          ImageURL: "./img/main page/food & this category menu/sandwich/2.jpg",
+          ImageURL: "../image/main page/food & this category menu/sandwich/2.jpg",
         },
         {
           codeNumber: 104,
           isPopular: "false",
           Title: "VegetablePanini",
           Price: 175,
-          ImageURL: "./img/main page/food & this category menu/sandwich/3.jpg",
+          ImageURL: "../image/main page/food & this category menu/sandwich/3.jpg",
         },
         {
           codeNumber: 105,
           isPopular: "false",
           Title: "meatPanini",
           Price: 245,
-          ImageURL: "./img/main page/food & this category menu/sandwich/4.jpg",
+          ImageURL: "../image/main page/food & this category menu/sandwich/4.jpg",
         },
         {
           codeNumber: 106,
           isPopular: "false",
           Title: "HamPanini",
           Price: 175,
-          ImageURL: "./img/main page/food & this category menu/sandwich/5.jpg",
+          ImageURL: "../image/main page/food & this category menu/sandwich/5.jpg",
         },
         {
           codeNumber: 107,
           isPopular: "false",
           Title: "BaconPanini",
           Price: 205,
-          ImageURL: "./img/main page/food & this category menu/sandwich/6.jpg",
+          ImageURL: "../image/main page/food & this category menu/sandwich/6.jpg",
         },
         {
           codeNumber: 108,
           isPopular: "false",
           Title: "RoastBeefPanini",
           Price: 315,
-          ImageURL: "./img/main page/food & this category menu/sandwich/7.jpeg",
+          ImageURL: "../image/main page/food & this category menu/sandwich/7.jpeg",
         },
       ],
     },
@@ -948,21 +948,21 @@ var menu = {
       CategoryID: 15,
       headerNameFA: "Pasta",
       headerNameEN: "PastaEn",
-      headerImg: "./img/main page/food & this category menu/pasta/pasta.png",
+      headerImg: "../image/main page/food & this category menu/pasta/pasta.png",
       Info: [
         {
           codeNumber: 109,
           isPopular: "false",
           Title: "AlfredoPasta",
           Price: 235,
-          ImageURL: "./img/main page/food & this category menu/pasta/1.jpg",
+          ImageURL: "../image/main page/food & this category menu/pasta/1.jpg",
         },
         {
           codeNumber: 110,
           isPopular: "false",
           Title: "ArabicaPasta",
           Price: 255,
-          ImageURL: "./img/main page/food & this category menu/pasta/2.jpg",
+          ImageURL: "../image/main page/food & this category menu/pasta/2.jpg",
         },
       ],
     },
@@ -970,42 +970,42 @@ var menu = {
       CategoryID: 16,
       headerNameFA: "Grill",
       headerNameEN: "GrillEn",
-      headerImg: "./img/main page/food & this category menu/grill/grill.png",
+      headerImg: "../image/main page/food & this category menu/grill/grill.png",
       Info: [
         {
           codeNumber: 111,
           isPopular: "false",
           Title: "FiletMignon",
           Price: 655,
-          ImageURL: "./img/main page/food & this category menu/grill/1.jpg",
+          ImageURL: "../image/main page/food & this category menu/grill/1.jpg",
         },
         {
           codeNumber: 112,
           isPopular: "false",
           Title: "LemChops",
           Price: 555,
-          ImageURL: "./img/main page/food & this category menu/grill/2.jpg",
+          ImageURL: "../image/main page/food & this category menu/grill/2.jpg",
         },
         {
           codeNumber: 113,
           isPopular: "false",
           Title: "EpicorBerger",
           Price: 330,
-          ImageURL: "./img/main page/food & this category menu/grill/3.jpg",
+          ImageURL: "../image/main page/food & this category menu/grill/3.jpg",
         },
         {
           codeNumber: 114,
           isPopular: "false",
           Title: "ChickenSteak",
           Price: 485,
-          ImageURL: "./img/main page/food & this category menu/grill/4.jpg",
+          ImageURL: "../image/main page/food & this category menu/grill/4.jpg",
         },
         {
           codeNumber: 115,
           isPopular: "false",
           Title: "EpicorSteak",
           Price: 665,
-          ImageURL: "./img/general image/noimagefood.png",
+          ImageURL: "../image/general image/noimagefood.png",
         },
       ],
     },
@@ -1014,7 +1014,7 @@ var menu = {
       headerNameFA: "AccompanyingFood",
       headerNameEN: "AccompanyingFoodEn",
       headerImg:
-        "./img/main page/food & this category menu/accompanying/accompanying.png",
+        "../image/main page/food & this category menu/accompanying/accompanying.png",
       Info: [
         {
           codeNumber: 116,
@@ -1022,7 +1022,7 @@ var menu = {
           Title: "Classic-lemonBeer",
           Price: 85,
           ImageURL:
-            "./img/main page/food & this category menu/accompanying/1.jpg",
+            "../image/main page/food & this category menu/accompanying/1.jpg",
         },
         {
           codeNumber: 117,
@@ -1030,28 +1030,28 @@ var menu = {
           Title: "SodaWithlemon",
           Price: 55,
           ImageURL:
-            "./img/main page/food & this category menu/accompanying/2.jpg",
+            "../image/main page/food & this category menu/accompanying/2.jpg",
         },
         {
           codeNumber: 118,
           isPopular: "false",
           Title: "Coca-Sprite-Zero-Fanta",
           Price: 25,
-          ImageURL: "./img/general image/noimagefood.png",
+          ImageURL: "../image/general image/noimagefood.png",
         },
         {
           codeNumber: 119,
           isPopular: "false",
           Title: "mineralWater",
           Price: 15,
-          ImageURL: "./img/general image/noimagefood.png",
+          ImageURL: "../image/general image/noimagefood.png",
         },
         {
           codeNumber: 120,
           isPopular: "false",
           Title: "Dough",
           Price: 42,
-          ImageURL: "./img/general image/noimagefood.png",
+          ImageURL: "../image/general image/noimagefood.png",
         },
       ],
     },
@@ -1059,42 +1059,42 @@ var menu = {
       CategoryID: 18,
       headerNameFA: "Sauces",
       headerNameEN: "SaucesEn",
-      headerImg: "./img/main page/food & this category menu/sauces/sauces.png",
+      headerImg: "../image/main page/food & this category menu/sauces/sauces.png",
       Info: [
         {
           codeNumber: 121,
           isPopular: "false",
           Title: "MushroomSauce",
           Price: 20,
-          ImageURL: "./img/general image/noimagefood.png",
+          ImageURL: "../image/general image/noimagefood.png",
         },
         {
           codeNumber: 122,
           isPopular: "false",
           Title: "BuffaloSauce",
           Price: 20,
-          ImageURL: "./img/general image/noimagefood.png",
+          ImageURL: "../image/general image/noimagefood.png",
         },
         {
           codeNumber: 123,
           isPopular: "false",
           Title: "CaesarDressing",
           Price: 20,
-          ImageURL: "./img/general image/noimagefood.png",
+          ImageURL: "../image/general image/noimagefood.png",
         },
         {
           codeNumber: 124,
           isPopular: "false",
           Title: "sourSauce",
           Price: 20,
-          ImageURL: "./img/general image/noimagefood.png",
+          ImageURL: "../image/general image/noimagefood.png",
         },
         {
           codeNumber: 125,
           isPopular: "false",
           Title: "ChiliThaiSauce",
           Price: 20,
-          ImageURL: "./img/general image/noimagefood.png",
+          ImageURL: "../image/general image/noimagefood.png",
         },
       ],
     },
@@ -1102,63 +1102,63 @@ var menu = {
       CategoryID: 19,
       headerNameFA: "pizza",
       headerNameEN: "pizzaEn",
-      headerImg: "./img/main page/food & this category menu/pizza/pizza.png",
+      headerImg: "../image/main page/food & this category menu/pizza/pizza.png",
       Info: [
         {
           codeNumber: 126,
           isPopular: "false",
           Title: "EpicureanPizza",
           Price: 335,
-          ImageURL: "./img/general image/noimagefood.png",
+          ImageURL: "../image/general image/noimagefood.png",
         },
         {
           codeNumber: 127,
           isPopular: "false",
           Title: "ChickenPizza",
           Price: 275,
-          ImageURL: "./img/general image/noimagefood.png",
+          ImageURL: "../image/general image/noimagefood.png",
         },
         {
           codeNumber: 128,
           isPopular: "false",
           Title: "VegetablePizza",
           Price: 215,
-          ImageURL: "./img/main page/food & this category menu/pizza/3.jpg",
+          ImageURL: "../image/main page/food & this category menu/pizza/3.jpg",
         },
         {
           codeNumber: 129,
           isPopular: "false",
           Title: "MeatPizza",
           Price: 315,
-          ImageURL: "./img/main page/food & this category menu/pizza/4.jpg",
+          ImageURL: "../image/main page/food & this category menu/pizza/4.jpg",
         },
         {
           codeNumber: 130,
           isPopular: "false",
           Title: "BaconPizza",
           Price: 325,
-          ImageURL: "./img/general image/noimagefood.png",
+          ImageURL: "../image/general image/noimagefood.png",
         },
         {
           codeNumber: 131,
           isPopular: "false",
           Title: "PepperoniPizza",
           Price: 285,
-          ImageURL: "./img/main page/food & this category menu/pizza/6.jpg",
+          ImageURL: "../image/main page/food & this category menu/pizza/6.jpg",
         },
         {
           codeNumber: 132,
           isPopular: "false",
           Title: "ChickenAndMeatPizza",
           Price: 310,
-          ImageURL: "./img/general image/noimagefood.png",
+          ImageURL: "../image/general image/noimagefood.png",
         },
         {
           codeNumber: 133,
           isPopular: "false",
           Title: "garlicBread",
           Price: 185,
-          ImageURL: "./img/main page/food & this category menu/pizza/8.jpg",
+          ImageURL: "../image/main page/food & this category menu/pizza/8.jpg",
         },
       ],
     },
@@ -1167,56 +1167,56 @@ var menu = {
       headerNameFA: "persianCuisine",
       headerNameEN: "persianCuisineEn",
       headerImg:
-        "./img/main page/food & this category menu/persian/persian.png",
+        "../image/main page/food & this category menu/persian/persian.png",
       Info: [
         {
           codeNumber: 134,
           isPopular: "false",
           Title: "bonelessChicken",
           Price: 245,
-          ImageURL: "./img/main page/food & this category menu/persian/1.jpeg",
+          ImageURL: "../image/main page/food & this category menu/persian/1.jpeg",
         },
         {
           codeNumber: 135,
           isPopular: "false",
           Title: "Shishlik",
           Price: 465,
-          ImageURL: "./img/main page/food & this category menu/persian/2.jpg",
+          ImageURL: "../image/main page/food & this category menu/persian/2.jpg",
         },
         {
           codeNumber: 136,
           isPopular: "false",
           Title: "CatRice",
           Price: 95,
-          ImageURL: "./img/main page/food & this category menu/persian/3.jpeg",
+          ImageURL: "../image/main page/food & this category menu/persian/3.jpeg",
         },
         {
           codeNumber: 137,
           isPopular: "false",
           Title: "SpeciallyPoundedSaffron",
           Price: 255,
-          ImageURL: "./img/main page/food & this category menu/persian/4.jpg",
+          ImageURL: "../image/main page/food & this category menu/persian/4.jpg",
         },
         {
           codeNumber: 138,
           isPopular: "false",
           Title: "Chinja",
           Price: 365,
-          ImageURL: "./img/general image/noimagefood.png",
+          ImageURL: "../image/general image/noimagefood.png",
         },
         {
           codeNumber: 139,
           isPopular: "false",
           Title: "SourFillet",
           Price: 435,
-          ImageURL: "./img/main page/food & this category menu/persian/6.jpeg",
+          ImageURL: "../image/main page/food & this category menu/persian/6.jpeg",
         },
         {
           codeNumber: 140,
           isPopular: "false",
           Title: "GrilledLeaves",
           Price: 415,
-          ImageURL: "./img/general image/noimagefood.png",
+          ImageURL: "../image/general image/noimagefood.png",
         },
       ],
     },
