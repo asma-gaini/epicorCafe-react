@@ -2,15 +2,15 @@ import "./theme.css";
 
 function Theme() {
   return (
-    <div class="changeTheme">
-      <label class="switch">
+    <div className="changeTheme">
+      <label className="switch">
         <input
-          class="themeInput"
+          className="themeInput"
           type="checkbox"
           theme="light"
         //   onclick="changeTheme()"
         />
-        <span class="sliderTheme round"></span>
+        <span className="sliderTheme round"></span>
       </label>
     </div>
   );

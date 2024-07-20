@@ -1,0 +1,13 @@
+.form-select{
+    color: black;
+    position: absolute;
+    top: 25px;
+    left: 20px;
+    width: 140px;
+    height: 25px;
+    font-size: 11px;
+    background-color: rgb(205 171 44);
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+}
