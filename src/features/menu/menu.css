@@ -1,0 +1,143 @@
+:root {
+    --body: rgb(192, 160, 40, 0.9);
+    --white: rgb(255, 255, 255);
+    --menu-item: rgba(178, 157, 84, 0.8);
+    --btn-order: #ab6130;
+    --btn-counter: rgb(207, 137, 80);
+    --menubar: linear-gradient(
+        to left top,
+        rgba(134, 53, 0, 0.09),
+        rgba(134, 53, 0, 0)
+      )
+      rgba(134, 53, 0, 0.02);
+    --menubar-click-primary: rgb(196, 145, 91);
+    --menubar-click: radial-gradient(
+      circle,
+      rgb(221, 178, 131),
+      rgb(210, 119, 21),
+      rgb(106, 56, 2)
+    );
+    --hrLineFont: rgb(237, 237, 237);
+    --hrLineBack: rgb(134 53 0 / 15%);
+    --font-button: #000000;
+  }
+
+.sliders {
+  margin: 0px 30px;
+}
+.slider {
+  display: flex;
+  justify-content: space-between;
+  direction: rtl;
+  flex-wrap: wrap;
+  max-width: 1600px;
+}
+
+/* Top line of all slides */
+.hrLine {
+  display: flex;
+  justify-content: space-between;
+  width: 99%;
+  margin: 30px 20px;
+}
+.hrLine p {
+  color: var(--hrLineFont);
+}
+.hrLine span {
+  background-color: var(--hrLineBack);
+  flex-grow: 1;
+  height: 2px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+/* The contents of the slides */
+.menu_contant {
+  display: flex;
+  margin: 10px;
+  max-width: 100%;
+  width: 47%;
+  background-color: var(--menu-item);
+  border-radius: 5px;
+  position: relative;
+}
+.menu_contant_image img {
+  padding-bottom: 0px;
+  border-radius: 5px;
+  width: 150px;
+  height: 100%;
+}
+.posPopular {
+  position: absolute !important;
+  top: 15px !important;
+  font-size: 20px;
+}
+.menu_contant_info h4 {
+  line-height: 15px;
+  font-size: 0.85rem;
+  font-weight: bold;
+  padding: 10px;
+}
+.menu_contant_info p {
+  line-height: 15px;
+  width: 90%;
+  font-size: 0.75rem;
+  opacity: 0.65;
+  padding: 10px;
+}
+.menu_contant_info_price {
+  display: flex;
+  justify-content: space-between;
+  max-width: 100%;
+}
+.menu_contant_info_price_contant {
+  display: flex;
+  align-items: center;
+  padding-right: 5px;
+}
+.menu_contant_info_price_btn {
+  background-color: var(--btn-order);
+  cursor: pointer;
+  padding: 8px;
+  color: var(--white);
+  border-radius: 5px;
+  position: absolute;
+  bottom: 20px;
+  font-size: 9px;
+  font-family: "iransans";
+  width: 90px;
+}
+.Direction-rtl {
+  left: 15px !important;
+}
+.Direction-ltr {
+  right: 15px !important;
+}
+.Purchase-count {
+  border: none;
+  cursor: pointer;
+  padding: 3px;
+  color: var(--white);
+  border-radius: 5px;
+  position: absolute;
+  bottom: 20px;
+}
+
+.btn-counter {
+  background-color: inherit;
+  border: none;
+}
+
+/* When the product is finished */
+.unavalable img {
+  position: absolute;
+  border-radius: 5px;
+  height: 80%;
+  right: 300px;
+  top: 10px;
+  opacity: 1 !important;
+}
+.non {
+  opacity: 0.6;
+}
