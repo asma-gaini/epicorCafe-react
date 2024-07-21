@@ -3,6 +3,16 @@ import "./menu.css";
 import "./sliderMenu.css";
 
 function SliderMenu() {
+  function linked(CategoryID) {
+    const otherMenu = document.querySelectorAll("div.slider[CategoryID]");
+    for (let i = 0; i < otherMenu.length; i++) {
+      if (otherMenu[i].getAttribute("Categoryid") != CategoryID) {
+        otherMenu[i].style.display = "none";
+      } else {
+        otherMenu[i].style.display = "block";
+      }
+    }
+  }
   return (
     <main className="grid-item main">
       <div className="items menu-bar">
@@ -11,7 +21,7 @@ function SliderMenu() {
             <button
               categoryid={categoriItem.CategoryID}
               className="menu-bar_section menu-bar_section_click-Backgroundlight"
-              // onclick="linked('1')"
+              onClick={() => linked(categoriItem.CategoryID)}
             >
               <img
                 src={categoriItem.headerImg}
