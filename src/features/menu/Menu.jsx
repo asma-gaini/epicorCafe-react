@@ -17,6 +17,39 @@ function Menu() {
     selectMenuItemPurchase.classList.add("show");
   }
 
+  function increaseNumOfProduct(purchaseSpanClass, codeNumber) {
+    var purchaseSpanHtml = document.querySelector(
+      "span." + purchaseSpanClass + "[codeNumber='" + codeNumber + "']"
+    );
+    var numberOfPurchase = purchaseSpanHtml.innerHTML;
+    numberOfPurchase++;
+    purchaseSpanHtml.innerHTML = " " + numberOfPurchase + " ";
+  }
+
+  function decreaseNumOfProduct(purchaseSpanClass, codeNumber) {
+    var purchaseSpanHtml = document.querySelector(
+      "span." + purchaseSpanClass + "[codeNumber='" + codeNumber + "']"
+    );
+    var numberOfPurchase = purchaseSpanHtml.innerHTML;
+    numberOfPurchase--;
+
+    if (numberOfPurchase < 1) {
+      var PurchaseBtn = document.querySelector(
+        "div.Purchase-count[codeNumber='" + codeNumber + "']"
+      );
+      PurchaseBtn.classList.remove("show");
+      PurchaseBtn.classList.add("hide");
+
+      var mainButton = document.querySelector(
+        "button.menu_contant_info_price_btn[codeNumber='" + codeNumber + "']"
+      );
+      mainButton.classList.remove("hide");
+      mainButton.classList.add("show");
+    }
+
+    purchaseSpanHtml.innerHTML = " " + numberOfPurchase + " ";
+  }
+
   return (
     <div>
       {menu.map((categoriItem) => (
@@ -72,7 +105,9 @@ function Menu() {
                       >
                         <button
                           class="btn-counter"
-                          // onclick="decreaseNumOfProduct('span','1')"
+                          onClick={() =>
+                            decreaseNumOfProduct("span", menuItem.codeNumber)
+                          }
                         >
                           <span>➖</span>
                         </button>
@@ -85,7 +120,9 @@ function Menu() {
                         </span>
                         <button
                           class="btn-counter"
-                          // onclick="increaseNumOfProduct('span','1')"
+                          onClick={() =>
+                            increaseNumOfProduct("span", menuItem.codeNumber)
+                          }
                         >
                           <span>➕</span>
                         </button>
