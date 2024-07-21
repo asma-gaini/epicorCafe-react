@@ -3,6 +3,20 @@ import { changeLanguage } from "../../utils/helper";
 import "./menu.css";
 
 function Menu() {
+  function AddPurchaseNumBtn(codeNumber, CategoryID) {
+    const selectMenuItem = document.querySelector(
+      "button.menu_contant_info_price_btn[codeNumber='" + codeNumber + "']"
+    );
+    selectMenuItem.classList.remove("show");
+    selectMenuItem.classList.add("hide");
+
+    const selectMenuItemPurchase = document.querySelector(
+      "div.Purchase-count[codeNumber='" + codeNumber + "']"
+    );
+    selectMenuItemPurchase.classList.remove("hide");
+    selectMenuItemPurchase.classList.add("show");
+  }
+
   return (
     <div>
       {menu.map((categoriItem) => (
@@ -41,12 +55,41 @@ function Menu() {
                       <button
                         codenumber={menuItem.codeNumber}
                         categoryid={categoriItem.CategoryID}
-                        class="menu_contant_info_price_btn Direction-ltr"
+                        class="menu_contant_info_price_btn Direction-rtl"
                         text_key="AddToNotebook"
-                        // onclick="AddPurchaseNumBtn('1','1')"
+                        onClick={() =>
+                          AddPurchaseNumBtn(
+                            menuItem.codeNumber,
+                            categoriItem.CategoryID
+                          )
+                        }
                       >
                         افزودن
                       </button>
+                      <div
+                        class="Purchase-count Direction-rtl hide"
+                        codenumber={menuItem.codeNumber}
+                      >
+                        <button
+                          class="btn-counter"
+                          // onclick="decreaseNumOfProduct('span','1')"
+                        >
+                          <span>➖</span>
+                        </button>
+                        <span
+                          class="span"
+                          codenumber={menuItem.codeNumber}
+                          categoryid={categoriItem.CategoryID}
+                        >
+                          1
+                        </span>
+                        <button
+                          class="btn-counter"
+                          // onclick="increaseNumOfProduct('span','1')"
+                        >
+                          <span>➕</span>
+                        </button>
+                      </div>
                     </div>
                   </div>
                 </div>

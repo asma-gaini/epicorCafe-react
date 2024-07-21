@@ -1,26 +1,26 @@
 :root {
-    --body: rgb(192, 160, 40, 0.9);
-    --white: rgb(255, 255, 255);
-    --menu-item: rgba(178, 157, 84, 0.8);
-    --btn-order: #ab6130;
-    --btn-counter: rgb(207, 137, 80);
-    --menubar: linear-gradient(
-        to left top,
-        rgba(134, 53, 0, 0.09),
-        rgba(134, 53, 0, 0)
-      )
-      rgba(134, 53, 0, 0.02);
-    --menubar-click-primary: rgb(196, 145, 91);
-    --menubar-click: radial-gradient(
-      circle,
-      rgb(221, 178, 131),
-      rgb(210, 119, 21),
-      rgb(106, 56, 2)
-    );
-    --hrLineFont: rgb(237, 237, 237);
-    --hrLineBack: rgb(134 53 0 / 15%);
-    --font-button: #000000;
-  }
+  --body: rgb(192, 160, 40, 0.9);
+  --white: rgb(255, 255, 255);
+  --menu-item: rgba(178, 157, 84, 0.8);
+  --btn-order: #ab6130;
+  --btn-counter: rgb(207, 137, 80);
+  --menubar: linear-gradient(
+      to left top,
+      rgba(134, 53, 0, 0.09),
+      rgba(134, 53, 0, 0)
+    )
+    rgba(134, 53, 0, 0.02);
+  --menubar-click-primary: rgb(196, 145, 91);
+  --menubar-click: radial-gradient(
+    circle,
+    rgb(221, 178, 131),
+    rgb(210, 119, 21),
+    rgb(106, 56, 2)
+  );
+  --hrLineFont: rgb(237, 237, 237);
+  --hrLineBack: rgb(134 53 0 / 15%);
+  --font-button: #000000;
+}
 
 .sliders {
   margin: 0px 30px;
@@ -140,4 +140,10 @@
 }
 .non {
   opacity: 0.6;
+}
+.show {
+  display: block;
+}
+.hide {
+  display: none;
 }
