@@ -1,4 +1,5 @@
 import { menu } from "../../utils/constants";
+import { changeLanguage } from "../../utils/helper";
 import "./menu.css";
 
 function Menu() {
@@ -54,9 +55,9 @@ function Menu() {
           ))}
         </>
       ))}
+      {changeLanguage()}
     </div>
   );
 }
 
 export default Menu;
-
