@@ -3,9 +3,8 @@ import { useTranslation } from "react-i18next";
 import "./menu.css";
 import { generaltext } from "../../utils/constants";
 
-function MenuItem({ menuItem }) {
+function MenuItem({ menuItem}) {
   const { t, i18n } = useTranslation();
-  console.log(i18n.language);
   const [numOfProduct, seNumOfProduct] = useState(0);
 
   function AddPurchaseNumBtn() {
@@ -40,7 +39,6 @@ function MenuItem({ menuItem }) {
             }`}
           ></img>
         )}
-        {/* <span class="posPopular glyphicon glyphicon-heart Direction-rtl"></span> */}
         <div className="menut_contant_info_price">
           <div className="menu_contant_info_price_contant">
             <h4 className="price">{menuItem.Price}</h4>
