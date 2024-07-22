@@ -2,6 +2,7 @@ import { menu } from "../../utils/constants";
 import "./menu.css";
 import "./sliderMenu.css";
 import { useTranslation } from "react-i18next";
+import GatherMenu from "./GatherMenu";
 
 function SliderMenu() {
   const { t, i18n } = useTranslation();
@@ -33,31 +34,34 @@ function SliderMenu() {
   }
 
   return (
-    <main className="grid-item main">
-      <div className="items menu-bar">
-        {menu.map((categoriItem) => (
-          <button
-            categoryid={categoriItem.CategoryID}
-            className="menu-bar_section"
-            onClick={() => linked(categoriItem.CategoryID)}
-          >
-            <img
-              src={categoriItem.headerImg}
-              alt={categoriItem.headerNameEN}
-              className="menu-bar_section_image"
-            />
-            <div className="menu-bar_section_info">
-              <p className="menu-bar_section_name-en">
-                {t(categoriItem.headerNameEN)}
-              </p>
-              <p className="menu-bar_section_name-fa">
-                {t(categoriItem.headerNameFA)}
-              </p>
-            </div>
-          </button>
-        ))}
-      </div>
-    </main>
+    <>
+      <main className="grid-item main">
+        <div className="items menu-bar">
+          {menu.map((categoriItem) => (
+            <button
+              categoryid={categoriItem.CategoryID}
+              className="menu-bar_section"
+              onClick={() => linked(categoriItem.CategoryID)}
+            >
+              <img
+                src={categoriItem.headerImg}
+                alt={categoriItem.headerNameEN}
+                className="menu-bar_section_image"
+              />
+              <div className="menu-bar_section_info">
+                <p className="menu-bar_section_name-en">
+                  {t(categoriItem.headerNameEN)}
+                </p>
+                <p className="menu-bar_section_name-fa">
+                  {t(categoriItem.headerNameFA)}
+                </p>
+              </div>
+            </button>
+          ))}
+        </div>
+      </main>
+      <GatherMenu linked={linked} />
+    </>
   );
 }
 

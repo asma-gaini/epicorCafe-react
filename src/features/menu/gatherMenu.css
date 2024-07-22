@@ -1,0 +1,77 @@
+/* ******************************* dropdown ******************************* */
+
+/* The Overlay (background) */
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  background-color: rgb(0, 0, 0);
+  background-color: rgb(46 36 18 / 95%);
+  overflow-x: hidden; /* Disable horizontal scroll */
+  transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+.overlay-content {
+  direction: rtl;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin: auto;
+  padding: 10px;
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s; /* Transition effects on hover (color) */
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover,
+.overlay a:focus {
+  color: #f1f1f1;
+}
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+.overlay-content a button:hover {
+  background: rgb(235, 173, 96);
+  background: radial-gradient(
+    circle,
+    rgba(235, 173, 96, 1) 0%,
+    rgba(133, 90, 37, 1) 100%
+  );
+}
+.dropdownButton {
+  text-align: center;
+  margin-top: 24px;
+}
+.dropdownButton button {
+  border: none;
+  background-color: inherit;
+  font-size: 13px;
+}
+
+.showMenu {
+  width: 100%;
+}
+.hideMenu {
+  width: 0%;
+}
