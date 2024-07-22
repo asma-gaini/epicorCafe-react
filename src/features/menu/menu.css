@@ -147,3 +147,9 @@
 .hide {
   display: none;
 }
+.directionCss-ltr {
+  direction: ltr;
+}
+.directionCss-rtl {
+  direction: rtl;
+}

@@ -5,7 +5,7 @@ import { generaltext } from "../../utils/constants";
 
 function MenuItem({ menuItem }) {
   const { t, i18n } = useTranslation();
-
+  console.log(i18n.language);
   const [numOfProduct, seNumOfProduct] = useState(0);
 
   function AddPurchaseNumBtn() {
@@ -21,35 +21,46 @@ function MenuItem({ menuItem }) {
   }
 
   return (
-    <div class="menu_contant menu_contant-Backgroundlight">
-      <div class="menu_contant_image">
+    <div
+      className={`menu_contant menu_contant-Backgroundlight ${
+        i18n.language === "fa" ? "directionCss-rtl" : "directionCss-ltr"
+      }`}
+    >
+      <div className="menu_contant_image">
         <img src={menuItem.ImageURL} alt={t(menuItem.Title)} />
       </div>
-      <div class="menu_contant_info">
+      <div className="menu_contant_info">
         <h4>{t(menuItem.Title)}</h4>
         <p>{t(menuItem.Description)}</p>
-        <span class="posPopular glyphicon glyphicon-heart Direction-rtl"></span>
-        <div class="menut_contant_info_price">
-          <div class="menu_contant_info_price_contant">
-            <h4 class="price">{menuItem.Price}</h4>
+
+        {/* <span class="posPopular glyphicon glyphicon-heart Direction-rtl"></span> */}
+        <div className="menut_contant_info_price">
+          <div className="menu_contant_info_price_contant">
+            <h4 className="price">{menuItem.Price}</h4>
             <p>{t(generaltext.MonetaryUnit)}</p>
           </div>
-          <div class="btn-class">
+          <div className="btn-class">
             {!numOfProduct ? (
               <button
-                class="menu_contant_info_price_btn Direction-rtl"
+                className={`menu_contant_info_price_btn ${
+                  i18n.language === "fa" ? "Direction-rtl" : "Direction-ltr"
+                }`}
                 onClick={AddPurchaseNumBtn}
               >
                 {t(generaltext.AddToNotebook)}
               </button>
             ) : null}
             {numOfProduct ? (
-              <div class="Purchase-count Direction-rtl">
-                <button class="btn-counter" onClick={decreaseNumOfProduct}>
+              <div
+                className={`Purchase-count ${
+                  i18n.language === "fa" ? "Direction-rtl" : "Direction-ltr"
+                }`}
+              >
+                <button className="btn-counter" onClick={decreaseNumOfProduct}>
                   <span>➖</span>
                 </button>
-                <span class="span">{numOfProduct}</span>
-                <button class="btn-counter" onClick={increaseNumOfProduct}>
+                <span className="span">{numOfProduct}</span>
+                <button className="btn-counter" onClick={increaseNumOfProduct}>
                   <span>➕</span>
                 </button>
               </div>
