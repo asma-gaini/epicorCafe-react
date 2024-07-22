@@ -12,7 +12,7 @@ function SliderMenu() {
       if (otherMenu[i].getAttribute("Categoryid") != CategoryID) {
         otherMenu[i].style.display = "none";
       } else {
-        otherMenu[i].style.display = "block";
+        otherMenu[i].style.display = "flex";
       }
     }
   }
