@@ -27,6 +27,14 @@ function MenuItem({ menuItem, tolatPrice, setTotalPrice }) {
       className={`menu_contant menu_contant-Backgroundlight ${
         i18n.language === "fa" ? "directionCss-rtl" : "directionCss-ltr"
       }`}
+
+      // className={`menu_contant menu_contant-Backgroundlight ${
+      //   i18n.language === "fa" ? "directionCss-rtl" : "directionCss-ltr"
+      // } ${
+      //   theme === "light"
+      //     ? "menu_contant-Backgroundlight"
+      //     : "menu_contant-BackgroundDark"
+      // }`}
     >
       <div className="menu_contant_image">
         <img src={menuItem.ImageURL} alt={t(menuItem.Title)} />
@@ -53,6 +61,13 @@ function MenuItem({ menuItem, tolatPrice, setTotalPrice }) {
                 className={`menu_contant_info_price_btn ${
                   i18n.language === "fa" ? "Direction-rtl" : "Direction-ltr"
                 }`}
+                // className={`menu_contant_info_price_btn ${
+                //   i18n.language === "fa" ? "Direction-rtl" : "Direction-ltr"
+                // } ${
+                //   theme === "light"
+                //     ? "menu_contant_info_price_btn-Backgroundlight"
+                //     : "menu_contant_info_price_btn-BackgroundDark"
+                // }`}
                 onClick={AddPurchaseNumBtn}
               >
                 {t(generaltext.AddToNotebook)}
