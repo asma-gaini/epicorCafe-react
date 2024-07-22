@@ -1,11 +1,7 @@
 import { menu, menuFa, menuEn } from "../utils/constants";
 
 export function changeLanguage() {
-  var menuFaJsonString = JSON.stringify(menuFa);
-  var menuFaJson = JSON.parse(menuFaJsonString);
-
-  var menuEnJsonString = JSON.stringify(menuEn);
-  var menuEnJson = JSON.parse(menuEnJsonString);
+ 
 
   const text_keys = document.querySelectorAll("[text_key]");
 
@@ -17,3 +13,10 @@ export function changeLanguage() {
     }
   }
 }
+// import { useTranslation } from "react-i18next";
+
+
+//   const { t, i18n } = useTranslation();
+
+
+//   console.log(i18n.language);

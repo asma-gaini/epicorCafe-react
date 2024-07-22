@@ -1286,6 +1286,24 @@ export const menu = [
   },
 ];
 
+export const generaltext = {
+  popular: "popular",
+  popularEn: "popularEn",
+  AddToNotebook: "AddToNotebook",
+  MonetaryUnit: "MonetaryUnit",
+  menuGathe: "menuGathe",
+  bill: "bill",
+  invoice: "invoice",
+  totalPrice: "totalPrice",
+  ClosingInvoice: "ClosingInvoice",
+  viewReceipt: "viewReceipt",
+  aboutUs: "aboutUs",
+  ContactUs: "ContactUs",
+  tel: "tel",
+  adresse: "adresse",
+  closeAboutUsBtn: "closeAboutUsBtn",
+};
+
 export const menuFa = {
   // brakfast
   breakfast: "صبحانه",

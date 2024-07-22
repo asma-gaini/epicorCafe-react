@@ -1,32 +1,23 @@
 import { useEffect, useState } from "react";
 import React from "react";
+import { useTranslation } from "react-i18next";
 import "./multiLanguage.css";
 
 function MultiLanguage() {
-  localStorage.clear();
-  const [language, setLanguage] = useState(localStorage?.getItem("lang"), "");
-  useEffect(() => {
-    localStorage.setItem("lang", language);
-  }, [language]);
+  const { t, i18n } = useTranslation();
 
   const onchangeLanguage = (e) => {
-    setLanguage(e.target.value);
-    console.log("value : ", e.target.value);
+    i18n.changeLanguage(e.target.value);
   };
-  console.log("lang : " + localStorage.getItem("lang"));
+  console.log(t("breakfast"));
   return (
-    <select
-      className="form-select"
-      // aria-label="Default select example"
-      id="language"
-      value={language}
-      // onclick="changeDirection()"
-      onchange={onchangeLanguage}
-    >
-      <option className="optionSelectBox" selected>
+    <select className="form-select" id="language" onChange={onchangeLanguage}>
+      <option value="fa" className="optionSelectBox" selected>
         فارسی
       </option>
-      <option className="optionSelectBox">English</option>
+      <option value="en" className="optionSelectBox">
+        English
+      </option>
     </select>
   );
 }
