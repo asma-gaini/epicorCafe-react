@@ -32,7 +32,14 @@ function MenuItem({ menuItem }) {
       <div className="menu_contant_info">
         <h4>{t(menuItem.Title)}</h4>
         <p>{t(menuItem.Description)}</p>
-
+        {menuItem.isPopular == "true" && (
+          <img
+            src="../../../public/image/general image/heart-full.svg"
+            className={`posPopular ${
+              i18n.language === "fa" ? "Direction-rtl" : "Direction-ltr"
+            }`}
+          ></img>
+        )}
         {/* <span class="posPopular glyphicon glyphicon-heart Direction-rtl"></span> */}
         <div className="menut_contant_info_price">
           <div className="menu_contant_info_price_contant">
