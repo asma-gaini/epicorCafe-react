@@ -153,3 +153,134 @@
 .directionCss-rtl {
   direction: rtl;
 }
+
+/* ******************************* change theme ******************************* */
+
+.bodyBackgroundlight {
+  background-color: var(--body);
+}
+.bodyBackgroundDark {
+  background-color: rgb(16 12 12 / 90%);
+}
+.menu_contant-Backgroundlight {
+  background-color: var(--menu-item);
+}
+.menu_contant-BackgroundDark {
+  background-color: #dea6239c;
+}
+.menu_contant_info_price_btn-Backgroundlight {
+  background-color: var(--btn-order);
+}
+.menu_contant_info_price_btn-BackgroundDark {
+  /* background-color: #b6a193; */
+  background-color: #be8b2796;
+  /* border: 1px solid aqua; */
+}
+.headerBtn-Backgroundlight {
+  background-color: rgb(205 171 44);
+  /* color: #000000; */
+}
+.headerBtn-BackgroundDark {
+  background-color: rgb(129 126 126);
+  color: #ffffff !important;
+  /* border: 1px solid #ebf8f8; */
+}
+.menu-bar_section_click-Backgroundlight {
+  background-color: var(--menubar-click-primary);
+  background-image: var(--menubar-click) !important;
+}
+.menu-bar_section_click-BackgroundDark {
+  background-color: rgb(0, 0, 0) !important;
+  background-image: radial-gradient(
+    circle,
+    rgb(216, 210, 202),
+    rgb(105, 104, 103),
+    rgb(0 0 0)
+  ) !important;
+}
+.active_menu-bar_section_click-Backgroundlight {
+  background-color: var(--menubar-click-primary);
+  background-image: var(--menubar-click);
+}
+.active_menu-bar_section_click-BackgroundDark {
+  background-color: rgb(0, 0, 0) !important;
+  background-image: radial-gradient(
+    circle,
+    rgb(216, 210, 202),
+    rgb(105, 104, 103),
+    rgb(0 0 0)
+  ) !important;
+}
+.focus_menu-bar_section_click-Backgroundlight {
+  background-color: var(--menubar-click-primary);
+  background-image: var(--menubar-click);
+}
+.focus_menu-bar_section_click-BackgroundDark {
+  background-color: rgb(0, 0, 0) !important;
+  background-image: radial-gradient(
+    circle,
+    rgb(216, 210, 202),
+    rgb(105, 104, 103),
+    rgb(0 0 0)
+  ) !important;
+}
+.pay-off-Backgroundlight {
+  background-color: rgb(192, 160, 40) !important;
+}
+.pay-off-BackgroundDark {
+  background-color: rgb(74 74 73) !important;
+}
+.menu_contant_bill-Backgroundlight {
+  background-color: var(--menu-item);
+}
+.menu_contant_bill-BackgroundDark {
+  background-color: rgb(16 16 16 / 80%) !important;
+}
+.box-Backgroundlight {
+  background: #c1a736;
+  color: #7f4711;
+}
+.box-BackgroundDark {
+  background: rgb(16 16 16 / 80%);
+  color: #ffffff;
+}
+.title-Backgroundlight {
+  background: #f2da71;
+}
+.title-BackgroundDark {
+  background: #d4d1c4;
+}
+.innerAboutBtn-Backgroundlight {
+  background: #c38710;
+}
+.innerAboutBtn-BackgroundDark {
+  background: #000000 !important;
+}
+.hrTheme-Backgroundlight {
+  background-color: var(--hrLineBack);
+}
+.hrTheme-BackgroundDark {
+  background-color: #fbffff !important;
+}
+.popular-Backgroundlight {
+  color: #ffffff;
+}
+.popular-BackgroundDark {
+  color: white;
+}
+.hover-overlay-content-Backgroundlight {
+  background: rgb(235, 173, 96);
+  background: radial-gradient(
+    circle,
+    rgba(235, 173, 96, 1) 0%,
+    rgba(133, 90, 37, 1) 100%
+  );
+}
+.hover-overlay-content-BackgroundDark {
+  /* background: rgb(59, 58, 57) !important; */
+  background: radial-gradient(
+    circle,
+    rgb(182 181 178) 0%,
+    rgb(68 63 56) 100%
+  ) !important;
+}

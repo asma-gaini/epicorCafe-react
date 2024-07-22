@@ -8,11 +8,26 @@ function SliderMenu() {
 
   function linked(CategoryID) {
     const otherMenu = document.querySelectorAll("div.slider[CategoryID]");
+    const otherCategoryBtn = document.querySelectorAll(
+      "button.menu-bar_section[CategoryID]"
+    );
+
     for (let i = 0; i < otherMenu.length; i++) {
       if (otherMenu[i].getAttribute("Categoryid") != CategoryID) {
         otherMenu[i].style.display = "none";
       } else {
         otherMenu[i].style.display = "flex";
+      }
+    }
+    for (let i = 0; i < otherCategoryBtn.length; i++) {
+      if (otherCategoryBtn[i].getAttribute("Categoryid") == CategoryID) {
+        otherCategoryBtn[i].classList.add(
+          "menu-bar_section_click-Backgroundlight"
+        );
+      } else {
+        otherCategoryBtn[i].classList.remove(
+          "menu-bar_section_click-Backgroundlight"
+        );
       }
     }
   }
@@ -23,7 +38,7 @@ function SliderMenu() {
         {menu.map((categoriItem) => (
           <button
             categoryid={categoriItem.CategoryID}
-            className="menu-bar_section menu-bar_section_click-Backgroundlight"
+            className="menu-bar_section"
             onClick={() => linked(categoriItem.CategoryID)}
           >
             <img

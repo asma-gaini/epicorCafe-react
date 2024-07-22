@@ -7,12 +7,18 @@ import Category from "./Category";
 import Cart from "../cart/Cart";
 
 function Menu() {
+  const [tolatPrice, setTotalPrice] = useState(0);
   return (
     <div>
       {menu.map((categoriItem) => (
-        <Category categoriItem={categoriItem} key={categoriItem.CategoryID} />
+        <Category
+          categoriItem={categoriItem}
+          key={categoriItem.CategoryID}
+          tolatPrice={tolatPrice}
+          setTotalPrice={setTotalPrice}
+        />
       ))}
-      <Cart />
+      <Cart tolatPrice={tolatPrice} setTotalPrice={setTotalPrice} />
     </div>
   );
 }

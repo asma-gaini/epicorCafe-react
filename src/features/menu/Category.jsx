@@ -5,7 +5,7 @@ import { changeLanguage } from "../../utils/helper";
 import "./menu.css";
 import MenuItem from "./MenuItem";
 
-function Category({ categoriItem }) {
+function Category({ categoriItem, tolatPrice, setTotalPrice }) {
   const { t, i18n } = useTranslation();
 
   return (
@@ -16,7 +16,7 @@ function Category({ categoriItem }) {
         <p>{t(categoriItem.headerNameEN)}</p>
       </div>
       {categoriItem.Info.map((menuItem) => (
-        <MenuItem menuItem={menuItem} key={menuItem.codeNumber} />
+        <MenuItem menuItem={menuItem} key={menuItem.codeNumber} tolatPrice={tolatPrice} setTotalPrice={setTotalPrice} />
       ))}
     </div>
   );

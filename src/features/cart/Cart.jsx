@@ -2,7 +2,7 @@ import "../cart/cart.css";
 import { generaltext } from "../../utils/constants";
 import { useTranslation } from "react-i18next";
 
-function Cart() {
+function Cart({ tolatPrice, setTotalPrice }) {
   const { t, i18n } = useTranslation();
 
   return (
@@ -14,7 +14,7 @@ function Cart() {
       // onclick="show_Hide()"
     >
       <span>{t(generaltext.bill)}</span>
-      <span className="bill"> 175/000 </span>
+      <span className="bill"> {tolatPrice} </span>
       <span>{t(generaltext.MonetaryUnit)}</span>
     </button>
   );

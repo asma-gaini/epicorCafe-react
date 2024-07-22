@@ -3,20 +3,23 @@ import { useTranslation } from "react-i18next";
 import "./menu.css";
 import { generaltext } from "../../utils/constants";
 
-function MenuItem({ menuItem}) {
+function MenuItem({ menuItem, tolatPrice, setTotalPrice }) {
   const { t, i18n } = useTranslation();
   const [numOfProduct, seNumOfProduct] = useState(0);
 
   function AddPurchaseNumBtn() {
     seNumOfProduct((prev) => prev + 1);
+    setTotalPrice((prev) => prev + menuItem.Price);
   }
 
   function increaseNumOfProduct() {
     seNumOfProduct((prev) => prev + 1);
+    setTotalPrice((prev) => prev + menuItem.Price);
   }
 
   function decreaseNumOfProduct() {
     seNumOfProduct((prev) => prev - 1);
+    setTotalPrice((prev) => prev - menuItem.Price);
   }
 
   return (
