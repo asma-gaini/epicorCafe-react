@@ -22,6 +22,7 @@ function Category({ categoriItem, tolatPrice, setTotalPrice }) {
             key={menuItem.codeNumber}
             tolatPrice={tolatPrice}
             setTotalPrice={setTotalPrice}
+            categoryId={categoriItem.CategoryID}
           />
 
           {/* {menuItem.isPopular === true && (

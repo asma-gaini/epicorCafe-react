@@ -2,24 +2,43 @@ import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import "./menu.css";
 import { generaltext } from "../../utils/constants";
+import { useDispatch, useSelector } from "react-redux";
+import { setCartItems } from "../../store/slices/shoppingCartSlice";
 
-function MenuItem({ menuItem, tolatPrice, setTotalPrice }) {
+function MenuItem({ menuItem, tolatPrice, setTotalPrice, categoryId }) {
   const { t, i18n } = useTranslation();
   const [numOfProduct, seNumOfProduct] = useState(0);
+  const cartValue = useSelector(
+    (store) => store.shoppingCart.cartItems?.[menuItem.codeNumber] || 0
+  );
+  console.log(cartValue);
 
-  function AddPurchaseNumBtn() {
-    seNumOfProduct((prev) => prev + 1);
-    setTotalPrice((prev) => prev + menuItem.Price);
-  }
+  const dispatch = useDispatch();
+  // function AddPurchaseNumBtn() {
+  //   seNumOfProduct((prev) => prev + 1);
+  //   setTotalPrice((prev) => prev + menuItem.Price);
+  // }
 
   function increaseNumOfProduct() {
-    seNumOfProduct((prev) => prev + 1);
-    setTotalPrice((prev) => prev + menuItem.Price);
+    // seNumOfProduct((prev) => prev + 1);
+    // setTotalPrice((prev) => prev + menuItem.Price);
+    dispatch(
+      setCartItems({
+        categoryId: categoryId,
+        codeNumber: menuItem.codeNumber,
+        value: 1,
+      })
+    );
   }
 
   function decreaseNumOfProduct() {
-    seNumOfProduct((prev) => prev - 1);
-    setTotalPrice((prev) => prev - menuItem.Price);
+    dispatch(
+      setCartItems({
+        categoryId: categoryId,
+        codeNumber: menuItem.codeNumber,
+        value: -1,
+      })
+    );
   }
 
   return (
@@ -48,17 +67,17 @@ function MenuItem({ menuItem, tolatPrice, setTotalPrice }) {
             <p>{t(generaltext.MonetaryUnit)}</p>
           </div>
           <div className="btn-class">
-            {!numOfProduct ? (
+            {!cartValue ? (
               <button
                 className={`menu_contant_info_price_btn ${
                   i18n.language === "fa" ? "Direction-rtl" : "Direction-ltr"
                 }`}
-                onClick={AddPurchaseNumBtn}
+                onClick={increaseNumOfProduct}
               >
                 {t(generaltext.AddToNotebook)}
               </button>
             ) : null}
-            {numOfProduct ? (
+            {cartValue ? (
               <div
                 className={`Purchase-count ${
                   i18n.language === "fa" ? "Direction-rtl" : "Direction-ltr"
@@ -67,7 +86,7 @@ function MenuItem({ menuItem, tolatPrice, setTotalPrice }) {
                 <button className="btn-counter" onClick={decreaseNumOfProduct}>
                   <span>➖</span>
                 </button>
-                <span className="span">{numOfProduct}</span>
+                <span className="span">{cartValue[0]}</span>
                 <button className="btn-counter" onClick={increaseNumOfProduct}>
                   <span>➕</span>
                 </button>
