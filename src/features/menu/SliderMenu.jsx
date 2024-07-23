@@ -34,51 +34,56 @@ function SliderMenu() {
   }
 
   return (
-    <main className="grid-item main">
-      <div className="items menu-bar">
-        <div className="item item1">
-          <button
-            categoryid="0"
-            className="menu-bar_section"
-            onClick={() => linked(0)}
-          >
-            <img
-              src="../../../public/image/main page/food & this category menu/popular/icons8-food-menu-53.png"
-              alt={t(generaltext.popularEn)}
-              className="menu-bar_section_image"
-            />
-            <div className="menu-bar_section_info">
-              <p className="menu-bar_section_name-en">
-                {t(generaltext.popularEn)}
-              </p>
-              <p className="menu-bar_section_name-fa">{t(generaltext.popular)}</p>
-            </div>
-          </button>
-
-          {menu.map((categoriItem) => (
+    <>
+      <main className="grid-item main">
+        <div className="items menu-bar">
+          <div className="item item1">
             <button
-              categoryid={categoriItem.CategoryID}
+              categoryid="0"
               className="menu-bar_section"
-              onClick={() => linked(categoriItem.CategoryID)}
+              onClick={() => linked(0)}
             >
               <img
-                src={categoriItem.headerImg}
-                alt={categoriItem.headerNameEN}
+                src="../../../public/image/main page/food & this category menu/popular/icons8-food-menu-53.png"
+                alt={t(generaltext.popularEn)}
                 className="menu-bar_section_image"
               />
               <div className="menu-bar_section_info">
                 <p className="menu-bar_section_name-en">
-                  {t(categoriItem.headerNameEN)}
+                  {t(generaltext.popularEn)}
                 </p>
                 <p className="menu-bar_section_name-fa">
-                  {t(categoriItem.headerNameFA)}
+                  {t(generaltext.popular)}
                 </p>
               </div>
             </button>
-          ))}
+
+            {menu.map((categoriItem) => (
+              <button
+                categoryid={categoriItem.CategoryID}
+                className="menu-bar_section"
+                onClick={() => linked(categoriItem.CategoryID)}
+              >
+                <img
+                  src={categoriItem.headerImg}
+                  alt={categoriItem.headerNameEN}
+                  className="menu-bar_section_image"
+                />
+                <div className="menu-bar_section_info">
+                  <p className="menu-bar_section_name-en">
+                    {t(categoriItem.headerNameEN)}
+                  </p>
+                  <p className="menu-bar_section_name-fa">
+                    {t(categoriItem.headerNameFA)}
+                  </p>
+                </div>
+              </button>
+            ))}
+          </div>
         </div>
-      </div>
-    </main>
+      </main>
+      <GatherMenu linked={linked} />
+    </>
   );
 }
 
