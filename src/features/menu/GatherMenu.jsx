@@ -30,6 +30,25 @@ function GatherMenu({ linked }) {
 
         <div className="overlay-content">
           <a onClick={closeNav} href="#">
+            <button
+              categoryid="0"
+              className="menu-bar_section"
+              onClick={() => linked(0)}
+            >
+              <img
+                src="../../../public/image/main page/food & this category menu/popular/icons8-food-menu-53.png"
+                alt={t(generaltext.popularEn)}
+                className="menu-bar_section_image"
+              />
+              <div className="menu-bar_section_info">
+                <p className="menu-bar_section_name-en">
+                  {t(generaltext.popularEn)}
+                </p>
+                <p className="menu-bar_section_name-fa">
+                  {t(generaltext.popular)}
+                </p>
+              </div>
+            </button>
             {menu.map((categoriItem) => (
               <button
                 categoryid={categoriItem.CategoryID}
