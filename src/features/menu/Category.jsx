@@ -16,7 +16,23 @@ function Category({ categoriItem, tolatPrice, setTotalPrice }) {
         <p>{t(categoriItem.headerNameEN)}</p>
       </div>
       {categoriItem.Info.map((menuItem) => (
-        <MenuItem menuItem={menuItem} key={menuItem.codeNumber} tolatPrice={tolatPrice} setTotalPrice={setTotalPrice} />
+        <>
+          <MenuItem
+            menuItem={menuItem}
+            key={menuItem.codeNumber}
+            tolatPrice={tolatPrice}
+            setTotalPrice={setTotalPrice}
+          />
+
+          {/* {menuItem.isPopular === true && (
+            <MenuItem
+              menuItem={menuItem}
+              key={menuItem.codeNumber}
+              tolatPrice={tolatPrice}
+              setTotalPrice={setTotalPrice}
+            />
+          )} */}
+        </>
       ))}
     </div>
   );
