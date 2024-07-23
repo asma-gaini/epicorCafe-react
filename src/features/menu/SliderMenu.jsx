@@ -2,6 +2,7 @@ import { menu, generaltext } from "../../utils/constants";
 import "./menu.css";
 import "./sliderMenu.css";
 import { useTranslation } from "react-i18next";
+import GatherMenu from "./GatherMenu";
 
 function SliderMenu() {
   const { t, i18n } = useTranslation();
