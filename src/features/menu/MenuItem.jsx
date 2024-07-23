@@ -53,7 +53,7 @@ function MenuItem({ menuItem, tolatPrice, setTotalPrice, categoryId }) {
       <div className="menu_contant_info">
         <h4>{t(menuItem.Title)}</h4>
         <p>{t(menuItem.Description)}</p>
-        {menuItem.isPopular == "true" && (
+        {menuItem.isPopular && (
           <img
             src="../../../public/image/general image/heart-full.svg"
             className={`posPopular ${

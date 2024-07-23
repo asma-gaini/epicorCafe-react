@@ -16,7 +16,10 @@ export const shoppingCartSlice = createSlice({
       if (nextValue === 0) {
         delete cartCopy[codeNumber];
       } else {
-        cartCopy[codeNumber] = [nextValue, categoryId];
+        cartCopy[codeNumber] = [
+          nextValue,
+          categoryId === 0 ? cartCopy[codeNumber]?.[1] : categoryId,
+        ];
       }
 
       state.cartItems = cartCopy;

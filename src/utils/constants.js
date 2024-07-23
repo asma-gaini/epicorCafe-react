@@ -9,7 +9,7 @@ export const menu = [
     Info: [
       {
         codeNumber: 1,
-        isPopular: "true",
+        isPopular: true,
         Title: "PersianBreakfast",
         Description:
           "Cucumbers-tomatoes-vegetables-butter-cheese-honey-boiled_eggs",
@@ -19,7 +19,7 @@ export const menu = [
       },
       {
         codeNumber: 2,
-        isPopular: "true",
+        isPopular: true,
         Title: "IranianOmelette",
         Description: "Toast-eggs-tomatoes",
         Price: 155,
@@ -27,7 +27,7 @@ export const menu = [
       },
       {
         codeNumber: 3,
-        isPopular: "false",
+        isPopular: false,
         Title: "EnglishBreakfast",
         Description:
           "Sausage-bacon-halfBoiledEgg-beanFeed-potato-mushroom-tomato-pickledCucumber",
@@ -37,7 +37,7 @@ export const menu = [
       },
       {
         codeNumber: 4,
-        isPopular: "false",
+        isPopular: false,
         Title: "MexicanOmelette",
         Description: "Toast-egg-tomato-jalapenoPepper",
         Price: 135,
@@ -45,7 +45,7 @@ export const menu = [
       },
       {
         codeNumber: 5,
-        isPopular: "false",
+        isPopular: false,
         Title: "McMuffin",
         Description: "MacBread-scrambledEggs-bacon-slicedCheese-lettuce-tomato",
         Price: 125,
@@ -54,14 +54,14 @@ export const menu = [
       },
       {
         codeNumber: 6,
-        isPopular: "false",
+        isPopular: false,
         Title: "beanFeed",
         Price: 95,
         ImageURL: "../../public/image/general image/noimagefood.png",
       },
       {
         codeNumber: 7,
-        isPopular: "true",
+        isPopular: true,
         Title: "friedEgg",
         Price: 110,
         ImageURL: "../../public/image/general image/noimagefood.png",
@@ -77,7 +77,7 @@ export const menu = [
     Info: [
       {
         codeNumber: 8,
-        isPopular: "false",
+        isPopular: false,
         Title: "Espresso",
         Price: 68,
         ImageURL:
@@ -85,7 +85,7 @@ export const menu = [
       },
       {
         codeNumber: 9,
-        isPopular: "false",
+        isPopular: false,
         Title: "DoubleEspresso",
         Price: 72,
         ImageURL:
@@ -93,7 +93,7 @@ export const menu = [
       },
       {
         codeNumber: 10,
-        isPopular: "true",
+        isPopular: true,
         Title: "Americans",
         Price: 78,
         ImageURL:
@@ -101,14 +101,14 @@ export const menu = [
       },
       {
         codeNumber: 11,
-        isPopular: "false",
+        isPopular: false,
         Title: "EspressoMacchiato",
         Price: 75,
         ImageURL: "../../public/image/general image/noimagefood.png",
       },
       {
         codeNumber: 12,
-        isPopular: "false",
+        isPopular: false,
         Title: "cortado",
         Price: 70,
         ImageURL:
@@ -116,7 +116,7 @@ export const menu = [
       },
       {
         codeNumber: 13,
-        isPopular: "false",
+        isPopular: false,
         Title: "Cappuccino",
         Price: 85,
         ImageURL:
@@ -124,7 +124,7 @@ export const menu = [
       },
       {
         codeNumber: 14,
-        isPopular: "false",
+        isPopular: false,
         Title: "DoubleLatte",
         Price: 85,
         ImageURL:
@@ -132,7 +132,7 @@ export const menu = [
       },
       {
         codeNumber: 15,
-        isPopular: "false",
+        isPopular: false,
         Title: "SheikhCoffee",
         Price: 98,
         ImageURL: "../../public/image/general image/noimagefood.png",
@@ -148,7 +148,7 @@ export const menu = [
     Info: [
       {
         codeNumber: 16,
-        isPopular: "false",
+        isPopular: false,
         Title: "SingleEspresso",
         Price: 69,
         ImageURL:
@@ -156,7 +156,7 @@ export const menu = [
       },
       {
         codeNumber: 17,
-        isPopular: "true",
+        isPopular: true,
         Title: "DoubleEspresso",
         Price: 74,
         ImageURL:
@@ -164,7 +164,7 @@ export const menu = [
       },
       {
         codeNumber: 18,
-        isPopular: "false",
+        isPopular: false,
         Title: "Mocha",
         Price: 85,
         ImageURL:
@@ -172,7 +172,7 @@ export const menu = [
       },
       {
         codeNumber: 19,
-        isPopular: "false",
+        isPopular: false,
         Title: "CaramelMacchiato",
         Price: 95,
         ImageURL:
@@ -180,7 +180,7 @@ export const menu = [
       },
       {
         codeNumber: 20,
-        isPopular: "false",
+        isPopular: false,
         Title: "Americans",
         Price: 75,
         ImageURL:
@@ -188,7 +188,7 @@ export const menu = [
       },
       {
         codeNumber: 21,
-        isPopular: "false",
+        isPopular: false,
         Title: "latte",
         Price: 83,
         ImageURL:
@@ -196,7 +196,7 @@ export const menu = [
       },
       {
         codeNumber: 22,
-        isPopular: "false",
+        isPopular: false,
         Title: "Affogato",
         Price: 105,
         ImageURL:
@@ -213,7 +213,7 @@ export const menu = [
     Info: [
       {
         codeNumber: 23,
-        isPopular: "false",
+        isPopular: false,
         Title: "IcedLatte",
         Price: 69,
         ImageURL:
@@ -221,7 +221,7 @@ export const menu = [
       },
       {
         codeNumber: 24,
-        isPopular: "false",
+        isPopular: false,
         Title: "IcedAmerican",
         Price: 79,
         ImageURL:
@@ -229,7 +229,7 @@ export const menu = [
       },
       {
         codeNumber: 25,
-        isPopular: "false",
+        isPopular: false,
         Title: "IcedCaramelMacchiato",
         Price: 95,
         ImageURL:
@@ -237,7 +237,7 @@ export const menu = [
       },
       {
         codeNumber: 26,
-        isPopular: "false",
+        isPopular: false,
         Title: "IceMocha",
         Price: 90,
         ImageURL:
@@ -245,7 +245,7 @@ export const menu = [
       },
       {
         codeNumber: 27,
-        isPopular: "false",
+        isPopular: false,
         Title: "Coldbrew",
         Price: 78,
         ImageURL: "../../public/image/general image/noimagefood.png",
@@ -261,7 +261,7 @@ export const menu = [
     Info: [
       {
         codeNumber: 28,
-        isPopular: "false",
+        isPopular: false,
         Title: "SingleSiphon",
         Price: 68,
         ImageURL:
@@ -269,21 +269,21 @@ export const menu = [
       },
       {
         codeNumber: 29,
-        isPopular: "false",
+        isPopular: false,
         Title: "Two-personSiphon",
         Price: 110,
         ImageURL: "../../public/image/general image/noimagefood.png",
       },
       {
         codeNumber: 30,
-        isPopular: "false",
+        isPopular: false,
         Title: "Three-personSiphon",
         Price: 155,
         ImageURL: "../../public/image/general image/noimagefood.png",
       },
       {
         codeNumber: 31,
-        isPopular: "false",
+        isPopular: false,
         Title: "singlePlayer",
         Price: 85,
         ImageURL:
@@ -291,28 +291,28 @@ export const menu = [
       },
       {
         codeNumber: 32,
-        isPopular: "false",
+        isPopular: false,
         Title: "DoubleBed",
         Price: 110,
         ImageURL: "../../public/image/general image/noimagefood.png",
       },
       {
         codeNumber: 33,
-        isPopular: "false",
+        isPopular: false,
         Title: "AThree-personCamp",
         Price: 145,
         ImageURL: "../../public/image/general image/noimagefood.png",
       },
       {
         codeNumber: 34,
-        isPopular: "false",
+        isPopular: false,
         Title: "Turkish",
         Price: 95,
         ImageURL: "../../public/image/general image/noimagefood.png",
       },
       {
         codeNumber: 35,
-        isPopular: "false",
+        isPopular: false,
         Title: "FrenchPressWithMilk",
         Price: 125,
         ImageURL:
@@ -329,14 +329,14 @@ export const menu = [
     Info: [
       {
         codeNumber: 36,
-        isPopular: "false",
+        isPopular: false,
         Title: "SingleIranianBlackTea",
         Price: 42,
         ImageURL: "../../public/image/general image/noimagefood.png",
       },
       {
         codeNumber: 37,
-        isPopular: "false",
+        isPopular: false,
         Title: "IranianBlackTeaForTwo",
         Price: 62,
         ImageURL:
@@ -344,7 +344,7 @@ export const menu = [
       },
       {
         codeNumber: 38,
-        isPopular: "false",
+        isPopular: false,
         Title: "IranianBlackTeaForFour",
         Price: 155,
         ImageURL:
@@ -352,42 +352,42 @@ export const menu = [
       },
       {
         codeNumber: 39,
-        isPopular: "false",
+        isPopular: false,
         Title: "JazminGreenTeaForOnePerson",
         Price: 65,
         ImageURL: "../../public/image/general image/noimagefood.png",
       },
       {
         codeNumber: 40,
-        isPopular: "false",
+        isPopular: false,
         Title: "JasmineGreenTeaForTwo",
         Price: 75,
         ImageURL: "../../public/image/general image/noimagefood.png",
       },
       {
         codeNumber: 41,
-        isPopular: "false",
+        isPopular: false,
         Title: "JasmineGreenTeaForFour",
         Price: 80,
         ImageURL: "../../public/image/general image/noimagefood.png",
       },
       {
         codeNumber: 42,
-        isPopular: "false",
+        isPopular: false,
         Title: "WhiteTea(BardGinsengAndHoney)",
         Price: 110,
         ImageURL: "../../public/image/general image/noimagefood.png",
       },
       {
         codeNumber: 43,
-        isPopular: "false",
+        isPopular: false,
         Title: "WhiteTea(WithGingerAndCitrusPeel)",
         Price: 125,
         ImageURL: "../../public/image/general image/noimagefood.png",
       },
       {
         codeNumber: 44,
-        isPopular: "false",
+        isPopular: false,
         Title: "MasalaTea",
         Price: 95,
         ImageURL:
@@ -395,7 +395,7 @@ export const menu = [
       },
       {
         codeNumber: 45,
-        isPopular: "false",
+        isPopular: false,
         Title: "hotChocolate",
         Price: 93,
         ImageURL:
@@ -403,14 +403,14 @@ export const menu = [
       },
       {
         codeNumber: 46,
-        isPopular: "false",
+        isPopular: false,
         Title: "WhiteChocolateWithPeanutButter",
         Price: 105,
         ImageURL: "../../public/image/general image/noimagefood.png",
       },
       {
         codeNumber: 47,
-        isPopular: "false",
+        isPopular: false,
         Title: "teaLatte",
         Price: 85,
         ImageURL:
@@ -418,7 +418,7 @@ export const menu = [
       },
       {
         codeNumber: 48,
-        isPopular: "false",
+        isPopular: false,
         Title: "SingleMoroccanTea",
         Price: 62,
         ImageURL: "../../public/image/general image/noimagefood.png",
@@ -434,7 +434,7 @@ export const menu = [
     Info: [
       {
         codeNumber: 49,
-        isPopular: "false",
+        isPopular: false,
         Title: "peaceOfMind",
         Price: 85,
         ImageURL:
@@ -442,7 +442,7 @@ export const menu = [
       },
       {
         codeNumber: 50,
-        isPopular: "false",
+        isPopular: false,
         Title: "Lemon-Ginger-Honey",
         Price: 115,
         ImageURL: "../../public/image/general image/noimagefood.png",
@@ -458,7 +458,7 @@ export const menu = [
     Info: [
       {
         codeNumber: 51,
-        isPopular: "false",
+        isPopular: false,
         Title: "NaturalJuice",
         Description: "WatermelonJuice-cantaloupeJuice-orangeJuice",
         Price: 95,
@@ -466,7 +466,7 @@ export const menu = [
       },
       {
         codeNumber: 52,
-        isPopular: "false",
+        isPopular: false,
         Title: "lemonade",
         Description: "SimpleLime-Syrup-Soda+GingerCanBeAddedIfDesired ",
         Price: 105,
@@ -475,7 +475,7 @@ export const menu = [
       },
       {
         codeNumber: 53,
-        isPopular: "false",
+        isPopular: false,
         Title: "Mojito",
         Description: "TheCompositionOfMint-FreshLime-SweetAndSour-Soda ",
         Price: 115,
@@ -484,7 +484,7 @@ export const menu = [
       },
       {
         codeNumber: 54,
-        isPopular: "false",
+        isPopular: false,
         Title: "TropicalSmoothie",
         Description: "Banana-pineapple-strawberry-mango-coconut",
         Price: 165,
@@ -493,7 +493,7 @@ export const menu = [
       },
       {
         codeNumber: 55,
-        isPopular: "false",
+        isPopular: false,
         Title: "Strapon",
         Description: "AloeVeraJuice-Strawberry-WatermelonAndPassionFruit ",
         Price: 145,
@@ -502,7 +502,7 @@ export const menu = [
       },
       {
         codeNumber: 56,
-        isPopular: "false",
+        isPopular: false,
         Title: "BerrySmoothie",
         Description: "Strawberries-Blackberries-GrenadineSyrup-aloeVeraJuice",
         Price: 155,
@@ -510,7 +510,7 @@ export const menu = [
       },
       {
         codeNumber: 57,
-        isPopular: "false",
+        isPopular: false,
         Title: "PostmodernPunchForTwo",
         Price: 195,
         ImageURL:
@@ -518,7 +518,7 @@ export const menu = [
       },
       {
         codeNumber: 58,
-        isPopular: "false",
+        isPopular: false,
         Title: "Midsummer",
         Description:
           "FreshStrawberries-strawberryFlavoring-orangeJuice-mangoJuice-cheeseCold ",
@@ -528,7 +528,7 @@ export const menu = [
       },
       {
         codeNumber: 59,
-        isPopular: "false",
+        isPopular: false,
         Title: "BerryMojito",
         Price: 135,
         ImageURL:
@@ -536,7 +536,7 @@ export const menu = [
       },
       {
         codeNumber: 60,
-        isPopular: "false",
+        isPopular: false,
         Title: "Helix",
         Description: "Blucarasao-MintFlavoring-AloeVeraJuice-AppleJuice",
         Price: 185,
@@ -545,7 +545,7 @@ export const menu = [
       },
       {
         codeNumber: 61,
-        isPopular: "false",
+        isPopular: false,
         Title: "Frappuccino",
         Description: "Espresso-VanillaIceCream-VanillaFlavor-CoconutFlavor",
         Price: 145,
@@ -563,7 +563,7 @@ export const menu = [
     Info: [
       {
         codeNumber: 62,
-        isPopular: "false",
+        isPopular: false,
         Title: "CrazyChocolate",
         Description:
           "ExcitingCombinationsOfChocolateGelato-PeanutButter-BananaWithChocolateTopping-Cornflakes",
@@ -573,7 +573,7 @@ export const menu = [
       },
       {
         codeNumber: 63,
-        isPopular: "false",
+        isPopular: false,
         Title: "wildBerry",
         Description:
           "ACombinationOfStrawberries-CranberrySyrup-AndChocolateGelato",
@@ -592,7 +592,7 @@ export const menu = [
     Info: [
       {
         codeNumber: 64,
-        isPopular: "false",
+        isPopular: false,
         Title: "Chocolate",
         Price: 115,
         ImageURL:
@@ -600,7 +600,7 @@ export const menu = [
       },
       {
         codeNumber: 65,
-        isPopular: "false",
+        isPopular: false,
         Title: "Shatot",
         Price: 115,
         ImageURL:
@@ -608,7 +608,7 @@ export const menu = [
       },
       {
         codeNumber: 66,
-        isPopular: "false",
+        isPopular: false,
         Title: "vanilla",
         Price: 115,
         ImageURL:
@@ -616,7 +616,7 @@ export const menu = [
       },
       {
         codeNumber: 67,
-        isPopular: "false",
+        isPopular: false,
         Title: "Strawberry",
         Price: 125,
         ImageURL:
@@ -624,7 +624,7 @@ export const menu = [
       },
       {
         codeNumber: 68,
-        isPopular: "false",
+        isPopular: false,
         Title: "VanillaNutella",
         Price: 135,
         ImageURL:
@@ -632,7 +632,7 @@ export const menu = [
       },
       {
         codeNumber: 69,
-        isPopular: "false",
+        isPopular: false,
         Title: "ChocolateBanana",
         Price: 120,
         ImageURL:
@@ -640,7 +640,7 @@ export const menu = [
       },
       {
         codeNumber: 70,
-        isPopular: "false",
+        isPopular: false,
         Title: "Coffee",
         Price: 125,
         ImageURL:
@@ -648,7 +648,7 @@ export const menu = [
       },
       {
         codeNumber: 71,
-        isPopular: "false",
+        isPopular: false,
         Title: "peanut",
         Price: 115,
         ImageURL:
@@ -656,7 +656,7 @@ export const menu = [
       },
       {
         codeNumber: 72,
-        isPopular: "false",
+        isPopular: false,
         Title: "ChocolateBrownieFreakShake",
         Price: 165,
         ImageURL:
@@ -664,7 +664,7 @@ export const menu = [
       },
       {
         codeNumber: 73,
-        isPopular: "false",
+        isPopular: false,
         Title: "ChicLotus",
         Price: 155,
         ImageURL:
@@ -681,14 +681,14 @@ export const menu = [
     Info: [
       {
         codeNumber: 74,
-        isPopular: "false",
+        isPopular: false,
         Title: "NewYorkCheesecake",
         Price: 98,
         ImageURL: "../../public/image/general image/noimagefood.png",
       },
       {
         codeNumber: 75,
-        isPopular: "false",
+        isPopular: false,
         Title: "CarrotCake",
         Price: 93,
         ImageURL:
@@ -696,7 +696,7 @@ export const menu = [
       },
       {
         codeNumber: 76,
-        isPopular: "false",
+        isPopular: false,
         Title: "redolot",
         Price: 85,
         ImageURL:
@@ -704,7 +704,7 @@ export const menu = [
       },
       {
         codeNumber: 77,
-        isPopular: "false",
+        isPopular: false,
         Title: "CherryCrumble",
         Price: 83,
         ImageURL:
@@ -712,7 +712,7 @@ export const menu = [
       },
       {
         codeNumber: 78,
-        isPopular: "false",
+        isPopular: false,
         Title: "brownie",
         Price: 89,
         ImageURL:
@@ -720,7 +720,7 @@ export const menu = [
       },
       {
         codeNumber: 79,
-        isPopular: "false",
+        isPopular: false,
         Title: "TripleChocolate",
         Price: 92,
         ImageURL:
@@ -728,14 +728,14 @@ export const menu = [
       },
       {
         codeNumber: 80,
-        isPopular: "false",
+        isPopular: false,
         Title: "ChocolateChipCookie",
         Price: 9,
         ImageURL: "../../public/image/general image/noimagefood.png",
       },
       {
         codeNumber: 81,
-        isPopular: "false",
+        isPopular: false,
         Title: "Kenafa",
         Price: 185,
         ImageURL:
@@ -743,14 +743,14 @@ export const menu = [
       },
       {
         codeNumber: 82,
-        isPopular: "false",
+        isPopular: false,
         Title: "KonafaWithIceCream",
         Price: 215,
         ImageURL: "../../public/image/general image/noimagefood.png",
       },
       {
         codeNumber: 83,
-        isPopular: "false",
+        isPopular: false,
         Title: "waffle",
         Price: 195,
         ImageURL:
@@ -758,14 +758,14 @@ export const menu = [
       },
       {
         codeNumber: 84,
-        isPopular: "false",
+        isPopular: false,
         Title: "Baklava",
         Price: 85,
         ImageURL: "../../public/image/general image/noimagefood.png",
       },
       {
         codeNumber: 85,
-        isPopular: "false",
+        isPopular: false,
         Title: "ClassicCroissant",
         Price: 125,
         ImageURL:
@@ -773,7 +773,7 @@ export const menu = [
       },
       {
         codeNumber: 86,
-        isPopular: "false",
+        isPopular: false,
         Title: "CroissantsWithNutellaAndStrawberries",
         Price: 170,
         ImageURL:
@@ -781,7 +781,7 @@ export const menu = [
       },
       {
         codeNumber: 87,
-        isPopular: "false",
+        isPopular: false,
         Title: "BrownieWithVanillaGelato",
         Price: 125,
         ImageURL: "../../public/image/general image/noimagefood.png",
@@ -797,7 +797,7 @@ export const menu = [
     Info: [
       {
         codeNumber: 88,
-        isPopular: "false",
+        isPopular: false,
         Title: "CaesarSalad",
         Price: 265,
         ImageURL:
@@ -805,7 +805,7 @@ export const menu = [
       },
       {
         codeNumber: 89,
-        isPopular: "false",
+        isPopular: false,
         Title: "CaesarSalad(grilled)",
         Price: 285,
         ImageURL:
@@ -813,7 +813,7 @@ export const menu = [
       },
       {
         codeNumber: 90,
-        isPopular: "false",
+        isPopular: false,
         ChickenSalad: "چیکن سالاد",
         Description:
           "Lettuce-MixedVegetables-cherryTomatoes-SteamedMushrooms-Carrots-ChickenBreast-GarnerSauce",
@@ -823,7 +823,7 @@ export const menu = [
       },
       {
         codeNumber: 91,
-        isPopular: "false",
+        isPopular: false,
         Title: "greenSalad",
         Description:
           "Lettuce-VegetableMix-Celery-CherryTomato-Cucumber-ColorPepper-Carrot-Sesame-LemoMustardSauce",
@@ -833,7 +833,7 @@ export const menu = [
       },
       {
         codeNumber: 92,
-        isPopular: "false",
+        isPopular: false,
         Title: "WalmustardSalad",
         Description: "Lettuce-GreenApple-Lemon-Bacon-Cheese-Walnuts",
         Price: 245,
@@ -842,7 +842,7 @@ export const menu = [
       },
       {
         codeNumber: 93,
-        isPopular: "false",
+        isPopular: false,
         Title: "PlateOfSteamedVegetables",
         Price: 215,
         ImageURL:
@@ -850,7 +850,7 @@ export const menu = [
       },
       {
         codeNumber: 94,
-        isPopular: "false",
+        isPopular: false,
         Title: "FrenchPotatoSoup",
         Price: 105,
         ImageURL:
@@ -858,7 +858,7 @@ export const menu = [
       },
       {
         codeNumber: 95,
-        isPopular: "false",
+        isPopular: false,
         Title: "MexicanBreadWithSalsaSauce",
         Price: 115,
         ImageURL:
@@ -866,14 +866,14 @@ export const menu = [
       },
       {
         codeNumber: 96,
-        isPopular: "false",
+        isPopular: false,
         Title: "Olive",
         Price: 55,
         ImageURL: "../../public/image/general image/noimagefood.png",
       },
       {
         codeNumber: 97,
-        isPopular: "false",
+        isPopular: false,
         Title: "YogurtAndCucumber",
         Description: "Yogurt-Cucumber-Mint-Walnut",
         Price: 35,
@@ -890,7 +890,7 @@ export const menu = [
     Info: [
       {
         codeNumber: 98,
-        isPopular: "false",
+        isPopular: false,
         Title: "FrenchFries",
         Price: 115,
         ImageURL:
@@ -898,7 +898,7 @@ export const menu = [
       },
       {
         codeNumber: 99,
-        isPopular: "false",
+        isPopular: false,
         Title: "ChickenWings",
         Price: 195,
         ImageURL:
@@ -906,7 +906,7 @@ export const menu = [
       },
       {
         codeNumber: 100,
-        isPopular: "false",
+        isPopular: false,
         Title: "PotatoesWithCheese",
         Description: "SlicedPotatoes-PizzaCheese",
         Price: 135,
@@ -914,7 +914,7 @@ export const menu = [
       },
       {
         codeNumber: 101,
-        isPopular: "false",
+        isPopular: false,
         Title: "FryingPlate",
         Description:
           "TwoFillets-2Wings-2Shoulders-Mushrooms-FrenchFriedVegetables-4TypesOfSauces",
@@ -933,7 +933,7 @@ export const menu = [
     Info: [
       {
         codeNumber: 102,
-        isPopular: "false",
+        isPopular: false,
         Title: "ChickenAndVegetablePanini",
         Price: 225,
         ImageURL:
@@ -941,7 +941,7 @@ export const menu = [
       },
       {
         codeNumber: 103,
-        isPopular: "false",
+        isPopular: false,
         Title: "ChickenAndPeanutPanini",
         Price: 210,
         ImageURL:
@@ -949,7 +949,7 @@ export const menu = [
       },
       {
         codeNumber: 104,
-        isPopular: "false",
+        isPopular: false,
         Title: "VegetablePanini",
         Price: 175,
         ImageURL:
@@ -957,7 +957,7 @@ export const menu = [
       },
       {
         codeNumber: 105,
-        isPopular: "false",
+        isPopular: false,
         Title: "meatPanini",
         Price: 245,
         ImageURL:
@@ -965,7 +965,7 @@ export const menu = [
       },
       {
         codeNumber: 106,
-        isPopular: "false",
+        isPopular: false,
         Title: "HamPanini",
         Price: 175,
         ImageURL:
@@ -973,7 +973,7 @@ export const menu = [
       },
       {
         codeNumber: 107,
-        isPopular: "false",
+        isPopular: false,
         Title: "BaconPanini",
         Price: 205,
         ImageURL:
@@ -981,7 +981,7 @@ export const menu = [
       },
       {
         codeNumber: 108,
-        isPopular: "false",
+        isPopular: false,
         Title: "RoastBeefPanini",
         Price: 315,
         ImageURL:
@@ -998,7 +998,7 @@ export const menu = [
     Info: [
       {
         codeNumber: 109,
-        isPopular: "false",
+        isPopular: false,
         Title: "AlfredoPasta",
         Price: 235,
         ImageURL:
@@ -1006,7 +1006,7 @@ export const menu = [
       },
       {
         codeNumber: 110,
-        isPopular: "false",
+        isPopular: false,
         Title: "ArabicaPasta",
         Price: 255,
         ImageURL:
@@ -1023,7 +1023,7 @@ export const menu = [
     Info: [
       {
         codeNumber: 111,
-        isPopular: "false",
+        isPopular: false,
         Title: "FiletMignon",
         Price: 655,
         ImageURL:
@@ -1031,7 +1031,7 @@ export const menu = [
       },
       {
         codeNumber: 112,
-        isPopular: "false",
+        isPopular: false,
         Title: "LemChops",
         Price: 555,
         ImageURL:
@@ -1039,7 +1039,7 @@ export const menu = [
       },
       {
         codeNumber: 113,
-        isPopular: "false",
+        isPopular: false,
         Title: "EpicorBerger",
         Price: 330,
         ImageURL:
@@ -1047,7 +1047,7 @@ export const menu = [
       },
       {
         codeNumber: 114,
-        isPopular: "false",
+        isPopular: false,
         Title: "ChickenSteak",
         Price: 485,
         ImageURL:
@@ -1055,7 +1055,7 @@ export const menu = [
       },
       {
         codeNumber: 115,
-        isPopular: "false",
+        isPopular: false,
         Title: "EpicorSteak",
         Price: 665,
         ImageURL: "../../public/image/general image/noimagefood.png",
@@ -1071,7 +1071,7 @@ export const menu = [
     Info: [
       {
         codeNumber: 116,
-        isPopular: "false",
+        isPopular: false,
         Title: "Classic-lemonBeer",
         Price: 85,
         ImageURL:
@@ -1079,7 +1079,7 @@ export const menu = [
       },
       {
         codeNumber: 117,
-        isPopular: "false",
+        isPopular: false,
         Title: "SodaWithlemon",
         Price: 55,
         ImageURL:
@@ -1087,21 +1087,21 @@ export const menu = [
       },
       {
         codeNumber: 118,
-        isPopular: "false",
+        isPopular: false,
         Title: "Coca-Sprite-Zero-Fanta",
         Price: 25,
         ImageURL: "../../public/image/general image/noimagefood.png",
       },
       {
         codeNumber: 119,
-        isPopular: "false",
+        isPopular: false,
         Title: "mineralWater",
         Price: 15,
         ImageURL: "../../public/image/general image/noimagefood.png",
       },
       {
         codeNumber: 120,
-        isPopular: "false",
+        isPopular: false,
         Title: "Dough",
         Price: 42,
         ImageURL: "../../public/image/general image/noimagefood.png",
@@ -1117,35 +1117,35 @@ export const menu = [
     Info: [
       {
         codeNumber: 121,
-        isPopular: "false",
+        isPopular: false,
         Title: "MushroomSauce",
         Price: 20,
         ImageURL: "../../public/image/general image/noimagefood.png",
       },
       {
         codeNumber: 122,
-        isPopular: "false",
+        isPopular: false,
         Title: "BuffaloSauce",
         Price: 20,
         ImageURL: "../../public/image/general image/noimagefood.png",
       },
       {
         codeNumber: 123,
-        isPopular: "false",
+        isPopular: false,
         Title: "CaesarDressing",
         Price: 20,
         ImageURL: "../../public/image/general image/noimagefood.png",
       },
       {
         codeNumber: 124,
-        isPopular: "false",
+        isPopular: false,
         Title: "sourSauce",
         Price: 20,
         ImageURL: "../../public/image/general image/noimagefood.png",
       },
       {
         codeNumber: 125,
-        isPopular: "false",
+        isPopular: false,
         Title: "ChiliThaiSauce",
         Price: 20,
         ImageURL: "../../public/image/general image/noimagefood.png",
@@ -1161,21 +1161,21 @@ export const menu = [
     Info: [
       {
         codeNumber: 126,
-        isPopular: "false",
+        isPopular: false,
         Title: "EpicureanPizza",
         Price: 335,
         ImageURL: "../../public/image/general image/noimagefood.png",
       },
       {
         codeNumber: 127,
-        isPopular: "false",
+        isPopular: false,
         Title: "ChickenPizza",
         Price: 275,
         ImageURL: "../../public/image/general image/noimagefood.png",
       },
       {
         codeNumber: 128,
-        isPopular: "false",
+        isPopular: false,
         Title: "VegetablePizza",
         Price: 215,
         ImageURL:
@@ -1183,7 +1183,7 @@ export const menu = [
       },
       {
         codeNumber: 129,
-        isPopular: "false",
+        isPopular: false,
         Title: "MeatPizza",
         Price: 315,
         ImageURL:
@@ -1191,14 +1191,14 @@ export const menu = [
       },
       {
         codeNumber: 130,
-        isPopular: "false",
+        isPopular: false,
         Title: "BaconPizza",
         Price: 325,
         ImageURL: "../../public/image/general image/noimagefood.png",
       },
       {
         codeNumber: 131,
-        isPopular: "false",
+        isPopular: false,
         Title: "PepperoniPizza",
         Price: 285,
         ImageURL:
@@ -1206,14 +1206,14 @@ export const menu = [
       },
       {
         codeNumber: 132,
-        isPopular: "false",
+        isPopular: false,
         Title: "ChickenAndMeatPizza",
         Price: 310,
         ImageURL: "../../public/image/general image/noimagefood.png",
       },
       {
         codeNumber: 133,
-        isPopular: "false",
+        isPopular: false,
         Title: "garlicBread",
         Price: 185,
         ImageURL:
@@ -1230,7 +1230,7 @@ export const menu = [
     Info: [
       {
         codeNumber: 134,
-        isPopular: "false",
+        isPopular: false,
         Title: "bonelessChicken",
         Price: 245,
         ImageURL:
@@ -1238,7 +1238,7 @@ export const menu = [
       },
       {
         codeNumber: 135,
-        isPopular: "false",
+        isPopular: false,
         Title: "Shishlik",
         Price: 465,
         ImageURL:
@@ -1246,7 +1246,7 @@ export const menu = [
       },
       {
         codeNumber: 136,
-        isPopular: "false",
+        isPopular: false,
         Title: "CatRice",
         Price: 95,
         ImageURL:
@@ -1254,7 +1254,7 @@ export const menu = [
       },
       {
         codeNumber: 137,
-        isPopular: "false",
+        isPopular: false,
         Title: "SpeciallyPoundedSaffron",
         Price: 255,
         ImageURL:
@@ -1262,14 +1262,14 @@ export const menu = [
       },
       {
         codeNumber: 138,
-        isPopular: "false",
+        isPopular: false,
         Title: "Chinja",
         Price: 365,
         ImageURL: "../../public/image/general image/noimagefood.png",
       },
       {
         codeNumber: 139,
-        isPopular: "false",
+        isPopular: false,
         Title: "SourFillet",
         Price: 435,
         ImageURL:
@@ -1277,7 +1277,7 @@ export const menu = [
       },
       {
         codeNumber: 140,
-        isPopular: "false",
+        isPopular: false,
         Title: "GrilledLeaves",
         Price: 415,
         ImageURL: "../../public/image/general image/noimagefood.png",
