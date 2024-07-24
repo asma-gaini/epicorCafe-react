@@ -7,7 +7,6 @@ import Category from "./Category";
 import Cart from "../cart/Cart";
 
 function Menu() {
-  const [tolatPrice, setTotalPrice] = useState(0);
   const menuWithPopular = useMemo(() => {
     const papularCategory = {
       CategoryID: 0,
@@ -22,7 +21,7 @@ function Menu() {
         if (item.isPopular) {
           papularCategory.Info.push({
             ...item,
-            categryId: category.CategoryID,
+            categoryId: category.CategoryID,
           });
         }
       });
@@ -30,34 +29,12 @@ function Menu() {
     return [papularCategory, ...menu];
   }, []);
   console.log(menuWithPopular);
-  // {
-  //   CategoryID: 4,
-  //   headerNameFA: "IceCoffee",
-  //   headerNameEN: "IceCoffeeEn",
-  //   headerImg:
-  //     "../../public/image/main page/food & this category menu/ice cofee/ice cofee.png",
-  //   Info: [
-  //     {
-  //       codeNumber: 23,
-  //       isPopular: "false",
-  //       Title: "IcedLatte",
-  //       Price: 69,
-  //       ImageURL:
-  //         "../../public/image/main page/food & this category menu/ice cofee/1.jpg",
-  //     },
-  //   ],
-  // },
   return (
     <div>
       {menuWithPopular.map((categoriItem) => (
-        <Category
-          categoriItem={categoriItem}
-          key={categoriItem.CategoryID}
-          tolatPrice={tolatPrice}
-          setTotalPrice={setTotalPrice}
-        />
+        <Category categoriItem={categoriItem} key={categoriItem.CategoryID} />
       ))}
-      <Cart tolatPrice={tolatPrice} setTotalPrice={setTotalPrice} />
+      <Cart />
     </div>
   );
 }

@@ -11,7 +11,6 @@ function MenuItem({ menuItem, tolatPrice, setTotalPrice, categoryId }) {
   const cartValue = useSelector(
     (store) => store.shoppingCart.cartItems?.[menuItem.codeNumber] || 0
   );
-  console.log(cartValue);
 
   const dispatch = useDispatch();
   // function AddPurchaseNumBtn() {
@@ -20,13 +19,14 @@ function MenuItem({ menuItem, tolatPrice, setTotalPrice, categoryId }) {
   // }
 
   function increaseNumOfProduct() {
-    // seNumOfProduct((prev) => prev + 1);
-    // setTotalPrice((prev) => prev + menuItem.Price);
     dispatch(
       setCartItems({
-        categoryId: categoryId,
+        categoryId: categoryId === 0 ? menuItem.categoryId : categoryId,
         codeNumber: menuItem.codeNumber,
         value: 1,
+        price: menuItem.Price,
+        nameFood: menuItem.Title,
+        imageFood: menuItem.ImageURL,
       })
     );
   }
@@ -37,6 +37,9 @@ function MenuItem({ menuItem, tolatPrice, setTotalPrice, categoryId }) {
         categoryId: categoryId,
         codeNumber: menuItem.codeNumber,
         value: -1,
+        price: menuItem.Price,
+        nameFood: menuItem.Title,
+        imageFood: menuItem.ImageURL,
       })
     );
   }

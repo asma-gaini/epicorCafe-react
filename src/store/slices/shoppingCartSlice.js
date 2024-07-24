@@ -9,7 +9,8 @@ export const shoppingCartSlice = createSlice({
   initialState,
   reducers: {
     setCartItems: (state, actions) => {
-      const { categoryId, codeNumber, value } = actions.payload;
+      const { categoryId, codeNumber, value, price, nameFood, imageFood } =
+        actions.payload;
       const cartCopy = { ...state.cartItems };
       const currentValue = cartCopy[codeNumber]?.[0] || 0;
       const nextValue = currentValue + value;
@@ -18,7 +19,10 @@ export const shoppingCartSlice = createSlice({
       } else {
         cartCopy[codeNumber] = [
           nextValue,
-          categoryId === 0 ? cartCopy[codeNumber]?.[1] : categoryId,
+          categoryId,
+          price,
+          nameFood,
+          imageFood,
         ];
       }
 

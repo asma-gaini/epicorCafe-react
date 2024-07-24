@@ -1,114 +1,262 @@
 .glyphicon {
-    position: relative;
-    margin: 0 -5px;
-    top: 1px;
-    display: inline-block;
-    font-family: "Glyphicons Halflings";
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  margin: 0 -5px;
+  top: 1px;
+  display: inline-block;
+  font-family: "Glyphicons Halflings";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-.modal{
-    height: 600px;
-    overflow-y: scroll !important;
+.modal {
+  height: 600px;
+  overflow-y: scroll !important;
 }
 
-.modal-content{
-    background-color: var(--body);
-    direction: rtl;
-    border-radius: 30px;
-
+.modal-content {
+  background-color: var(--body);
+  direction: rtl;
+  border-radius: 30px;
 }
 .modal-title {
-    text-align: center
+  text-align: center;
 }
-.content_pay{
-    height: 35px;
-    width: 95%;
+.content_pay {
+  height: 35px;
+  width: 95%;
 }
-.modal-body img{
-    width: auto;
-    border-radius: 60%;
-
+.modal-body img {
+  width: auto;
+  border-radius: 60%;
 }
-.modal-body h4{
-    font-size: 10px;
-    padding: 0 5px;
+.modal-body h4 {
+  font-size: 10px;
+  padding: 0 5px;
 }
-.modal-body p{
-    font-size: 10px;
-    padding: 5px;
+.modal-body p {
+  font-size: 10px;
+  padding: 5px;
 }
-.menu_contant_info-modal{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-right: 10px;
-    padding-left: 10px;
+.menu_contant_info-modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 10px;
+  padding-left: 10px;
 }
-.button-counter{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-right: 20px;
-    position: absolute;
+.button-counter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 20px;
+  position: absolute;
 }
-.button-counter button{
-    width: 17px;
-    height: 17px;
-    background-color: inherit;
-    border: none;
+.button-counter button {
+  width: 17px;
+  height: 17px;
+  background-color: inherit;
+  border: none;
 }
-.spanPurchase{
-    font-size: 12px;
-    padding: 0px 10px;
+.spanPurchase {
+  font-size: 12px;
+  padding: 0px 10px;
 }
 .btn-default {
-    color: #ffffff;
-    background-color:inherit;
-    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
-    border: none;
-    border-color: #ccc;
+  color: #ffffff;
+  background-color: inherit;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+  border: none;
+  border-color: #ccc;
 }
- .btn-default:hover, .btn-default:focus, .btn-default:active:focus, .btn-default:active {
-    color: #eec016;
-    background-color: inherit;
+.btn-default:hover,
+.btn-default:focus,
+.btn-default:active:focus,
+.btn-default:active {
+  color: #eec016;
+  background-color: inherit;
 
-    border: none;
+  border: none;
 }
-.btn-info:active, .btn-info:hover, .btn-info:focus {
-    color: #fff;
-   
-    background-color: var(--menubar-click-primary);
-    background-image: var(--menubar-click);
+.btn-info:active,
+.btn-info:hover,
+.btn-info:focus {
+  color: #fff;
+
+  background-color: var(--menubar-click-primary);
+  background-image: var(--menubar-click);
 }
-.btn-info:focus{
-    outline: none;
+.btn-info:focus {
+  outline: none;
 }
-.payment-modal{
-    padding: 10px 30px 30px 30px;
-    font-size: 14px;
-    font-weight: bold;
+.payment-modal {
+  padding: 10px 30px 30px 30px;
+  font-size: 14px;
+  font-weight: bold;
 }
-.pay-off{
-    box-shadow: rgb(134, 53, 0) 0px -20px 30px -30px inset;
-    background-color: rgb(192, 160, 40);
-    width: 100%;
-    border: none;
-    min-height: 60px;
-    position: fixed;
-    z-index: 999;
-    bottom: 0;
-    direction: rtl;
-    font-family: 'iransans';
-    font-weight: bold;
-    cursor: pointer;
-    font-size: 14px;
+.pay-off {
+  box-shadow: rgb(134, 53, 0) 0px -20px 30px -30px inset;
+  background-color: rgb(192, 160, 40);
+  width: 100%;
+  border: none;
+  min-height: 60px;
+  position: fixed;
+  z-index: 999;
+  bottom: 0;
+  direction: rtl;
+  font-family: "iransans";
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 14px;
 }
 
-.show{
-    display: block;
+.showPopup {
+  display: block;
+}
+.hidePopup {
+  display: none;
+}
+.fade.in {
+  opacity: 1;
+}
+
+.modal {
+  height: 600px;
+  overflow-y: scroll !important;
+}
+
+.modal {
+  position: fixed;
+  top: 20%;
+  right: 0;
+  /* bottom: 0; */
+  left: 0;
+  z-index: 1050;
+  /* display: none; */
+  overflow: hidden;
+  -webkit-overflow-scrolling: touch;
+  outline: 0;
+}
+
+.fade {
+  transition: opacity 0.15s linear;
+}
+@media (min-width: 768px) {
+  .modal-dialog {
+    width: 600px;
+    margin: 30px auto;
+  }
+}
+
+.modal-dialog {
+  position: relative;
+  /* width: auto; */
+  /* margin: 10px; */
+}
+.menu_contant-Backgroundlight {
+  background-color: var(--menu-item);
+}
+.modal-content {
+  background-color: var(--body);
+  direction: rtl;
+  border-radius: 30px;
+}
+
+@media (min-width: 768px) {
+  .modal-content {
+    -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  }
+}
+.modal-content {
+  position: relative;
+  /* background-color: #fff; */
+  background-clip: padding-box;
+  border: 1px solid #999;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+  outline: 0;
+}
+
+.modal-header {
+  padding: 15px;
+  border-bottom: 1px solid #e5e5e5;
+}
+.modal-body {
+  position: relative;
+  padding: 15px;
+}
+.payment-modal {
+  padding: 10px 30px 30px 30px;
+  font-size: 14px;
+  font-weight: bold;
+}
+.modal-footer {
+  padding: 15px;
+  text-align: right;
+  border-top: 1px solid #e5e5e5;
+}
+.btn-default {
+  color: #ffffff;
+  background-color: inherit;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+  border: none;
+  border-color: #ccc;
+}
+
+.btn {
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  border-radius: 4px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.modal-header .close {
+  margin-top: -2px;
+}
+.close:focus,
+.close:hover {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+  filter: alpha(opacity = 50);
+  opacity: 0.5;
+}
+button.close {
+  padding: 0;
+  cursor: pointer;
+  background: 0 0;
+  border: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.close {
+  float: right;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 1;
+  color: #000;
+  text-shadow: 0 1px 0 #fff;
+  filter: alpha(opacity = 20);
+  opacity: 0.2;
 }
