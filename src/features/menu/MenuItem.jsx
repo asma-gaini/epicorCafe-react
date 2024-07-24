@@ -49,21 +49,16 @@ function MenuItem({ menuItem, tolatPrice, setTotalPrice, categoryId }) {
 
   return (
     <div
-      className={`menu_contant menu_contant-Backgroundlight ${
-        i18n.language === "fa" ? "directionCss-rtl" : "directionCss-ltr"
-      } ${
-        themeValue === "light"
-          ? "menu_contant-Backgroundlight"
-          : "menu_contant-BackgroundDark"
-      }`}
-
-      // className={`menu_contant menu_contant-Backgroundlight ${
-      //   i18n.language === "fa" ? "directionCss-rtl" : "directionCss-ltr"
-      // } ${
-      //   theme === "light"
-      //     ? "menu_contant-Backgroundlight"
-      //     : "menu_contant-BackgroundDark"
-      // }`}
+      className={
+        `menu_contant ${
+          i18n.language === "fa" ? "directionCss-rtl" : "directionCss-ltr"
+        }` +
+        ` ${
+          themeValue === "light"
+            ? "menu_contant-Backgroundlight"
+            : "menu_contant-BackgroundDark"
+        }`
+      }
     >
       <div className="menu_contant_image">
         <img src={menuItem.ImageURL} alt={t(menuItem.Title)} />
@@ -74,9 +69,16 @@ function MenuItem({ menuItem, tolatPrice, setTotalPrice, categoryId }) {
         {menuItem.isPopular && (
           <img
             src="../../../public/image/general image/heart-full.svg"
-            className={`posPopular ${
-              i18n.language === "fa" ? "Direction-rtl" : "Direction-ltr"
-            }`}
+            className={
+              `posPopular ${
+                i18n.language === "fa" ? "Direction-rtl" : "Direction-ltr"
+              }` +
+              ` ${
+                themeValue === "light"
+                  ? "popular-Backgroundlight"
+                  : "popular-BackgroundDark"
+              }`
+            }
           ></img>
         )}
         <div className="menut_contant_info_price">
@@ -87,9 +89,16 @@ function MenuItem({ menuItem, tolatPrice, setTotalPrice, categoryId }) {
           <div className="btn-class">
             {!cartValue ? (
               <button
-                className={`menu_contant_info_price_btn ${
-                  i18n.language === "fa" ? "Direction-rtl" : "Direction-ltr"
-                }`}
+                className={
+                  `menu_contant_info_price_btn ${
+                    i18n.language === "fa" ? "Direction-rtl" : "Direction-ltr"
+                  }` +
+                  ` ${
+                    themeValue === "light"
+                      ? "menu_contant_info_price_btn-Backgroundlight"
+                      : "menu_contant_info_price_btn-BackgroundDark"
+                  }`
+                }
                 onClick={increaseNumOfProduct}
               >
                 {t(generaltext.AddToNotebook)}

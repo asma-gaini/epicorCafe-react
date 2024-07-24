@@ -2,9 +2,12 @@ import { useEffect, useState } from "react";
 import React from "react";
 import { useTranslation } from "react-i18next";
 import "./multiLanguage.css";
+import { useSelector } from "react-redux";
 
 function MultiLanguage() {
   const { t, i18n } = useTranslation();
+
+  const themeValue = useSelector((store) => store.themePage.theme);
 
   const onchangeLanguage = (e) => {
     i18n.changeLanguage(e.target.value);
@@ -12,12 +15,11 @@ function MultiLanguage() {
   // console.log(t("breakfast"));
   return (
     <select
-      className="form-select "
-      // className={`form-select ${
-      //   theme === "light"
-      //     ? "headerBtn-Backgroundlight"
-      //     : "headerBtn-BackgroundDark"
-      // }`}
+      className={`form-select ${
+        themeValue === "light"
+          ? "headerBtn-Backgroundlight"
+          : "headerBtn-BackgroundDark"
+      }`}
       id="language"
       onChange={onchangeLanguage}
     >

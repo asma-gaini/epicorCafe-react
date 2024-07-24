@@ -15,6 +15,7 @@ function CartPopup({
   const dispatch = useDispatch();
 
   const cartValues = useSelector((store) => store.shoppingCart.cartItems);
+  const themeValue = useSelector((store) => store.themePage.theme);
 
   function increaseNumOfProduct(product) {
     console.log(product[1][2]);
@@ -56,7 +57,11 @@ function CartPopup({
     >
       <div className="modal-dialog">
         <div
-          className="modal-content menu_contant-Backgroundlight showPopup"
+          className={`modal-content showPopup ${
+            themeValue === "light"
+              ? "bodyBackgroundlight"
+              : "bodyBackgroundDark"
+          }`}
           //   style="display: block;"
         >
           <div className="modal-header">
