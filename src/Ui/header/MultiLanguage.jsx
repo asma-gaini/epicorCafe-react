@@ -9,9 +9,18 @@ function MultiLanguage() {
   const onchangeLanguage = (e) => {
     i18n.changeLanguage(e.target.value);
   };
-  console.log(t("breakfast"));
+  // console.log(t("breakfast"));
   return (
-    <select className="form-select" id="language" onChange={onchangeLanguage}>
+    <select
+      className="form-select "
+      // className={`form-select ${
+      //   theme === "light"
+      //     ? "headerBtn-Backgroundlight"
+      //     : "headerBtn-BackgroundDark"
+      // }`}
+      id="language"
+      onChange={onchangeLanguage}
+    >
       <option value="fa" className="optionSelectBox" selected>
         فارسی
       </option>

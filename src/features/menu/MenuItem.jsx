@@ -56,6 +56,14 @@ function MenuItem({ menuItem, tolatPrice, setTotalPrice, categoryId }) {
           ? "menu_contant-Backgroundlight"
           : "menu_contant-BackgroundDark"
       }`}
+
+      // className={`menu_contant menu_contant-Backgroundlight ${
+      //   i18n.language === "fa" ? "directionCss-rtl" : "directionCss-ltr"
+      // } ${
+      //   theme === "light"
+      //     ? "menu_contant-Backgroundlight"
+      //     : "menu_contant-BackgroundDark"
+      // }`}
     >
       <div className="menu_contant_image">
         <img src={menuItem.ImageURL} alt={t(menuItem.Title)} />
