@@ -9,6 +9,8 @@ function Cart() {
   const { t, i18n } = useTranslation();
   const [showCartPopup, setShowCartPopup] = useState(false);
 
+  const themeValue = useSelector((store) => store.themePage.theme);
+  console.log("theme" + themeValue);
   const cartValues = useSelector((store) => store.shoppingCart.cartItems);
   const totalprice = useMemo(() => {
     console.log(Object.values(cartValues));
@@ -29,7 +31,11 @@ function Cart() {
     <>
       <button
         type="button"
-        className="btn btn-info btn-lg pay-off "
+        className={`btn btn-info btn-lg pay-off ${
+          themeValue === "light"
+            ? "pay-off-Backgroundlight"
+            : "pay-off-BackgroundDark"
+        }`}
         // data-toggle="modal"
         // data-target="#myModal"
         onClick={openPopupCart}

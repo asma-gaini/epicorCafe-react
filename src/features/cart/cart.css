@@ -260,3 +260,9 @@ button.close {
   filter: alpha(opacity = 20);
   opacity: 0.2;
 }
+.bodyBackgroundlight {
+  background-color: rgb(192, 160, 40, 0.9);
+}
+.bodyBackgroundDark {
+  background-color: rgb(16 12 12 / 90%);
+}

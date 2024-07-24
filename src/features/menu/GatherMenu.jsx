@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
+import { useSelector } from "react-redux";
 import { generaltext } from "../../utils/constants";
 import { menu } from "../../utils/constants";
 
@@ -8,6 +9,15 @@ import "./gatherMenu.css";
 function GatherMenu({ linked }) {
   const { t, i18n } = useTranslation();
   const [showDropdownMenu, setShowDropdownMenu] = useState(false);
+  const themeValue = useSelector((store) => store.themePage.theme);
+
+  const handleMouseEnter = () => {
+    setIsHover(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsHover(false);
+  };
 
   function openNav() {
     setShowDropdownMenu(true);
@@ -23,12 +33,14 @@ function GatherMenu({ linked }) {
         className={`overlay ${
           showDropdownMenu === false ? "hideMenu" : "showMenu"
         }`}
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
       >
         <a href="javascript:void(0)" className="closebtn" onClick={closeNav}>
           ×
         </a>
 
-        <div className="overlay-content">
+        <div className="overlay-content ">
           <a onClick={closeNav} href="#">
             <button
               categoryid="0"
