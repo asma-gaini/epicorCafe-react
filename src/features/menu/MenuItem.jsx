@@ -12,6 +12,9 @@ function MenuItem({ menuItem, tolatPrice, setTotalPrice, categoryId }) {
     (store) => store.shoppingCart.cartItems?.[menuItem.codeNumber] || 0
   );
 
+  const themeValue = useSelector((store) => store.themePage.theme);
+  console.log("theme" + themeValue);
+
   const dispatch = useDispatch();
   // function AddPurchaseNumBtn() {
   //   seNumOfProduct((prev) => prev + 1);
@@ -48,6 +51,10 @@ function MenuItem({ menuItem, tolatPrice, setTotalPrice, categoryId }) {
     <div
       className={`menu_contant menu_contant-Backgroundlight ${
         i18n.language === "fa" ? "directionCss-rtl" : "directionCss-ltr"
+      } ${
+        themeValue === "light"
+          ? "menu_contant-Backgroundlight"
+          : "menu_contant-BackgroundDark"
       }`}
     >
       <div className="menu_contant_image">
