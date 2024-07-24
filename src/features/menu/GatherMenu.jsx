@@ -40,7 +40,14 @@ function GatherMenu({ linked }) {
           ×
         </a>
 
-        <div className="overlay-content ">
+        <div
+          className="overlay-content"
+          // className={`overlay-content:hover${
+          //   themeValue === "light"
+          //     ? "hover-overlay-content-Backgroundlight"
+          //     : "hover-overlay-content-BackgroundDark"
+          // }`}
+        >
           <a onClick={closeNav} href="#">
             <button
               categoryid="0"
