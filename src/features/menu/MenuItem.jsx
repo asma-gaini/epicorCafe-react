@@ -13,10 +13,6 @@ function MenuItem({ menuItem, tolatPrice, setTotalPrice, categoryId }) {
   );
 
   const dispatch = useDispatch();
-  // function AddPurchaseNumBtn() {
-  //   seNumOfProduct((prev) => prev + 1);
-  //   setTotalPrice((prev) => prev + menuItem.Price);
-  // }
 
   function increaseNumOfProduct() {
     dispatch(
