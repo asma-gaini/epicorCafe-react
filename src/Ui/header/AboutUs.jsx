@@ -1,11 +1,14 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { generaltext } from "../../utils/constants";
+import { useSelector } from "react-redux";
 
 import "./aboutUs.css";
 import CustomMap from "./CustomMap";
 
 function AboutUs() {
+  const themeValue = useSelector((store) => store.themePage.theme);
+
   const [showAbout, setShowAbout] = useState(false);
   const { t, i18n } = useTranslation();
 
@@ -19,7 +22,14 @@ function AboutUs() {
   return (
     <div className="wrapAboutUs">
       <div className="introAboutUs">
-        <button className="aboutUsLink" onClick={openAbout}>
+        <button
+          className={`${
+            themeValue === "light"
+              ? "headerBtn-Backgroundlight"
+              : "headerBtn-BackgroundDark"
+          }`}
+          onClick={openAbout}
+        >
           {t(generaltext.aboutUs)}
         </button>
       </div>
@@ -52,4 +62,3 @@ function AboutUs() {
 }
 
 export default AboutUs;
-

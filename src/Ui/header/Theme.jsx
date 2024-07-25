@@ -9,6 +9,10 @@ function Theme() {
 
   function changeTheme() {
     dispatch(themeValue == "light" ? setTheme("dark") : setTheme("light"));
+
+    themeValue == "light"
+      ? (document.body.style.backgroundColor = "rgb(16 12 12 / 90%)")
+      : (document.body.style.backgroundColor = "rgb(192, 160, 40, 0.9)");
     // console.log(themeValue);
   }
   return (
