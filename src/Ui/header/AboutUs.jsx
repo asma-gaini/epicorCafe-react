@@ -40,17 +40,33 @@ function AboutUs() {
         }`}
       >
         <div className="popupContainAboutUs">
-          <div className="titleAboutUs">
+          <div
+            className={`boxAboutUs ${
+              themeValue === "light"
+                ? "box-Backgroundlight"
+                : "box-BackgroundDark"
+            }`}
+          >
             <p>{t(generaltext.aboutUs)}</p>
           </div>
 
-          <div className="boxAboutUs">
+          <div
+            className={`boxAboutUs ${
+              themeValue === "light"
+                ? "title-Backgroundlight"
+                : "title-BackgroundDark"
+            }`}
+          >
             <p>{t(generaltext.ContactUs)}</p>
             <p>{t(generaltext.tel)}</p>
             <p>{t(generaltext.adresse)}</p>
             <CustomMap />
             <center>
-              <button className="innerAboutBtn" onClick={closeAbout}>
+              <button className={`innerAboutBtn ${
+              themeValue === "light"
+                ? "innerAboutBtn-Backgroundlight"
+                : "innerAboutBtn-BackgroundDark"
+            }`} onClick={closeAbout}>
                 {t(generaltext.closeAboutUsBtn)}
               </button>
             </center>
