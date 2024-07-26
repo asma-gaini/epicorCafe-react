@@ -147,6 +147,12 @@
 .hide {
   display: none;
 }
+.showMenuItem {
+  display: flex;
+}
+.hideMenuItem {
+  display: none;
+}
 .directionCss-ltr {
   direction: ltr;
 }

@@ -9,7 +9,12 @@ function Category({ categoriItem, tolatPrice, setTotalPrice }) {
   const { t, i18n } = useTranslation();
 
   return (
-    <div categoryid={categoriItem.CategoryID} className="slider">
+    <div
+      categoryid={categoriItem.CategoryID}
+      className={`slider ${
+        categoriItem.CategoryID === 1 ? "showMenuItem" : "hideMenuItem"
+      }`}
+    >
       <div className="hrLine">
         <p>{t(categoriItem.headerNameFA)}</p>
         <span className="hrTheme"></span>
