@@ -7,6 +7,8 @@ import "./index.css";
 import "./reset.css";
 import { store } from "./store/store";
 import { Provider } from "react-redux";
+import { register } from "swiper/element/bundle";
+register();
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>

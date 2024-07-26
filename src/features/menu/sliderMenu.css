@@ -1,26 +1,26 @@
 :root {
-    --body: rgb(192, 160, 40, 0.9);
-    --white: rgb(255, 255, 255);
-    --menu-item: rgba(178, 157, 84, 0.8);
-    --btn-order: #ab6130;
-    --btn-counter: rgb(207, 137, 80);
-    --menubar: linear-gradient(
-        to left top,
-        rgba(134, 53, 0, 0.09),
-        rgba(134, 53, 0, 0)
-      )
-      rgba(134, 53, 0, 0.02);
-    --menubar-click-primary: rgb(196, 145, 91);
-    --menubar-click: radial-gradient(
-      circle,
-      rgb(221, 178, 131),
-      rgb(210, 119, 21),
-      rgb(106, 56, 2)
-    );
-    --hrLineFont: rgb(237, 237, 237);
-    --hrLineBack: rgb(134 53 0 / 15%);
-    --font-button: #000000;
-  }
+  --body: rgb(192, 160, 40, 0.9);
+  --white: rgb(255, 255, 255);
+  --menu-item: rgba(178, 157, 84, 0.8);
+  --btn-order: #ab6130;
+  --btn-counter: rgb(207, 137, 80);
+  --menubar: linear-gradient(
+      to left top,
+      rgba(134, 53, 0, 0.09),
+      rgba(134, 53, 0, 0)
+    )
+    rgba(134, 53, 0, 0.02);
+  --menubar-click-primary: rgb(196, 145, 91);
+  --menubar-click: radial-gradient(
+    circle,
+    rgb(221, 178, 131),
+    rgb(210, 119, 21),
+    rgb(106, 56, 2)
+  );
+  --hrLineFont: rgb(237, 237, 237);
+  --hrLineBack: rgb(134 53 0 / 15%);
+  --font-button: #000000;
+}
 
 /* ******************************* menu bar ******************************* */
 
@@ -89,3 +89,32 @@
 a:hover {
   cursor: pointer;
 }
+
+swiper-container {
+  width: 100vw;
+  height: 200px;
+  /* line-height: 200px; */
+  /* text-align: center; */
+}
+
+/* swiper-slide {
+  background-color: rgb(4 47 46);
+  color: #fff;
+  font-size: 25px;
+}
+
+swiper-slide:nth-child(2) {
+  background-color: rgb(15 118 110);
+}
+
+swiper-slide:nth-child(3) {
+  background-color: rgb(45 212 191);
+}
+
+swiper-slide:nth-child(4) {
+  background-color: rgb(153 246 228);
+}
+
+swiper-slide:nth-child(5) {
+  background-color: rgb(34 197 94);
+} */

@@ -1,9 +1,9 @@
 import { menu, generaltext } from "../../utils/constants";
+
 import "./menu.css";
 import "./sliderMenu.css";
 import { useTranslation } from "react-i18next";
 import GatherMenu from "./GatherMenu";
-
 function SliderMenu() {
   const { t, i18n } = useTranslation();
 
@@ -38,51 +38,62 @@ function SliderMenu() {
       <main className="grid-item main">
         <div className="items menu-bar">
           <div className="item item1">
-            <button
-              categoryid="0"
-              className="menu-bar_section"
-              onClick={() => linked(0)}
+            <swiper-container
+              slides-per-view="3"
+              space-between="20"
+              scrollbar-clickable="true"
+              mousewheel-invert="true"
             >
-              <img
-                src="../../../public/image/main page/food & this category menu/popular/icons8-food-menu-53.png"
-                alt={t(generaltext.popularEn)}
-                className="menu-bar_section_image"
-              />
-              <div className="menu-bar_section_info">
-                <p className="menu-bar_section_name-en">
-                  {t(generaltext.popularEn)}
-                </p>
-                <p className="menu-bar_section_name-fa">
-                  {t(generaltext.popular)}
-                </p>
-              </div>
-            </button>
+              <swiper-slide>
+                <button
+                  categoryid="0"
+                  className="menu-bar_section"
+                  onClick={() => linked(0)}
+                >
+                  <img
+                    src="../../../public/image/main page/food & this category menu/popular/icons8-food-menu-53.png"
+                    alt={t(generaltext.popularEn)}
+                    className="menu-bar_section_image"
+                  />
+                  <div className="menu-bar_section_info">
+                    <p className="menu-bar_section_name-en">
+                      {t(generaltext.popularEn)}
+                    </p>
+                    <p className="menu-bar_section_name-fa">
+                      {t(generaltext.popular)}
+                    </p>
+                  </div>
+                </button>
+              </swiper-slide>
 
-            {menu.map((categoriItem) => (
-              <button
-                categoryid={categoriItem.CategoryID}
-                className={`menu-bar_section ${
-                  categoriItem.CategoryID === 1
-                    ? "menu-bar_section_click-Backgroundlight"
-                    : ""
-                }`}
-                onClick={() => linked(categoriItem.CategoryID)}
-              >
-                <img
-                  src={categoriItem.headerImg}
-                  alt={categoriItem.headerNameEN}
-                  className="menu-bar_section_image"
-                />
-                <div className="menu-bar_section_info">
-                  <p className="menu-bar_section_name-en">
-                    {t(categoriItem.headerNameEN)}
-                  </p>
-                  <p className="menu-bar_section_name-fa">
-                    {t(categoriItem.headerNameFA)}
-                  </p>
-                </div>
-              </button>
-            ))}
+              {menu.map((categoriItem) => (
+                <swiper-slide>
+                  <button
+                    categoryid={categoriItem.CategoryID}
+                    className={`menu-bar_section ${
+                      categoriItem.CategoryID === 1
+                        ? "menu-bar_section_click-Backgroundlight"
+                        : ""
+                    }`}
+                    onClick={() => linked(categoriItem.CategoryID)}
+                  >
+                    <img
+                      src={categoriItem.headerImg}
+                      alt={categoriItem.headerNameEN}
+                      className="menu-bar_section_image"
+                    />
+                    <div className="menu-bar_section_info">
+                      <p className="menu-bar_section_name-en">
+                        {t(categoriItem.headerNameEN)}
+                      </p>
+                      <p className="menu-bar_section_name-fa">
+                        {t(categoriItem.headerNameFA)}
+                      </p>
+                    </div>
+                  </button>
+                </swiper-slide>
+              ))}
+            </swiper-container>
           </div>
         </div>
       </main>
