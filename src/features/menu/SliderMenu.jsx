@@ -61,7 +61,11 @@ function SliderMenu() {
             {menu.map((categoriItem) => (
               <button
                 categoryid={categoriItem.CategoryID}
-                className="menu-bar_section"
+                className={`menu-bar_section ${
+                  categoriItem.CategoryID === 1
+                    ? "menu-bar_section_click-Backgroundlight"
+                    : ""
+                }`}
                 onClick={() => linked(categoriItem.CategoryID)}
               >
                 <img
