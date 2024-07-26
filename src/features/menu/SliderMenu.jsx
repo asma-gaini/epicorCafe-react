@@ -38,13 +38,13 @@ function SliderMenu() {
       <main className="grid-item main">
         <div className="items menu-bar">
           <div className="item item1">
-            <swiper-container
-              slides-per-view="3"
+            {/* <swiper-container
+              slides-per-view="10"
               space-between="20"
               scrollbar-clickable="true"
               mousewheel-invert="true"
             >
-              <swiper-slide>
+              <swiper-slide> */}
                 <button
                   categoryid="0"
                   className="menu-bar_section"
@@ -64,10 +64,10 @@ function SliderMenu() {
                     </p>
                   </div>
                 </button>
-              </swiper-slide>
+              {/* </swiper-slide> */}
 
               {menu.map((categoriItem) => (
-                <swiper-slide>
+                // <swiper-slide>
                   <button
                     categoryid={categoriItem.CategoryID}
                     className={`menu-bar_section ${
@@ -91,9 +91,9 @@ function SliderMenu() {
                       </p>
                     </div>
                   </button>
-                </swiper-slide>
+                // </swiper-slide>
               ))}
-            </swiper-container>
+            {/* </swiper-container> */}
           </div>
         </div>
       </main>

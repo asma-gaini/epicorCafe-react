@@ -25,7 +25,7 @@
 /* ******************************* menu bar ******************************* */
 
 .menu-bar {
-  margin: 40px 70px 0px 70px;
+  /* margin: 40px 70px 0px 70px; */
   direction: rtl;
   overflow: auto;
   white-space: nowrap;
@@ -69,8 +69,8 @@
 }
 .items {
   position: relative;
-  overflow-x: scroll;
-  overflow-y: hidden;
+  /* overflow-x: scroll; */
+  /* overflow-y: hidden; */
   white-space: nowrap;
   transition: all 0.2s;
   transform: scale(0.98);
@@ -91,7 +91,7 @@ a:hover {
 }
 
 swiper-container {
-  width: 100vw;
+  /* width: 800px; */
   height: 200px;
   /* line-height: 200px; */
   /* text-align: center; */
@@ -126,4 +126,20 @@ swiper-slide:nth-child(5) {
   position: relative;
   transition-property: transform;
   display: block;
+}
+swiper-container {
+  width: 100vw;
+  height: 150px;
+  /* line-height: 200px; */
+  /* text-align: center; */
+}
+.swiper-horizontal>.swiper-scrollbar, .swiper-scrollbar.swiper-scrollbar-horizontal {
+  position: absolute;
+  left: var(--swiper-scrollbar-sides-offset, 1%);
+  bottom: var(--swiper-scrollbar-bottom, 4px);
+  top: var(--swiper-scrollbar-top, auto);
+  z-index: 50;
+  height: var(--swiper-scrollbar-size, 4px);
+  width: calc(100% - 2* var(--swiper-scrollbar-sides-offset, 1%));
+  /* display: none; */
 }
