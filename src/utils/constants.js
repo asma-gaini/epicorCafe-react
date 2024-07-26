@@ -1286,6 +1286,50 @@ export const menu = [
   },
 ];
 
+export const receipt_key = {
+  InformationBrand: {
+    recieptBerandName: "nameCafe_receipt",
+    recieptLogoImg: "../../public/image/general image/logo.jpg",
+    recieptAddress: "recieptAddress",
+    recieptPhone: "recieptPhone",
+  },
+
+  InformationReceipt: {
+    receiptNumber: "receiptNumber",
+    resiptDate: "resiptDate",
+    receiptTime: "receiptTime",
+  },
+
+  InformationCustomer: {
+    headerCustomerText: "receiptHeaderCustomer",
+    receiptCustomerName: "receiptCustomerName",
+    receiptCustomerPhone: "receiptCustomerPhone",
+  },
+
+  InformationTable: [
+    {
+      hederTable: "receiptListOfItems",
+    },
+    {
+      hederTable: "receiptQuantity",
+    },
+    {
+      hederTable: "receiptUnitCost",
+    },
+    {
+      hederTable: "receiptAmount",
+    },
+  ],
+
+  InformationPaymentTable: {
+    paymentTableTotal: "totalAmount",
+
+    paymentTableVat: "vat",
+
+    paymentTableAmount: "NetAmount",
+  },
+};
+
 export const generaltext = {
   popular: "popular",
   popularEn: "popularEn",
@@ -1581,6 +1625,23 @@ export const menuFa = {
   tel: "تلفن: 02186128863",
   adresse: " : آدرس  ما",
   closeAboutUsBtn: "بستن",
+
+  nameCafe_receipt: " کافه اپیکور",
+  recieptAddress: "آدرس: انتهای اشرفی، سیمون بولیوار، خیابان مرادآباد",
+  recieptPhone: "تلفن:02186128863",
+  receiptNumber: "شماره رسید:",
+  resiptDate: "تاریخ:",
+  receiptTime: "زمان:",
+  receiptHeaderCustomer: ":اطلاعات مشتری",
+  receiptCustomerName: ":نام",
+  receiptCustomerPhone: ":تلفن",
+  receiptListOfItems: "اقلام سفارش",
+  receiptQuantity: "تعداد",
+  receiptUnitCost: " فی قیمت",
+  receiptAmount: "قیمت کل",
+  totalAmount: "جمع کل",
+  vat: "مالیات بر ارزش افزوده",
+  NetAmount: "قابل پرداخت",
 };
 
 export const menuEn = {
@@ -1862,4 +1923,21 @@ export const menuEn = {
   tel: "telephon : 02186128863",
   adresse: "our address : ",
   closeAboutUsBtn: "close",
+
+  nameCafe_receipt: "Epicor Cafe",
+  recieptAddress: "address : End of Ashrafi, Simon Bolivar, Moradabad St",
+  recieptPhone: "phone:02186128863",
+  receiptNumber: "Receipt No:",
+  resiptDate: "Date:",
+  receiptTime: "Time:",
+  receiptHeaderCustomer: "customer details:",
+  receiptCustomerName: "name:",
+  receiptCustomerPhone: "phone:",
+  receiptListOfItems: "List Of Items",
+  receiptQuantity: "Quantity",
+  receiptUnitCost: "Unit Cost",
+  receiptAmount: "Amount",
+  totalAmount: "total amount",
+  vat: "vat @9%",
+  NetAmount: "Net amount",
 };

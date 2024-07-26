@@ -8,6 +8,8 @@ import CartPopup from "./CartPopup";
 function Cart() {
   const { t, i18n } = useTranslation();
   const [showCartPopup, setShowCartPopup] = useState(false);
+  const [showCart, setShowCart] = useState(false);
+
 
   const themeValue = useSelector((store) => store.themePage.theme);
   console.log("theme" + themeValue);
@@ -21,9 +23,13 @@ function Cart() {
   }, [cartValues]);
 
   function openPopupCart() {
+    setShowCart(true);
     setShowCartPopup(true);
+
   }
   function closePopupCart() {
+    setShowCart(false);
+
     setShowCartPopup(false);
   }
 
@@ -50,6 +56,8 @@ function Cart() {
         setShowCartPopup={setShowCartPopup}
         closePopupCart={closePopupCart}
         totalprice={totalprice}
+        setShowCart={setShowCart}
+        showCart={showCart}
       />
     </>
   );

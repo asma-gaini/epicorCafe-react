@@ -1,0 +1,90 @@
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 8px;
+  border: 1px solid #ddd;
+}
+th {
+  text-align: center;
+  background-color: #d6b642;
+  color: white;
+  font-size: 11px;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.receipt {
+  max-width: 500px;
+  text-align: center;
+  margin: auto;
+  border: 5px solid black;
+  border-radius: 10px;
+  color: black;
+  background-color: antiquewhite;
+}
+.receiptHeader {
+  margin: 50px;
+}
+.brandNameReceipt {
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+.receipLogo {
+  border-radius: 20px;
+  width: 90px;
+}
+.addressReceipt {
+  padding: 5px;
+  padding-top: 10px;
+  font-size: 10px;
+}
+.telephoneReceipt {
+  font-size: 10px;
+}
+.receiptDetails {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px;
+  font-size: 12px;
+}
+.numberReceipt {
+}
+.dateReceipt {
+}
+.timeReceipt {
+}
+.receiptCustomerDetails {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 50px;
+  font-size: 12px;
+}
+.headerCustomerDetails {
+  text-align: center;
+  font-size: 14px;
+}
+.customerName {
+}
+.customerPhone {
+}
+.receiptTable {
+  margin: 50px;
+  margin-bottom: 80px;
+}
+.receiptCloser {
+  position: absolute;
+  right: 80px;
+  top: 20px;
+}
+.overflow{
+    overflow-x: auto
+}
