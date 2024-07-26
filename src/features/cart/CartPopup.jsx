@@ -36,26 +36,28 @@ function CartPopup({
 
   function increaseNumOfProduct(product) {
     console.log(product[1][2]);
+
     dispatch(
       setCartItems({
-        // categoryId: categoryId === 0 ? menuItem.categoryId : categoryId,
+        codeNumber: product[0],
         value: 1,
+        categoryId: product[1][1],
         price: product[1][2],
-        nameFood: product[1][4],
-        imageFood: product[1][3],
+        nameFood: product[1][3],
+        imageFood: product[1][4],
       })
     );
   }
 
-  function decreaseNumOfProduct() {
+  function decreaseNumOfProduct(product) {
     dispatch(
       setCartItems({
-        // categoryId: categoryId,
         codeNumber: product[0],
         value: -1,
+        categoryId: product[1][1],
         price: product[1][2],
-        nameFood: product[1][4],
-        imageFood: product[1][3],
+        nameFood: product[1][3],
+        imageFood: product[1][4],
       })
     );
   }
@@ -117,12 +119,13 @@ function CartPopup({
                           <h4 className="price">{product[1][2]}</h4>
                         </div>
                         <div className="button-counter Direction-rtl">
-                          <button
-                          // onclick="decreaseNumOfProduct('span','1')"
-                          >
+                          <button onClick={() => decreaseNumOfProduct(product)}>
                             <span>➖</span>
                           </button>
-                          <span className="spanPurchase"> 1 </span>
+                          <span className="spanPurchase">
+                            {" "}
+                            {product[1][0]}{" "}
+                          </span>
                           <button onClick={() => increaseNumOfProduct(product)}>
                             <span>➕</span>
                           </button>
