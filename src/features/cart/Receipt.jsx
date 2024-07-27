@@ -74,12 +74,13 @@ function Receipt({ closeReceipt, showReceipt, totalprice }) {
                 </tr>
 
                 {Object.entries(cartValues).map((product) => {
+                  console.log(product[1]);
                   return (
                     <tr>
                       <th> {t(product[1][3])}</th>
-                      <th> {product[1][0]} </th>
-                      <th>{product[1][1]}.000</th>
-                      <th>{product[1][1] * product[1][0]}.000</th>
+                      <th> {product[1][0]}.000 </th>
+                      <th>{product[1][2]}.000</th>
+                      <th>{product[1][2] * product[1][0]}.000</th>
                     </tr>
                   );
                 })}
