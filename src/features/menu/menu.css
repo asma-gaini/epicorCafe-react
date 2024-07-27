@@ -188,18 +188,14 @@
   background-color: var(--btn-order);
 }
 .menu_contant_info_price_btn-BackgroundDark {
-  /* background-color: #b6a193; */
   background-color: #be8b2796;
-  /* border: 1px solid aqua; */
 }
 .headerBtn-Backgroundlight {
   background-color: rgb(205 171 44);
-  /* color: #000000; */
 }
 .headerBtn-BackgroundDark {
   background-color: rgb(129 126 126);
   color: #ffffff !important;
-  /* border: 1px solid #ebf8f8; */
 }
 .menu-bar_section_click-Backgroundlight {
   background-color: var(--menubar-click-primary);

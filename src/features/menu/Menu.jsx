@@ -1,6 +1,5 @@
 import { useMemo, useState } from "react";
 import { menu } from "../../utils/constants";
-import { changeLanguage } from "../../utils/helper";
 import "./menu.css";
 import "../cart/cart.css";
 import Category from "./Category";
@@ -28,7 +27,6 @@ function Menu() {
     });
     return [papularCategory, ...menu];
   }, []);
-  console.log(menuWithPopular);
   return (
     <div className="height">
       {menuWithPopular.map((categoriItem) => (

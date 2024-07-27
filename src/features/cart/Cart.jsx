@@ -11,10 +11,8 @@ function Cart() {
   const [showCart, setShowCart] = useState(false);
 
   const themeValue = useSelector((store) => store.themePage.theme);
-  console.log("theme" + themeValue);
   const cartValues = useSelector((store) => store.shoppingCart.cartItems);
   const totalprice = useMemo(() => {
-    console.log(Object.values(cartValues));
     return Object.values(cartValues).reduce(
       (acc, curr) => acc + curr[0] * curr[2],
       0
@@ -31,7 +29,6 @@ function Cart() {
     setShowCartPopup(false);
   }
   function mouseEnter() {
-    // console.log(document.querySelector(".btn-info").classList);
     if (themeValue === "light") {
       document
         .querySelector(".btn-info")

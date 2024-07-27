@@ -30,7 +30,6 @@ function GatherMenu({ linked }) {
     const menuItem = document.querySelector(
       "button.ghterBtn[CategoryID ='" + categoryId + "']"
     );
-    console.log(menuItem);
 
     if (themeValue === "light") {
       menuItem.classList.add("overlay-content-hovering-light");
@@ -47,21 +46,6 @@ function GatherMenu({ linked }) {
     } else {
       menuItem.classList.remove("overlay-content-hovering-dark");
     }
-    // console.log(categoryId);
-    // for (let i = 0; i < menu.length; i++) {
-    //   if (menu.categoryId == categoryId) {
-    //     if (themeValue === "light") {
-    //       document
-    //         .querySelector(".ghterBtn")
-    //         .classList.remove("overlay-content-hovering-light");
-    //     } else {
-    //       console.log("darrrrkk");
-    //       document
-    //         .querySelector(".ghterBtn")
-    //         .classList.remove("overlay-content-hovering-dark");
-    //     }
-    //   }
-    // }
   }
 
   return (
@@ -80,11 +64,6 @@ function GatherMenu({ linked }) {
 
         <div
           className="overlay-content"
-          // className={`overlay-content:hover${
-          //   themeValue === "light"
-          //     ? "hover-overlay-content-Backgroundlight"
-          //     : "hover-overlay-content-BackgroundDark"
-          // }`}
         >
           <a onClick={closeNav} href="#">
             <button

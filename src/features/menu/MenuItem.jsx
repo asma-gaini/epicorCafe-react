@@ -13,7 +13,6 @@ function MenuItem({ menuItem, tolatPrice, setTotalPrice, categoryId }) {
   );
 
   const themeValue = useSelector((store) => store.themePage.theme);
-  console.log("theme" + themeValue);
 
   const dispatch = useDispatch();
 

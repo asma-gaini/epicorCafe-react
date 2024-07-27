@@ -25,7 +25,6 @@ function CartPopup({
   const themeValue = useSelector((store) => store.themePage.theme);
 
   function openReceipt() {
-    // closePopupCart();
     setShowCart(true);
     setShowReceipt(true);
     setShowCartPopup(false);
@@ -36,8 +35,6 @@ function CartPopup({
   }
 
   function increaseNumOfProduct(product) {
-    console.log(product[1][2]);
-
     dispatch(
       setCartItems({
         codeNumber: product[0],
@@ -62,15 +59,10 @@ function CartPopup({
       })
     );
   }
-  //   const cart = useMemo(() => {
-  //     // console.log("entries : " + Object.entries(cartValues));
-  //   }, [cartValues]);
-  //   //   console.log(Object.entries(cartValues).length);
 
   return (
     <>
       <div
-        // className="modal fade in"
         className={`modal fade in ${
           showCart === false ? "hidePopup" : "showPopup"
         }`}
@@ -86,7 +78,6 @@ function CartPopup({
                   : "bodyBackgroundDark"
               }` + ` ${showCartPopup === false ? "hidePopup" : "showPopup"}`
             }
-            //   style="display: block;"
           >
             <div className="modal-header">
               <button type="button" className="close" onClick={closePopupCart}>
@@ -96,7 +87,6 @@ function CartPopup({
             </div>
             <div className="modal-body">
               {Object.entries(cartValues).map((product) => {
-                //   console.log("product:  " + product[1][3]);
                 return (
                   <div
                     className={
@@ -132,7 +122,6 @@ function CartPopup({
                         >
                           <button onClick={() => decreaseNumOfProduct(product)}>
                             <span>
-                              {" "}
                               <img
                                 className="marginIncreaseDecreaseBtncCart"
                                 src="../../../public/image/general image/minus-circle.svg"
@@ -141,8 +130,7 @@ function CartPopup({
                             </span>
                           </button>
                           <span className="spanPurchase">
-                            {" "}
-                            {product[1][0]}{" "}
+                            {product[1][0]}
                           </span>
                           <button onClick={() => increaseNumOfProduct(product)}>
                             <span>

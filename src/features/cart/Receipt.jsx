@@ -74,7 +74,6 @@ function Receipt({ closeReceipt, showReceipt, totalprice }) {
                 </tr>
 
                 {Object.entries(cartValues).map((product) => {
-                  console.log(product[1]);
                   return (
                     <tr>
                       <th> {t(product[1][3])}</th>

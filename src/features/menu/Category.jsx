@@ -1,8 +1,5 @@
-import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { useSelector } from "react-redux";
-import { menu } from "../../utils/constants";
-import { changeLanguage } from "../../utils/helper";
 import "./menu.css";
 import MenuItem from "./MenuItem";
 
@@ -37,15 +34,6 @@ function Category({ categoriItem, tolatPrice, setTotalPrice }) {
             setTotalPrice={setTotalPrice}
             categoryId={categoriItem.CategoryID}
           />
-
-          {/* {menuItem.isPopular === true && (
-            <MenuItem
-              menuItem={menuItem}
-              key={menuItem.codeNumber}
-              tolatPrice={tolatPrice}
-              setTotalPrice={setTotalPrice}
-            />
-          )} */}
         </>
       ))}
     </div>

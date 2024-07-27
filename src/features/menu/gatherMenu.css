@@ -60,7 +60,6 @@
   );
 }
 .overlay-content-hovering-dark {
-  /* background: rgb(59, 58, 57) !important; */
   background: radial-gradient(circle, rgb(182 181 178) 0%, rgb(68 63 56) 100%);
 }
 .dropdownButton {

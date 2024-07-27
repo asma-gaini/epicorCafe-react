@@ -8,7 +8,6 @@ import { useSelector } from "react-redux";
 function SliderMenu() {
   const { t, i18n } = useTranslation();
   const themeValue = useSelector((store) => store.themePage.theme);
-  // document.querySelector("")
   const darkMoad = document.querySelector(
     ".menu-bar_section_click-BackgroundDark"
   );

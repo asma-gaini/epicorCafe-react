@@ -56,12 +56,6 @@ tr:nth-child(even) {
   margin: 50px;
   font-size: 12px;
 }
-.numberReceipt {
-}
-.dateReceipt {
-}
-.timeReceipt {
-}
 .receiptCustomerDetails {
   display: flex;
   justify-content: space-between;
@@ -71,10 +65,6 @@ tr:nth-child(even) {
 .headerCustomerDetails {
   text-align: center;
   font-size: 14px;
-}
-.customerName {
-}
-.customerPhone {
 }
 .receiptTable {
   margin: 50px;

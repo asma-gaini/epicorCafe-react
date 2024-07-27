@@ -1,5 +1,4 @@
 import { MapContainer, TileLayer, Marker } from "react-leaflet";
-import { useRef } from "react";
 import "leaflet/dist/leaflet.css";
 
 function CustomMap() {

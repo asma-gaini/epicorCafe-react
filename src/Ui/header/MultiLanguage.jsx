@@ -12,7 +12,6 @@ function MultiLanguage() {
   const onchangeLanguage = (e) => {
     i18n.changeLanguage(e.target.value);
   };
-  // console.log(t("breakfast"));
   return (
     <select
       className={`form-select ${
