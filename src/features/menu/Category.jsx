@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
+import { useSelector } from "react-redux";
 import { menu } from "../../utils/constants";
 import { changeLanguage } from "../../utils/helper";
 import "./menu.css";
@@ -7,6 +8,7 @@ import MenuItem from "./MenuItem";
 
 function Category({ categoriItem, tolatPrice, setTotalPrice }) {
   const { t, i18n } = useTranslation();
+  const themeValue = useSelector((store) => store.themePage.theme);
 
   return (
     <div
@@ -17,7 +19,13 @@ function Category({ categoriItem, tolatPrice, setTotalPrice }) {
     >
       <div className="hrLine">
         <p>{t(categoriItem.headerNameFA)}</p>
-        <span className="hrTheme"></span>
+        <span
+          className={`hrTheme ${
+            themeValue === "light"
+              ? "hrTheme-Backgroundlight"
+              : "hrTheme-BackgroundDark"
+          }`}
+        ></span>
         <p>{t(categoriItem.headerNameEN)}</p>
       </div>
       {categoriItem.Info.map((menuItem) => (
