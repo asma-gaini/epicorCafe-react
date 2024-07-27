@@ -8,6 +8,32 @@ import { useSelector } from "react-redux";
 function SliderMenu() {
   const { t, i18n } = useTranslation();
   const themeValue = useSelector((store) => store.themePage.theme);
+  // document.querySelector("")
+  const darkMoad = document.querySelector(
+    ".menu-bar_section_click-BackgroundDark"
+  );
+  const lightMoad = document.querySelector(
+    ".menu-bar_section_click-Backgroundlight"
+  );
+  if (themeValue === "light") {
+    if (darkMoad) {
+      document
+        .querySelector(".menu-bar_section_click-BackgroundDark")
+        .classList.add("menu-bar_section_click-Backgroundlight");
+      document
+        .querySelector(".menu-bar_section_click-Backgroundlight")
+        .classList.remove("menu-bar_section_click-BackgroundDark");
+    }
+  } else {
+    if (lightMoad) {
+      document
+        .querySelector(".menu-bar_section_click-Backgroundlight")
+        .classList.add("menu-bar_section_click-BackgroundDark");
+      document
+        .querySelector(".menu-bar_section_click-BackgroundDark")
+        .classList.remove("menu-bar_section_click-Backgroundlight");
+    }
+  }
 
   function linked(CategoryID) {
     const otherMenu = document.querySelectorAll("div.slider[CategoryID]");
