@@ -15,6 +15,7 @@ function SliderMenu() {
   const lightMoad = document.querySelector(
     ".menu-bar_section_click-Backgroundlight"
   );
+
   if (themeValue === "light") {
     if (darkMoad) {
       document
@@ -24,7 +25,7 @@ function SliderMenu() {
         .querySelector(".menu-bar_section_click-Backgroundlight")
         .classList.remove("menu-bar_section_click-BackgroundDark");
     }
-  } else {
+  } else if (themeValue === "dark") {
     if (lightMoad) {
       document
         .querySelector(".menu-bar_section_click-Backgroundlight")
