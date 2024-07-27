@@ -23,10 +23,10 @@
   --font-button: #000000;
 }
 
-.glyphicon {
+.marginIncreaseDecreaseBtncCart {
   position: relative;
-  margin: 0 -5px;
-  top: 1px;
+  margin: 0 -12px;
+  top: -5px;
   display: inline-block;
   font-family: "Glyphicons Halflings";
   font-style: normal;

@@ -131,14 +131,27 @@ function CartPopup({
                           }`}
                         >
                           <button onClick={() => decreaseNumOfProduct(product)}>
-                            <span>➖</span>
+                            <span>
+                              {" "}
+                              <img
+                                className="marginIncreaseDecreaseBtncCart"
+                                src="../../../public/image/general image/minus-circle.svg"
+                                alt="minus"
+                              />
+                            </span>
                           </button>
                           <span className="spanPurchase">
                             {" "}
                             {product[1][0]}{" "}
                           </span>
                           <button onClick={() => increaseNumOfProduct(product)}>
-                            <span>➕</span>
+                            <span>
+                              <img
+                                className="marginIncreaseDecreaseBtncCart"
+                                src="../../../public/image/general image/plus-circle.svg"
+                                alt="plus"
+                              />
+                            </span>
                           </button>
                         </div>
                       </div>

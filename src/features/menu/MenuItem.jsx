@@ -107,11 +107,23 @@ function MenuItem({ menuItem, tolatPrice, setTotalPrice, categoryId }) {
                 }`}
               >
                 <button className="btn-counter" onClick={decreaseNumOfProduct}>
-                  <span>➖</span>
+                  <span>
+                    <img
+                      className="marginIncreaseDecreaseBtn"
+                      src="../../../public/image/general image/minus-circle.svg"
+                      alt="minus"
+                    />
+                  </span>
                 </button>
                 <span className="span">{cartValue[0]}</span>
                 <button className="btn-counter" onClick={increaseNumOfProduct}>
-                  <span>➕</span>
+                  <span>
+                    <img
+                      className="marginIncreaseDecreaseBtn"
+                      src="../../../public/image/general image/plus-circle.svg"
+                      alt="plus"
+                    />
+                  </span>
                 </button>
               </div>
             ) : null}
