@@ -10,7 +10,6 @@ function Cart() {
   const [showCartPopup, setShowCartPopup] = useState(false);
   const [showCart, setShowCart] = useState(false);
 
-
   const themeValue = useSelector((store) => store.themePage.theme);
   console.log("theme" + themeValue);
   const cartValues = useSelector((store) => store.shoppingCart.cartItems);
@@ -25,7 +24,6 @@ function Cart() {
   function openPopupCart() {
     setShowCart(true);
     setShowCartPopup(true);
-
   }
   function closePopupCart() {
     setShowCart(false);
@@ -38,11 +36,13 @@ function Cart() {
       {totalprice !== 0 && (
         <button
           type="button"
-          className={`btn btn-info btn-lg pay-off ${
-            themeValue === "light"
-              ? "pay-off-Backgroundlight"
-              : "pay-off-BackgroundDark"
-          }`}
+          className={
+            `btn btn-info btn-lg pay-off cartColor ${
+              themeValue === "light"
+                ? "pay-off-Backgroundlight"
+                : "pay-off-BackgroundDark"
+            }` + `${i18n.language === "fa" ? " persianFont" : " englishFont"}`
+          }
           onClick={openPopupCart}
         >
           <span>{t(generaltext.bill)}</span>

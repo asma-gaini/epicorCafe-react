@@ -68,6 +68,10 @@
   background-color: inherit;
   font-size: 13px;
 }
+.gatherMenu {
+  color: #f1f1f1;
+  cursor: pointer;
+}
 
 .showMenu {
   width: 100%;

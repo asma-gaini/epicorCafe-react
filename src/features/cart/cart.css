@@ -266,3 +266,13 @@ button.close {
 .bodyBackgroundDark {
   background-color: rgb(16 12 12 / 90%);
 }
+.cartColor {
+  color: #f1f1f1;
+}
+
+.direction_rtl {
+  direction: rtl;
+}
+.direction_ltr {
+  direction: ltr;
+}

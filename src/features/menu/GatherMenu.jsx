@@ -51,7 +51,9 @@ function GatherMenu({ linked }) {
           <a onClick={closeNav} href="#">
             <button
               categoryid="0"
-              className="menu-bar_section"
+              className={`menu-bar_section ${
+                i18n.language === "fa" ? "persianFont" : "englishFont"
+              }`}
               onClick={() => linked(0)}
             >
               <img
@@ -71,11 +73,14 @@ function GatherMenu({ linked }) {
             {menu.map((categoriItem) => (
               <button
                 categoryid={categoriItem.CategoryID}
-                className={`menu-bar_section ${
-                  categoriItem.CategoryID === 1
-                    ? "menu-bar_section_click-Backgroundlight"
-                    : ""
-                }`}
+                className={
+                  `menu-bar_section ${
+                    categoriItem.CategoryID === 1
+                      ? "menu-bar_section_click-Backgroundlight"
+                      : ""
+                  }` +
+                  `${i18n.language === "fa" ? " persianFont" : " englishFont"}`
+                }
                 onClick={() => linked(categoriItem.CategoryID)}
               >
                 <img
@@ -98,7 +103,12 @@ function GatherMenu({ linked }) {
       </div>
 
       <div className="dropdownButton">
-        <button className="gatherMenu" onClick={openNav}>
+        <button
+          className={`gatherMenu ${
+            i18n.language === "fa" ? "persianFont" : "englishFont"
+          }`}
+          onClick={openNav}
+        >
           {t(generaltext.menuGathe)}
         </button>
       </div>

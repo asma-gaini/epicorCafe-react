@@ -3,6 +3,7 @@ import { useMemo } from "react";
 import { useTranslation } from "react-i18next";
 import { useDispatch, useSelector } from "react-redux";
 import { setCartItems } from "../../store/slices/shoppingCartSlice";
+import { generaltext } from "../../utils/constants";
 
 import Receipt from "./Receipt";
 
@@ -96,16 +97,25 @@ function CartPopup({
               <button type="button" className="close" onClick={closePopupCart}>
                 ×
               </button>
-              <h4 text_key="invoice" className="modal-title">
-                سبد خرید
-              </h4>
+              <h4 className="modal-title">{t(generaltext.invoice)}</h4>
             </div>
             <div className="modal-body">
               {Object.entries(cartValues).map((product) => {
                 //   console.log("product:  " + product[1][3]);
                 return (
                   <div
-                    className="menu_contant content_pay menu_contant-Backgroundlight"
+                    className={
+                      `menu_contant content_pay ${
+                        i18n.language === "fa"
+                          ? "persianFont direction_rtl"
+                          : "englishFont direction_ltr"
+                      }` +
+                      ` ${
+                        themeValue === "light"
+                          ? " menu_contant-Backgroundlight"
+                          : " menu_contant-BackgroundDark"
+                      }`
+                    }
                     codenumber={product[0]}
                     //   style="direction: rtl;"
                   >
@@ -118,7 +128,13 @@ function CartPopup({
                         <div className="menu_contant_info_price_contant">
                           <h4 className="price">{product[1][2]}</h4>
                         </div>
-                        <div className="button-counter Direction-rtl">
+                        <div
+                          className={`button-counter ${
+                            i18n.language === "fa"
+                              ? "persianFont Direction-rtl"
+                              : "englishFont Direction-ltr"
+                          }`}
+                        >
                           <button onClick={() => decreaseNumOfProduct(product)}>
                             <span>➖</span>
                           </button>
@@ -137,29 +153,33 @@ function CartPopup({
               })}
             </div>
             <div
-              className="payment-modal"
+              className={`payment-modal ${
+                i18n.language === "fa" ? "persianFont " : "englishFont "
+              }`}
               //   style="direction: rtl;
             >
-              <span text_key="totalPrice">جمع کل : </span>
+              <span text_key="totalPrice">{t(generaltext.totalPrice)} </span>
               <span className="payment"> {totalprice} </span>
-              <span text_key="MonetaryUnit">تومان</span>
+              <span text_key="MonetaryUnit">{t(generaltext.MonetaryUnit)}</span>
             </div>
             <div className="modal-footer modal-payButton">
               <button
                 type="button"
-                className="btn btn-default"
-                text_key="ClosingInvoice"
+                className={`btn btn-default ${
+                  i18n.language === "fa" ? "persianFont " : "englishFont "
+                }`}
                 onClick={closePopupCart}
               >
-                بستن
+                {t(generaltext.ClosingInvoice)}
               </button>
               <button
                 type="button"
-                className="btn btn-default"
-                text_key="viewReceipt"
+                className={`btn btn-default ${
+                  i18n.language === "fa" ? "persianFont " : "englishFont "
+                }`}
                 onClick={openReceipt}
               >
-                مشاهده رسید
+                {t(generaltext.viewReceipt)}
               </button>
             </div>
           </div>

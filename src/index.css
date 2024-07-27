@@ -23,14 +23,32 @@
   --font-button: #000000;
 }
 
-/* @font-face {
+@font-face {
   font-family: iransans;
   src: url(../fonts/FontsFree-Net-ir_sans.ttf);
+}
+
+/* .englishFont {
+  font-family: "Edu AU VIC WA NT Hand", cursive;
+  font-optical-sizing: auto;
+  font-weight: "400";
+  font-style: normal;
 } */
+.persianFont {
+  font-family: iransans;
+  /* background-color: inherit; */
+}
+
+.englishFont {
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: "400";
+  font-style: normal;
+}
 
 body {
   background-color: var(--body);
-  font-family: "iransans";
+  /* font-family: "Edu AU VIC WA NT Hand", cursive; */
   box-sizing: border-box;
   color: var(--white);
   max-width: 1600px;

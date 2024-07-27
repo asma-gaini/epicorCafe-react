@@ -21,13 +21,17 @@ function AboutUs() {
 
   return (
     <div className="wrapAboutUs">
-      <div className="introAboutUs">
+      <div
+        className={` introAboutUs ${
+          i18n.language === "fa" ? "persianFont" : "englishFont"
+        }`}
+      >
         <button
           className={`${
             themeValue === "light"
               ? "headerBtn-Backgroundlight"
               : "headerBtn-BackgroundDark"
-          }`}
+          }` + `${i18n.language === "fa" ? " persianFont" : " englishFont"}`}
           onClick={openAbout}
         >
           {t(generaltext.aboutUs)}
@@ -62,11 +66,14 @@ function AboutUs() {
             <p>{t(generaltext.adresse)}</p>
             <CustomMap />
             <center>
-              <button className={`innerAboutBtn ${
-              themeValue === "light"
-                ? "innerAboutBtn-Backgroundlight"
-                : "innerAboutBtn-BackgroundDark"
-            }`} onClick={closeAbout}>
+              <button
+                className={`innerAboutBtn ${
+                  themeValue === "light"
+                    ? "innerAboutBtn-Backgroundlight"
+                    : "innerAboutBtn-BackgroundDark"
+                }`}
+                onClick={closeAbout}
+              >
                 {t(generaltext.closeAboutUsBtn)}
               </button>
             </center>

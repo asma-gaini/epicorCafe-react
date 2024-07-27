@@ -19,14 +19,14 @@ function MultiLanguage() {
         themeValue === "light"
           ? "headerBtn-Backgroundlight"
           : "headerBtn-BackgroundDark"
-      }`}
+      }`+`${i18n.language === "fa" ? " persianFont" : " englishFont"}` }
       id="language"
       onChange={onchangeLanguage}
     >
-      <option value="fa" className="optionSelectBox" selected>
+      <option value="fa" className="optionSelectBox persianFont" selected>
         فارسی
       </option>
-      <option value="en" className="optionSelectBox">
+      <option value="en" className="optionSelectBox englishFont">
         English
       </option>
     </select>
