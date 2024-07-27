@@ -39,6 +39,7 @@
   min-width: 90px;
   border: none;
   color: var(--white);
+  height: 110px;
 }
 .menu-bar_section_click {
   background-color: var(--menubar-click-primary);
@@ -85,6 +86,7 @@
 }
 .item {
   display: inline-block;
+  /* display: flex; */
 }
 a:hover {
   cursor: pointer;
@@ -111,13 +113,19 @@ swiper-container {
   /* line-height: 200px; */
   /* text-align: center; */
 }
-.swiper-horizontal>.swiper-scrollbar, .swiper-scrollbar.swiper-scrollbar-horizontal {
+.swiper-horizontal > .swiper-scrollbar,
+.swiper-scrollbar.swiper-scrollbar-horizontal {
   position: absolute;
   left: var(--swiper-scrollbar-sides-offset, 1%);
   bottom: var(--swiper-scrollbar-bottom, 4px);
   top: var(--swiper-scrollbar-top, auto);
   z-index: 50;
   height: var(--swiper-scrollbar-size, 4px);
-  width: calc(100% - 2* var(--swiper-scrollbar-sides-offset, 1%));
+  width: calc(100% - 2 * var(--swiper-scrollbar-sides-offset, 1%));
   /* display: none; */
+}
+
+.swiper-wrapper {
+  direction: rtl;
+  margin: 3px !important;
 }
