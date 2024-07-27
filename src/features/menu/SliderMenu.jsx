@@ -24,14 +24,33 @@ function SliderMenu() {
     }
     for (let i = 0; i < otherCategoryBtn.length; i++) {
       if (otherCategoryBtn[i].getAttribute("Categoryid") == CategoryID) {
-        otherCategoryBtn[i].classList.add(
-          "menu-bar_section_click-Backgroundlight"
-        );
+        if (themeValue === "light") {
+          otherCategoryBtn[i].classList.add(
+            "menu-bar_section_click-Backgroundlight"
+          );
+        } else {
+          otherCategoryBtn[i].classList.add(
+            "menu-bar_section_click-BackgroundDark"
+          );
+        }
+
         otherCategoryBtn[i].focus();
       } else {
-        otherCategoryBtn[i].classList.remove(
-          "menu-bar_section_click-Backgroundlight"
-        );
+        if (themeValue === "light") {
+          otherCategoryBtn[i].classList.remove(
+            "menu-bar_section_click-Backgroundlight"
+          );
+          otherCategoryBtn[i].classList.remove(
+            "menu-bar_section_click-BackgroundDark"
+          );
+        } else {
+          otherCategoryBtn[i].classList.remove(
+            "menu-bar_section_click-BackgroundDark"
+          );
+          otherCategoryBtn[i].classList.remove(
+            "menu-bar_section_click-Backgroundlight"
+          );
+        }
       }
     }
   }

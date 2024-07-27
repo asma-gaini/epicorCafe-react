@@ -51,13 +51,17 @@
   right: 45px;
   font-size: 60px;
 }
-.overlay-content a button:hover {
+.overlay-content-hovering-light {
   background: rgb(235, 173, 96);
   background: radial-gradient(
     circle,
     rgba(235, 173, 96, 1) 0%,
     rgba(133, 90, 37, 1) 100%
   );
+}
+.overlay-content-hovering-dark {
+  /* background: rgb(59, 58, 57) !important; */
+  background: radial-gradient(circle, rgb(182 181 178) 0%, rgb(68 63 56) 100%);
 }
 .dropdownButton {
   text-align: center;

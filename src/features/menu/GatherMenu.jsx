@@ -26,6 +26,44 @@ function GatherMenu({ linked }) {
     setShowDropdownMenu(false);
   }
 
+  function mouseEnter(categoryId) {
+    const menuItem = document.querySelector(
+      "button.ghterBtn[CategoryID ='" + categoryId + "']"
+    );
+    console.log(menuItem);
+
+    if (themeValue === "light") {
+      menuItem.classList.add("overlay-content-hovering-light");
+    } else {
+      menuItem.classList.add("overlay-content-hovering-dark");
+    }
+  }
+  function mouseLeave(categoryId) {
+    const menuItem = document.querySelector(
+      "button.ghterBtn[CategoryID ='" + categoryId + "']"
+    );
+    if (themeValue === "light") {
+      menuItem.classList.remove("overlay-content-hovering-light");
+    } else {
+      menuItem.classList.remove("overlay-content-hovering-dark");
+    }
+    // console.log(categoryId);
+    // for (let i = 0; i < menu.length; i++) {
+    //   if (menu.categoryId == categoryId) {
+    //     if (themeValue === "light") {
+    //       document
+    //         .querySelector(".ghterBtn")
+    //         .classList.remove("overlay-content-hovering-light");
+    //     } else {
+    //       console.log("darrrrkk");
+    //       document
+    //         .querySelector(".ghterBtn")
+    //         .classList.remove("overlay-content-hovering-dark");
+    //     }
+    //   }
+    // }
+  }
+
   return (
     <>
       <div
@@ -51,10 +89,12 @@ function GatherMenu({ linked }) {
           <a onClick={closeNav} href="#">
             <button
               categoryid="0"
-              className={`menu-bar_section ${
+              className={`menu-bar_section ghterBtn ${
                 i18n.language === "fa" ? "persianFont" : "englishFont"
               }`}
               onClick={() => linked(0)}
+              onMouseEnter={() => mouseEnter("0")}
+              onMouseLeave={() => mouseLeave("0")}
             >
               <img
                 src="../../../public/image/main page/food & this category menu/popular/icons8-food-menu-53.png"
@@ -74,7 +114,7 @@ function GatherMenu({ linked }) {
               <button
                 categoryid={categoriItem.CategoryID}
                 className={
-                  `menu-bar_section ${
+                  `menu-bar_section ghterBtn ${
                     categoriItem.CategoryID === 1
                       ? "menu-bar_section_click-Backgroundlight"
                       : ""
@@ -82,6 +122,8 @@ function GatherMenu({ linked }) {
                   `${i18n.language === "fa" ? " persianFont" : " englishFont"}`
                 }
                 onClick={() => linked(categoriItem.CategoryID)}
+                onMouseEnter={() => mouseEnter(categoriItem.CategoryID)}
+                onMouseLeave={() => mouseLeave(categoriItem.CategoryID)}
               >
                 <img
                   src={categoriItem.headerImg}
