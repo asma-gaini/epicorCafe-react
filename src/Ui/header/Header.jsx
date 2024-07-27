@@ -10,7 +10,7 @@ function Header() {
 
   return (
     <div
-      className={`${i18n.language === "fa" ? "persianFont" : "englishFont"}`}
+      className={`header ${i18n.language === "fa" ? "persianFont" : "englishFont"}`}
     >
       <MultiLanguage />
       <Theme />

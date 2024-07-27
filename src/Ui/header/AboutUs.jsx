@@ -22,16 +22,18 @@ function AboutUs() {
   return (
     <div className="wrapAboutUs">
       <div
-        className={` introAboutUs ${
+        className={`introAboutUs ${
           i18n.language === "fa" ? "persianFont" : "englishFont"
         }`}
       >
         <button
-          className={`${
-            themeValue === "light"
-              ? "headerBtn-Backgroundlight"
-              : "headerBtn-BackgroundDark"
-          }` + `${i18n.language === "fa" ? " persianFont" : " englishFont"}`}
+          className={
+            `${
+              themeValue === "light"
+                ? "headerBtn-Backgroundlight"
+                : "headerBtn-BackgroundDark"
+            }` + `${i18n.language === "fa" ? " persianFont" : " englishFont"}`
+          }
           onClick={openAbout}
         >
           {t(generaltext.aboutUs)}
