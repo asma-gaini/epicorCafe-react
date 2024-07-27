@@ -4,8 +4,10 @@ import "./menu.css";
 import "./sliderMenu.css";
 import { useTranslation } from "react-i18next";
 import GatherMenu from "./GatherMenu";
+import { useSelector } from "react-redux";
 function SliderMenu() {
   const { t, i18n } = useTranslation();
+  const themeValue = useSelector((store) => store.themePage.theme);
 
   function linked(CategoryID) {
     const otherMenu = document.querySelectorAll("div.slider[CategoryID]");
@@ -25,6 +27,7 @@ function SliderMenu() {
         otherCategoryBtn[i].classList.add(
           "menu-bar_section_click-Backgroundlight"
         );
+        otherCategoryBtn[i].focus();
       } else {
         otherCategoryBtn[i].classList.remove(
           "menu-bar_section_click-Backgroundlight"
