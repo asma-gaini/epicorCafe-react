@@ -15,6 +15,7 @@ function Theme() {
       : (document.body.style.backgroundColor = "rgb(192, 160, 40, 0.9)");
     // console.log(themeValue);
   }
+
   return (
     <div className="changeTheme">
       <label className="switch">

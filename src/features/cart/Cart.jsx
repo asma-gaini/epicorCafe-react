@@ -30,6 +30,29 @@ function Cart() {
 
     setShowCartPopup(false);
   }
+  function mouseEnter() {
+    // console.log(document.querySelector(".btn-info").classList);
+    if (themeValue === "light") {
+      document
+        .querySelector(".btn-info")
+        .classList.add("btn-info-Hovering-light");
+    } else {
+      document
+        .querySelector(".btn-info")
+        .classList.add("btn-info-Hovering-dark");
+    }
+  }
+  function mouseLeave() {
+    if (themeValue === "light") {
+      document
+        .querySelector(".btn-info")
+        .classList.remove("btn-info-Hovering-light");
+    } else {
+      document
+        .querySelector(".btn-info")
+        .classList.remove("btn-info-Hovering-dark");
+    }
+  }
 
   return (
     <>
@@ -44,6 +67,8 @@ function Cart() {
             }` + `${i18n.language === "fa" ? " persianFont" : " englishFont"}`
           }
           onClick={openPopupCart}
+          onMouseEnter={mouseEnter}
+          onMouseLeave={mouseLeave}
         >
           <span>{t(generaltext.bill)}</span>
           <span className="bill"> {totalprice} </span>

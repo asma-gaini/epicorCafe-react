@@ -114,13 +114,31 @@
 
   border: none;
 }
-.btn-info:active,
+/* .btn-info:active,
 .btn-info:hover,
 .btn-info:focus {
   color: #fff;
 
   background-color: var(--menubar-click-primary);
   background-image: var(--menubar-click);
+} */
+.btn-info-Hovering-light {
+  background-color: rgb(196, 145, 91);
+  background-image: radial-gradient(
+    circle,
+    rgb(221, 178, 131),
+    rgb(210, 119, 21),
+    rgb(106, 56, 2)
+  );
+}
+.btn-info-Hovering-dark {
+  background-color: rgb(0, 0, 0);
+  background-image: radial-gradient(
+    circle,
+    rgb(216, 210, 202),
+    rgb(105, 104, 103),
+    rgb(0 0 0)
+  );
 }
 .btn-info:focus {
   outline: none;
@@ -242,7 +260,7 @@
   -ms-touch-action: manipulation;
   touch-action: manipulation;
   cursor: pointer;
-  background-image: none;
+  /* background-image: none; */
   border: 1px solid transparent;
   padding: 6px 12px;
   font-size: 14px;
