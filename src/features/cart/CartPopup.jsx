@@ -78,11 +78,6 @@ function CartPopup({
         role="dialog"
       >
         <div className="modal-dialog">
-          <Receipt
-            closeReceipt={closeReceipt}
-            showReceipt={showReceipt}
-            totalprice={totalprice}
-          />
           <div
             className={
               `modal-content showPopup ${
@@ -183,6 +178,11 @@ function CartPopup({
               </button>
             </div>
           </div>
+          <Receipt
+            closeReceipt={closeReceipt}
+            showReceipt={showReceipt}
+            totalprice={totalprice}
+          />
         </div>
       </div>
     </>

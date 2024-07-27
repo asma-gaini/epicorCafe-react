@@ -1,3 +1,28 @@
+/* ******************************* primary ******************************* */
+:root {
+  --body: rgb(192, 160, 40, 0.9);
+  --white: rgb(255, 255, 255);
+  --menu-item: rgba(178, 157, 84, 0.8);
+  --btn-order: #ab6130;
+  --btn-counter: rgb(207, 137, 80);
+  --menubar: linear-gradient(
+      to left top,
+      rgba(134, 53, 0, 0.09),
+      rgba(134, 53, 0, 0)
+    )
+    rgba(134, 53, 0, 0.02);
+  --menubar-click-primary: rgb(196, 145, 91);
+  --menubar-click: radial-gradient(
+    circle,
+    rgb(221, 178, 131),
+    rgb(210, 119, 21),
+    rgb(106, 56, 2)
+  );
+  --hrLineFont: rgb(237, 237, 237);
+  --hrLineBack: rgb(134 53 0 / 15%);
+  --font-button: #000000;
+}
+
 .glyphicon {
   position: relative;
   margin: 0 -5px;
@@ -17,9 +42,18 @@
 }
 
 .modal-content {
-  background-color: var(--body);
+  background-color: rgba(178, 157, 84, 0.8);
   direction: rtl;
   border-radius: 30px;
+  position: relative;
+  /* background-color: #fff; */
+  background-clip: padding-box;
+  border: 1px solid #999;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  /* border-radius: 6px; */
+  -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+  outline: 0;
 }
 .modal-title {
   text-align: center;
@@ -112,12 +146,6 @@
   font-size: 14px;
 }
 
-.showPopup {
-  display: block;
-}
-.hidePopup {
-  display: none;
-}
 .fade.in {
   opacity: 1;
 }
@@ -129,7 +157,7 @@
 
 .modal {
   position: fixed;
-  top: 20%;
+  top: 0%;
   right: 0;
   /* bottom: 0; */
   left: 0;
@@ -141,6 +169,8 @@
 }
 
 .fade {
+  background-color: rgb(0, 0, 0, 0.5);
+  height: 100%;
   transition: opacity 0.15s linear;
 }
 @media (min-width: 768px) {
@@ -158,11 +188,6 @@
 .menu_contant-Backgroundlight {
   background-color: var(--menu-item);
 }
-.modal-content {
-  background-color: var(--body);
-  direction: rtl;
-  border-radius: 30px;
-}
 
 @media (min-width: 768px) {
   .modal-content {
@@ -170,9 +195,8 @@
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
   }
 }
-.modal-content {
+/* .modal-content {
   position: relative;
-  /* background-color: #fff; */
   background-clip: padding-box;
   border: 1px solid #999;
   border: 1px solid rgba(0, 0, 0, 0.2);
@@ -180,7 +204,7 @@
   -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
   box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
   outline: 0;
-}
+} */
 
 .modal-header {
   padding: 15px;
@@ -260,8 +284,9 @@ button.close {
   filter: alpha(opacity = 20);
   opacity: 0.2;
 }
+
 .bodyBackgroundlight {
-  background-color: rgb(192, 160, 40, 0.9);
+  background-color: rgba(178, 157, 84, 0.8);
 }
 .bodyBackgroundDark {
   background-color: rgb(16 12 12 / 90%);
@@ -269,10 +294,16 @@ button.close {
 .cartColor {
   color: #f1f1f1;
 }
-
 .direction_rtl {
   direction: rtl;
 }
 .direction_ltr {
   direction: ltr;
+}
+
+.showPopup {
+  display: block;
+}
+.hidePopup {
+  display: none;
 }
