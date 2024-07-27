@@ -30,7 +30,7 @@ function Menu() {
   }, []);
   console.log(menuWithPopular);
   return (
-    <div>
+    <div className="height">
       {menuWithPopular.map((categoriItem) => (
         <Category categoriItem={categoriItem} key={categoriItem.CategoryID} />
       ))}

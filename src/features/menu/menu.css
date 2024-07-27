@@ -22,6 +22,11 @@
   --font-button: #000000;
 }
 
+.height {
+  margin: 20px 10px;
+  padding-bottom: 300px;
+}
+
 .sliders {
   margin: 0px 30px;
 }
