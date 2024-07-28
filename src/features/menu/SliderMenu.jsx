@@ -88,73 +88,71 @@ function SliderMenu() {
       <main
         className={` ${i18n.language === "fa" ? "persianFont" : "englishFont"}`}
       >
-        <Swiper
+        {/* <Swiper
           spaceBetween={10}
           slidesPerView={11}
           onSlideChange={() => console.log("slide change")}
           onSwiper={(swiper) => console.log(swiper)}
-        >
-          <div className="items menu-bar">
-            <div className="item item1">
-              <SwiperSlide>
-                <button
-                  categoryid="0"
-                  className={`menu-bar_section ${
-                    i18n.language === "fa" ? "persianFont" : "englishFont"
-                  }`}
-                  onClick={() => linked(0)}
-                >
-                  <img
-                    src="../../../public/image/main page/food & this category menu/popular/icons8-food-menu-53.png"
-                    alt={t(generaltext.popularEn)}
-                    className="menu-bar_section_image"
-                  />
-                  <div className="menu-bar_section_info">
-                    <p className="menu-bar_section_name-en">
-                      {t(generaltext.popularEn)}
-                    </p>
-                    <p className="menu-bar_section_name-fa">
-                      {t(generaltext.popular)}
-                    </p>
-                  </div>
-                </button>
-              </SwiperSlide>
+        > */}
+        <div className="items menu-bar">
+          <div className="item item1">
+            {/* <SwiperSlide> */}
+            <button
+              categoryid="0"
+              className={`menu-bar_section ${
+                i18n.language === "fa" ? "persianFont" : "englishFont"
+              }`}
+              onClick={() => linked(0)}
+            >
+              <img
+                src="../../../public/image/main page/food & this category menu/popular/icons8-food-menu-53.png"
+                alt={t(generaltext.popularEn)}
+                className="menu-bar_section_image"
+              />
+              <div className="menu-bar_section_info">
+                <p className="menu-bar_section_name-en">
+                  {t(generaltext.popularEn)}
+                </p>
+                <p className="menu-bar_section_name-fa">
+                  {t(generaltext.popular)}
+                </p>
+              </div>
+            </button>
+            {/* </SwiperSlide> */}
 
-              {menu.map((categoriItem) => (
-                <SwiperSlide>
-                  <button
-                    categoryid={categoriItem.CategoryID}
-                    className={
-                      `menu-bar_section ${
-                        categoriItem.CategoryID === 1
-                          ? "menu-bar_section_click-Backgroundlight"
-                          : ""
-                      }` +
-                      `${
-                        i18n.language === "fa" ? " persianFont" : " englishFont"
-                      }`
-                    }
-                    onClick={() => linked(categoriItem.CategoryID)}
-                  >
-                    <img
-                      src={categoriItem.headerImg}
-                      alt={categoriItem.headerNameEN}
-                      className="menu-bar_section_image"
-                    />
-                    <div className="menu-bar_section_info">
-                      <p className="menu-bar_section_name-en">
-                        {t(categoriItem.headerNameEN)}
-                      </p>
-                      <p className="menu-bar_section_name-fa">
-                        {t(categoriItem.headerNameFA)}
-                      </p>
-                    </div>
-                  </button>
-                </SwiperSlide>
-              ))}
-            </div>
+            {menu.map((categoriItem) => (
+              // <SwiperSlide>
+              <button
+                categoryid={categoriItem.CategoryID}
+                className={
+                  `menu-bar_section ${
+                    categoriItem.CategoryID === 1
+                      ? "menu-bar_section_click-Backgroundlight"
+                      : ""
+                  }` +
+                  `${i18n.language === "fa" ? " persianFont" : " englishFont"}`
+                }
+                onClick={() => linked(categoriItem.CategoryID)}
+              >
+                <img
+                  src={categoriItem.headerImg}
+                  alt={categoriItem.headerNameEN}
+                  className="menu-bar_section_image"
+                />
+                <div className="menu-bar_section_info">
+                  <p className="menu-bar_section_name-en">
+                    {t(categoriItem.headerNameEN)}
+                  </p>
+                  <p className="menu-bar_section_name-fa">
+                    {t(categoriItem.headerNameFA)}
+                  </p>
+                </div>
+              </button>
+              // </SwiperSlide>
+            ))}
           </div>
-        </Swiper>
+        </div>
+        {/* </Swiper> */}
       </main>
       <GatherMenu linked={linked} />
     </>
