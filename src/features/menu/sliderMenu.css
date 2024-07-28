@@ -126,6 +126,31 @@ swiper-container {
 }
 
 .swiper-wrapper {
-  direction: rtl;
+  /* direction: rtl; */
   margin: 3px !important;
+}
+
+
+
+
+
+#dragSpace {
+  position:fixed;
+  width:10000px;
+  height:300px;
+  top:60px;
+  background-color:black;
+  left:-5000px;
+  margin-top:10px;
+}
+#wrapperBoxes{
+  position: absolute;
+  width: 5000px;
+  height: 300px;
+  left: 5000px;
+}
+.box {
+  position: relative;
+ 
+  float: left;
 }
