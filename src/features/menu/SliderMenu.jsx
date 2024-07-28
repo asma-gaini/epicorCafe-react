@@ -85,8 +85,10 @@ function SliderMenu() {
 
   return (
     <>
-      <main
-        className={` ${i18n.language === "fa" ? "persianFont" : "englishFont"}`}
+      <div
+        className={`main ${
+          i18n.language === "fa" ? "persianFont" : "englishFont"
+        }`}
       >
         <Swiper
           spaceBetween={40}
@@ -120,7 +122,7 @@ function SliderMenu() {
             },
             1400: {
               slidesPerView: 12,
-              spaceBetween: 30,
+              spaceBetween: 50,
             },
           }}
           onSlideChange={() => console.log("slide change")}
@@ -187,7 +189,7 @@ function SliderMenu() {
             </div>
           </div>
         </Swiper>
-      </main>
+      </div>
       <GatherMenu linked={linked} />
     </>
   );

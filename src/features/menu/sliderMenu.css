@@ -24,6 +24,9 @@
 
 /* ******************************* menu bar ******************************* */
 
+.main {
+  direction: rtl;
+}
 .menu-bar {
   /* margin: 40px 70px 0px 70px; */
   direction: rtl;
@@ -130,20 +133,16 @@ swiper-container {
   margin: 3px !important;
 }
 
-
-
-
-
 #dragSpace {
-  position:fixed;
-  width:10000px;
-  height:300px;
-  top:60px;
-  background-color:black;
-  left:-5000px;
-  margin-top:10px;
+  position: fixed;
+  width: 10000px;
+  height: 300px;
+  top: 60px;
+  background-color: black;
+  left: -5000px;
+  margin-top: 10px;
 }
-#wrapperBoxes{
+#wrapperBoxes {
   position: absolute;
   width: 5000px;
   height: 300px;
@@ -151,6 +150,6 @@ swiper-container {
 }
 .box {
   position: relative;
- 
+
   float: left;
 }
