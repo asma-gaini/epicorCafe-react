@@ -24,9 +24,9 @@
 
 /* ******************************* menu bar ******************************* */
 
-.main {
+/* .main {
   direction: rtl;
-}
+} */
 .menu-bar {
   /* margin: 40px 70px 0px 70px; */
   direction: rtl;
@@ -42,7 +42,7 @@
   min-width: 90px;
   border: none;
   color: var(--white);
-  height: 110px;
+  height: 125px;
 }
 .menu-bar_section_click {
   background-color: var(--menubar-click-primary);
@@ -152,4 +152,7 @@ swiper-container {
   position: relative;
 
   float: left;
+}
+.swiper {
+  direction: rtl;
 }
